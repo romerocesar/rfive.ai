@@ -1,0 +1,9 @@
+:root {
+  --theme-color: #4ad6ff;
+  --theme-color-dark: #2b95b8;
+  --theme-color-darker: #1f6b81;
+}
+
+.home-profile .buttons a {
+  border-radius: 999px;
+}

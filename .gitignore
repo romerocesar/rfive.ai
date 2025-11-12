@@ -1,0 +1,17 @@
+# Hugo build artifacts
+public/
+resources/
+.hugo_build.lock
+
+# Hugo cache
+.hugo_cache/
+*hugo_cache*
+
+# Local dev
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Logs
+*.log
+

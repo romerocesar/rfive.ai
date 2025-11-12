@@ -1,0 +1,84 @@
+baseURL = "https://rfive.ai/"
+title = "R5"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+timeZone = "UTC"
+enableRobotsTXT = true
+enableGitInfo = true
+summaryLength = 70
+
+[pagination]
+  pagerSize = 5
+copyright = "© {{ now.Year }} R5 LLC"
+
+[module]
+  [[module.imports]]
+    path = "github.com/dillonzq/LoveIt"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[params]
+  description = "Applied AI strategy and delivery for ambitious teams."
+  defaultTheme = "dark"
+  disableThemeSwitcher = true
+  dateFormat = "Jan 2, 2006"
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      logo = ""
+      name = "R5"
+      pre = ""
+      post = ""
+      typeit = false
+  [params.social]
+    Linkedin = "romerocesar"
+    Email = "cesar@rfive.ai"
+  [params.app]
+    title = "R5"
+    noFavicon = false
+  [params.assets]
+    customCSS = ["css/custom.css"]
+  [params.home]
+    [params.home.profile]
+      enable = true
+      title = "R5"
+      subtitle = "AI consulting with decades of experience."
+      typeit = false
+      imageUrl = "img/rfive-logo.svg"
+      imageTitle = "R5"
+      imageWidth = 160
+      imageHeight = 160
+  [params.footer]
+    enable = true
+    since = 2023
+    custom = "Experienced AI strategy, engineering, and mentoring."
+    hugo = false
+    copyright = true
+    author = false
+  [params.analytics]
+    enable = false
+  [params.author]
+    name = "R5"
+    email = "cesar@rfive.ai"
+    link = "https://rfive.ai"
+
+[permalinks]
+  page = "/:slug/"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    privacyEnhanced = true
