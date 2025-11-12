@@ -6,4 +6,4 @@ type = "page"
 layout = "list"
 +++
 
-We help leaders and builders design and create AI solutions and teams that ship, scales, and adds value.
+We help leaders define their AI strategy and grow AI teams. We help builders design and create AI solutions that work, scale, and add value.
