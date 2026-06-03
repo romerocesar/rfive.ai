@@ -1,0 +1,10 @@
+{{- with site.Data.booking_options.options -}}
+  <div class="booking-options">
+    {{- range . }}
+      <a class="booking-option" href="{{ .url | safeURL }}">
+        <strong>{{ .title }}</strong>
+        <span>{{ .description }}</span>
+      </a>
+    {{- end }}
+  </div>
+{{- end -}}

@@ -1,0 +1,204 @@
+:root {
+  --theme-color: #4ad6ff;
+  --theme-color-dark: #2b95b8;
+  --theme-color-darker: #1f6b81;
+}
+
+.home-profile .buttons a {
+  border-radius: 999px;
+}
+
+.home[data-home="posts"] {
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: none;
+  min-height: calc(100vh - var(--header-height) - 4rem);
+  max-height: calc(100vh - var(--header-height) - 4rem);
+  aspect-ratio: 16 / 9;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding: 5rem 1rem 4rem;
+  overflow: hidden;
+}
+
+.home[data-home="posts"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(12, 17, 22, 0.28) 0%,
+      rgba(12, 17, 22, 0.16) 42%,
+      rgba(12, 17, 22, 0.34) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(12, 17, 22, 0.22) 0%,
+      rgba(12, 17, 22, 0.1) 48%,
+      rgba(12, 17, 22, 0.18) 100%
+    ),
+    url("/hero.png") center center / cover no-repeat;
+}
+
+.home[data-home="posts"] .home-profile,
+.home[data-home="posts"] .single {
+  position: relative;
+  z-index: 1;
+  max-width: 44rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.home[data-home="posts"] .home-title,
+.home[data-home="posts"] .home-subtitle,
+.home[data-home="posts"] .content {
+  color: #f6fbfd;
+  text-shadow: 0 1px 1rem rgba(0, 0, 0, 0.4);
+}
+
+.home[data-home="posts"] .home-title {
+  font-size: 4rem;
+  line-height: 1.05;
+}
+
+.home[data-home="posts"] .home-subtitle {
+  font-size: 1.7rem;
+  line-height: 1.25;
+}
+
+.home[data-home="posts"] .content {
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+
+.single .content .home-cta {
+  margin: 2.5rem 0 0;
+  text-align: center;
+}
+
+.single .content .home-cta a,
+.single .content .home-cta a::before,
+.single .content .home-cta a::after {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0 1.5rem;
+  border: 1px solid var(--theme-color);
+  border-radius: 999px;
+  color: #161209;
+  background: var(--theme-color);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.single .content .home-cta a:hover,
+.single .content .home-cta a:focus,
+.single .content .home-cta a:hover::before,
+.single .content .home-cta a:hover::after,
+.single .content .home-cta a:focus::before,
+.single .content .home-cta a:focus::after {
+  border-color: var(--theme-color-dark);
+  background: var(--theme-color-dark);
+  color: #161209;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+[theme=dark] .single .content .home-cta a,
+[theme=dark] .single .content .home-cta a::before,
+[theme=dark] .single .content .home-cta a::after,
+[theme=dark] .single .content .home-cta a:hover,
+[theme=dark] .single .content .home-cta a:focus,
+[theme=dark] .single .content .home-cta a:hover::before,
+[theme=dark] .single .content .home-cta a:hover::after,
+[theme=dark] .single .content .home-cta a:focus::before,
+[theme=dark] .single .content .home-cta a:focus::after {
+  color: #161209;
+}
+
+@media (max-width: 680px) {
+  .home[data-home="posts"] {
+    padding: 3rem 1rem;
+  }
+
+  .home[data-home="posts"] .home-title {
+    font-size: 3rem;
+  }
+
+  .home[data-home="posts"] .home-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .home[data-home="posts"] .content {
+    font-size: 1.1rem;
+    line-height: 1.55;
+  }
+}
+
+.booking-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.booking-option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 8.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(74, 214, 255, 0.35);
+  border-radius: 8px;
+  color: inherit;
+  background: rgba(74, 214, 255, 0.06);
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.booking-option:hover,
+.booking-option:focus {
+  border-color: var(--theme-color);
+  background: rgba(74, 214, 255, 0.12);
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.booking-option strong {
+  color: var(--theme-color);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.booking-option span {
+  color: inherit;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  opacity: 0.88;
+}
+
+@media (max-width: 680px) {
+  .booking-options {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-option {
+    min-height: 0;
+  }
+}

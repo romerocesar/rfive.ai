@@ -7,3 +7,5 @@ layout = "list"
 +++
 
 We help leaders define their AI strategy and grow AI teams. We help builders design and create AI solutions that work, scale, and add value.
+
+{{< home-cta label="Schedule a Call" url="/contact/" >}}

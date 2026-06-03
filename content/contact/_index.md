@@ -14,5 +14,13 @@ lightgallery = false
 
 We’d love to learn about your AI priorities.
 
+## Schedule a Call
+
+Choose the conversation that best matches what you want to discuss.
+
+{{< booking-options >}}
+
+## Other Ways to Reach Us
+
 - Email: [cesar@rfive.ai](mailto:cesar@rfive.ai)
 - LinkedIn: [linkedin.com/in/romerocesar](https://www.linkedin.com/in/romerocesar/)

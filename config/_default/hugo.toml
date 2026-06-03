@@ -40,14 +40,13 @@ copyright = "© {{ now.Year }} R5 LLC"
   [params.app]
     title = "R5"
     noFavicon = false
-  [params.assets]
-    customCSS = ["css/custom.css"]
   [params.home]
     [params.home.profile]
       enable = true
       title = "R5"
       subtitle = "AI consulting with decades of experience."
       typeit = false
+      social = false
       imageUrl = "img/rfive-logo.svg"
       imageTitle = "R5"
       imageWidth = 160
