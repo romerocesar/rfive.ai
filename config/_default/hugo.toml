@@ -1,11 +1,12 @@
 baseURL = "https://rfive.ai/"
-title = "R5"
+title = "R5 | AI Strategy, Engineering, and Fractional CTO Consulting"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 timeZone = "UTC"
 enableRobotsTXT = true
 enableGitInfo = true
 summaryLength = 70
+disableKinds = ["taxonomy", "term"]
 
 [pagination]
   pagerSize = 5
@@ -21,10 +22,11 @@ copyright = "© {{ now.Year }} R5 LLC"
   page = ["HTML"]
 
 [params]
-  description = "Applied AI strategy and delivery for ambitious teams."
+  description = "R5 helps founders and executive teams turn AI strategy into production systems, internal capability, and technical roadmaps."
   defaultTheme = "dark"
   disableThemeSwitcher = true
   dateFormat = "Jan 2, 2006"
+  images = ["/hero.png"]
   [params.header]
     desktopMode = "fixed"
     mobileMode = "auto"
@@ -64,6 +66,13 @@ copyright = "© {{ now.Year }} R5 LLC"
     name = "R5"
     email = "cesar@rfive.ai"
     link = "https://rfive.ai"
+  [params.seo]
+    image = "/hero.png"
+    thumbnailUrl = "/hero.png"
+  [params.verification]
+    # Add the Google Search Console HTML tag content here after creating the property.
+    # Example: google = "abc123..."
+    google = ""
 
 [permalinks]
   page = "/:slug/"

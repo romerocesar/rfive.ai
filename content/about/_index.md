@@ -1,6 +1,6 @@
 +++
-title = "About"
-description = "R5 blends strategy, engineering, and enablement to help leaders ship AI that matters."
+title = "About R5 AI Consulting"
+description = "Learn how R5 blends AI strategy, engineering, fractional CTO guidance, and team enablement to help leaders ship AI that matters."
 date = 2024-01-01T00:00:00Z
 draft = false
 type = "page"

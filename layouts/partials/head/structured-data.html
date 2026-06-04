@@ -1,0 +1,38 @@
+{{- if .IsHome -}}
+  {{- $professionalService := dict
+    "@context" "https://schema.org"
+    "@type" "ProfessionalService"
+    "name" "R5"
+    "url" .Site.BaseURL
+    "image" ("/hero.png" | absURL)
+    "email" "cesar@rfive.ai"
+    "description" .Site.Params.description
+    "areaServed" "United States"
+    "sameAs" (slice "https://www.linkedin.com/in/romerocesar/")
+    "serviceType" (slice
+      "AI strategy consulting"
+      "Fractional CTO advisory"
+      "AI engineering"
+      "Technical due diligence"
+      "AI team enablement"
+    )
+  -}}
+  <script type="application/ld+json">{{ $professionalService | jsonify | safeJS }}</script>
+  {{- $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" "Cesar Romero"
+    "url" .Site.BaseURL
+    "email" "cesar@rfive.ai"
+    "sameAs" (slice "https://www.linkedin.com/in/romerocesar/")
+    "worksFor" (dict "@type" "Organization" "name" "R5" "url" .Site.BaseURL)
+    "knowsAbout" (slice
+      "Artificial intelligence"
+      "Machine learning"
+      "Software engineering"
+      "Technical leadership"
+      "AI strategy"
+    )
+  -}}
+  <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- end -}}

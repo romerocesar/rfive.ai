@@ -1,6 +1,6 @@
 +++
-title = "Contact"
-description = "Reach R5 to discuss AI strategy, delivery, and enablement."
+title = "Schedule an AI Consulting Call"
+description = "Schedule a call with R5 for AI strategy, fractional CTO guidance, technical deep dives, recruiting, or team enablement."
 date = 2024-01-01T00:00:00Z
 draft = false
 type = "page"
