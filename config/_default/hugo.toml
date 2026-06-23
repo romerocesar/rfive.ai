@@ -46,7 +46,7 @@ copyright = "© {{ now.Year }} R5 LLC"
     [params.home.profile]
       enable = true
       title = "R5"
-      subtitle = "AI consulting with decades of experience."
+      subtitle = ""
       typeit = false
       social = false
       imageUrl = "img/rfive-logo.svg"
