@@ -193,6 +193,101 @@
   opacity: 0.88;
 }
 
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(74, 214, 255, 0.35);
+  border-radius: 8px;
+  background: rgba(74, 214, 255, 0.06);
+}
+
+.service-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.service-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.service-card h2 {
+  margin: 0;
+  color: var(--theme-color);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.single .content .service-card-button,
+.single .content .service-card-button::before,
+.single .content .service-card-button::after {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  margin-top: auto;
+  padding: 0 1rem;
+  border: 1px solid var(--theme-color);
+  border-radius: 999px;
+  color: #161209;
+  background: var(--theme-color);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  opacity: 1;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.single .content .service-card-button:hover,
+.single .content .service-card-button:focus,
+.single .content .service-card-button:hover::before,
+.single .content .service-card-button:hover::after,
+.single .content .service-card-button:focus::before,
+.single .content .service-card-button:focus::after {
+  border-color: var(--theme-color-dark);
+  background: var(--theme-color-dark);
+  color: #161209;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+[theme=dark] .single .content .service-card-button,
+[theme=dark] .single .content .service-card-button::before,
+[theme=dark] .single .content .service-card-button::after,
+[theme=dark] .single .content .service-card-button:hover,
+[theme=dark] .single .content .service-card-button:focus,
+[theme=dark] .single .content .service-card-button:hover::before,
+[theme=dark] .single .content .service-card-button:hover::after,
+[theme=dark] .single .content .service-card-button:focus::before,
+[theme=dark] .single .content .service-card-button:focus::after {
+  color: #161209;
+}
+
 @media (max-width: 680px) {
   .booking-options {
     grid-template-columns: 1fr;
@@ -200,5 +295,9 @@
 
   .booking-option {
     min-height: 0;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
   }
 }
