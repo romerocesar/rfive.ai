@@ -1,0 +1,8 @@
+<article class="service-card">
+  <img src="{{ .Get "image" | safeURL }}" alt="{{ .Get "alt" }}" loading="lazy">
+  <div class="service-card-body">
+    <h2>{{ .Get "name" }}</h2>
+    <p>{{ .Inner | markdownify }}</p>
+    <a class="service-card-button" href="/contact/">Schedule a Free Consultation</a>
+  </div>
+</article>
