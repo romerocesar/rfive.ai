@@ -3,6 +3,9 @@
   <div class="service-card-body">
     <h2>{{ .Get "name" }}</h2>
     <p>{{ .Inner | markdownify }}</p>
-    <a class="service-card-button" href="/contact/">Schedule a Free Consultation</a>
+    <div class="service-card-actions">
+      <a class="service-card-button service-card-button-secondary" href="{{ .Get "learn" | safeURL }}">Learn More</a>
+      <a class="service-card-button service-card-button-primary" href="/contact/">Schedule a Call</a>
+    </div>
   </div>
 </article>
