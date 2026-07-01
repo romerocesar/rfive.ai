@@ -1,0 +1,7 @@
+interface:
+  display_name: "Start Feature Branch"
+  short_description: "Create a fresh branch from updated main"
+  default_prompt: "Use $start-feature-branch to start a new feature branch."
+
+policy:
+  allow_implicit_invocation: true
