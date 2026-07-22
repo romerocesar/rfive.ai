@@ -9,7 +9,7 @@ toc = false
 lightgallery = false
 [menu.main]
   name = "Contact"
-  weight = 2
+  weight = 3
 +++
 
 We’d love to learn about your AI priorities.

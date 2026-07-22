@@ -1,0 +1,11 @@
+<aside class="article-cta" aria-label="Work with R5">
+  <p>Working through a similar AI strategy or engineering challenge?</p>
+  <a class="article-cta-button" href="/contact/">Schedule a Call</a>
+</aside>
+
+{{- with .Params.linkedinURL }}
+  <p class="article-linkedin-source">
+    <i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>
+    <a href="{{ . | safeURL }}" rel="noopener">Also published on LinkedIn</a>
+  </p>
+{{- end }}
