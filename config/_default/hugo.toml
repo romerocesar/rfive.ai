@@ -56,7 +56,7 @@ copyright = "© {{ now.Year }} R5 LLC"
   [params.footer]
     enable = true
     since = 2023
-    custom = "Experienced AI strategy, engineering, and mentoring."
+    custom = "AI advisory and engineering."
     hugo = false
     copyright = true
     author = false
@@ -66,6 +66,14 @@ copyright = "© {{ now.Year }} R5 LLC"
     name = "R5"
     email = "cesar@rfive.ai"
     link = "https://rfive.ai"
+  [params.page]
+    linkToMarkdown = false
+    [params.page.toc]
+      enable = false
+    [params.page.share]
+      enable = false
+    [params.page.seo.publisher]
+      name = "R5"
   [params.seo]
     image = "/hero.png"
     thumbnailUrl = "/hero.png"
@@ -76,6 +84,7 @@ copyright = "© {{ now.Year }} R5 LLC"
 
 [permalinks]
   page = "/:slug/"
+  posts = "/blog/:slug/"
 
 [privacy]
   [privacy.googleAnalytics]

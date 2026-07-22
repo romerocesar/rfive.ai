@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Description | default .Site.Params.description }}</description>
+    <generator>Hugo -- gohugo.io</generator>
+    {{- with .Site.LanguageCode }}<language>{{ . }}</language>{{ end }}
+    {{- with .Site.Params.Author.email }}
+      <managingEditor>{{ . }}{{ with $.Site.Params.Author.name }} ({{ . }}){{ end }}</managingEditor>
+    {{- end }}
+    {{- with .OutputFormats.Get "RSS" }}
+      {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- range .RegularPages.ByPublishDate.Reverse | first (.Site.Params.section.rss | default 10) }}
+      {{- dict "Page" . "Site" .Site | partial "rss/item.html" }}
+    {{- end }}
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+    {{- $params := .Scratch.Get "params" -}}
+
+    <article class="page single blog-article">
+        <h1 class="single-title animate__animated animate__flipInX">{{ .Title | emojify }}</h1>
+
+        {{- with $params.subtitle }}
+            <h2 class="single-subtitle">{{ . }}</h2>
+        {{- end }}
+
+        <div class="post-meta">
+            <div class="post-meta-line">
+                {{- $author := $params.author | default .Site.Params.Author.name | default (T "author") -}}
+                {{- $authorLink := $params.authorlink | default .Site.Params.Author.link | default .Site.Home.RelPermalink -}}
+                <span class="post-author">
+                    {{- $options := dict "Class" "author" "Destination" $authorLink "Title" "Author" "Rel" "author" "Icon" (dict "Class" "fas fa-user-circle fa-fw") "Content" $author -}}
+                    {{- partial "plugin/a.html" $options -}}
+                </span>
+            </div>
+            <div class="post-meta-line">
+                {{- with .PublishDate }}
+                    <i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="{{ .Format "2006-01-02" }}">{{ .Format ($.Site.Params.dateFormat | default "Jan 2, 2006") }}</time>&nbsp;
+                {{- end }}
+                <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ T "wordCount" .WordCount }}&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;{{ T "readingTime" .ReadingTime }}
+            </div>
+        </div>
+
+        {{- $image := $params.featuredimage }}
+        {{- with .Resources.GetMatch "cover.*" }}
+            {{- $image = .RelPermalink }}
+        {{- end }}
+        {{- with $image }}
+            <div class="featured-image">
+                {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/img.html" -}}
+            </div>
+        {{- end }}
+
+        <div class="content" id="content">
+            {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+            {{- partial "blog/article-footer.html" . }}
+        </div>
+
+        {{- partial "single/footer.html" . }}
+    </article>
+{{- end -}}
