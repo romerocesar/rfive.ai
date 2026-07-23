@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release"
+  short_description: "Squash a feature branch and release to main"
+  default_prompt: "Use $release to validate, squash, and release the current feature branch to main."
