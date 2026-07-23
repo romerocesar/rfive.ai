@@ -45,8 +45,8 @@ copyright = "© {{ now.Year }} R5 LLC"
   [params.home]
     [params.home.profile]
       enable = true
-      title = "R5"
-      subtitle = ""
+      title = "Deliver AI solutions your business can trust."
+      subtitle = "We help leaders identify valuable opportunities and guide technical teams from architecture through production."
       typeit = false
       social = false
       imageUrl = "img/rfive-logo.svg"

@@ -1,3 +1,6 @@
 <p class="home-cta">
-  <a href="{{ .Get "url" | safeURL }}">{{ .Get "label" }}</a>
+  {{- with .Get "secondaryUrl" }}
+    <a class="home-cta-secondary" href="{{ . | safeURL }}">{{ $.Get "secondaryLabel" }}</a>
+  {{- end }}
+  <a class="home-cta-primary" href="{{ .Get "url" | safeURL }}">{{ .Get "label" }}</a>
 </p>

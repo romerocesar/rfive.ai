@@ -6,6 +6,4 @@ type = "page"
 layout = "list"
 +++
 
-We refine your AI strategy and guide your team to build solutions that make an impact
-
-{{< home-cta label="Schedule a Call" url="/contact/" >}}
+{{< home-cta label="Schedule a Free Consultation" url="/contact/" secondaryLabel="View Services" secondaryUrl="/services/" >}}
