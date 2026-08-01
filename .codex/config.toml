@@ -1,0 +1,5 @@
+[mcp_servers.gsd]
+url = "https://gsd.keypersonofinfluence.com/mcp/gsd"
+
+[mcp_servers.gsd.tools.engage-agent-tool]
+approval_mode = "approve"
