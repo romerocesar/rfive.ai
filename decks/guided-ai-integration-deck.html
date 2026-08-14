@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guided AI Integration — rfive.ai</title>
+  <style>
+    :root {
+      --ink: #eef5ff;
+      --muted: #9eb0c7;
+      --blue: #4296e8;
+      --blue-bright: #72b8ff;
+      --navy: #071321;
+      --navy-soft: #0c1c2e;
+      --panel: rgba(255, 255, 255, 0.055);
+      --line: rgba(145, 190, 235, 0.18);
+      --green: #66d2b0;
+    }
+
+    * { box-sizing: border-box; border-radius: 0 !important; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      overscroll-behavior: none;
+      background: var(--navy);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      background:
+        radial-gradient(circle at 82% 8%, rgba(32, 120, 207, 0.18), transparent 29%),
+        radial-gradient(circle at 4% 92%, rgba(45, 124, 170, 0.11), transparent 32%),
+        linear-gradient(145deg, #071321 0%, #091827 52%, #06101c 100%);
+    }
+
+    button { font: inherit; }
+
+    .deck {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      touch-action: pan-y;
+      cursor: pointer;
+    }
+
+    .slide {
+      --slide-pad-x: clamp(1.5rem, 7vw, 7rem);
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: clamp(1rem, 2.2vh, 1.7rem);
+      padding: clamp(1.5rem, 5vw, 5rem) var(--slide-pad-x) clamp(1.3rem, 4vh, 3rem);
+      opacity: 0;
+      visibility: hidden;
+      transform: none;
+      will-change: opacity;
+      transition: opacity 220ms ease, visibility 220ms;
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    .slide.previous { transform: none; }
+
+    .slide-header,
+    .slide-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: clamp(0.78rem, 1vw, 0.95rem);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .brand { display: flex; align-items: center; gap: 0.65rem; color: var(--ink); }
+
+    .mark {
+      display: grid;
+      width: 2rem;
+      height: 2rem;
+      place-items: center;
+      border: 1px solid rgba(114, 184, 255, 0.52);
+      background: linear-gradient(145deg, rgba(66, 150, 232, 0.32), rgba(66, 150, 232, 0.06));
+      color: var(--blue-bright);
+      font-size: 0.72rem;
+      letter-spacing: 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.8rem;
+      color: var(--blue-bright);
+      font-size: clamp(0.84rem, 1.15vw, 1.05rem);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2 {
+      max-width: 14ch;
+      margin-bottom: clamp(1rem, 2.4vh, 1.8rem);
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      letter-spacing: -0.035em;
+      line-height: 0.98;
+    }
+
+    h1 { font-size: clamp(3.6rem, 7.5vw, 7.8rem); }
+    h2 { font-size: clamp(2.7rem, 4.8vw, 5.2rem); }
+    h3 { margin-bottom: 0.75rem; font-size: clamp(1.15rem, 1.7vw, 1.55rem); }
+
+    .accent { color: var(--blue-bright); }
+
+    .hero {
+      display: grid;
+      align-content: center;
+      max-width: none;
+    }
+
+    .hero h1 { max-width: 22ch; font-size: clamp(3.15rem, 6.1vw, 6.4rem); }
+    .hero .credentials { margin-top: clamp(0.8rem, 1.7vh, 1.2rem); }
+
+    .hero-copy {
+      max-width: 42rem;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.7vw, 1.55rem);
+      line-height: 1.55;
+    }
+
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+      max-width: none;
+      margin-top: clamp(1.6rem, 4vh, 3.2rem);
+    }
+
+    .experience {
+      width: calc(100% + var(--slide-pad-x) + var(--slide-pad-x));
+      max-width: none;
+      margin-top: clamp(1rem, 2.2vh, 1.6rem);
+      margin-left: calc(0px - var(--slide-pad-x));
+      padding: clamp(0.75rem, 1.3vw, 1.1rem) var(--slide-pad-x);
+      background: #edf1f5;
+    }
+
+    .experience-label {
+      margin-bottom: 0.65rem;
+      color: #697586;
+      font-size: clamp(0.68rem, 0.82vw, 0.8rem);
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: clamp(0.4rem, 0.8vw, 0.8rem);
+    }
+
+    .company-logo {
+      display: flex;
+      min-width: 0;
+      min-height: 3.8rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.38rem;
+      padding: 0;
+      color: #596574;
+      font-size: clamp(0.65rem, 0.78vw, 0.82rem);
+      font-weight: 750;
+      letter-spacing: -0.01em;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .company-logo img {
+      width: clamp(1.75rem, 2.25vw, 2.35rem);
+      height: clamp(1.75rem, 2.25vw, 2.35rem);
+      padding: 0;
+      background: transparent;
+      filter: grayscale(1) saturate(0) contrast(0.72);
+      opacity: 0.82;
+      object-fit: contain;
+    }
+
+    .company-logo.wordmark-logo img {
+      width: 100%;
+      max-width: 7rem;
+      height: clamp(2rem, 2.8vw, 2.8rem);
+    }
+
+    .company-google { font-weight: 600; letter-spacing: -0.04em; }
+    .company-amazon { font-weight: 500; letter-spacing: -0.04em; }
+    .company-unity { font-weight: 800; text-transform: uppercase; }
+    .company-walmart { font-weight: 800; }
+
+    .credential, .card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+    }
+
+    .credential { padding: 1rem 1.15rem; }
+    .credential strong { display: block; color: var(--blue-bright); font-size: clamp(1.6rem, 2.4vw, 2.35rem); }
+    .credential span { color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.35; }
+
+    .content { min-height: 0; align-self: center; }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(1rem, 2.2vw, 2rem);
+    }
+
+    .card { padding: clamp(1.2rem, 2.3vw, 2rem); }
+    .card.challenge { border-top: 3px solid #e18378; }
+    .card.outcome { border-top: 3px solid var(--green); }
+    .card-label { color: var(--muted); font-size: clamp(0.82rem, 1vw, 0.96rem); font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+
+    ul { display: grid; gap: clamp(0.65rem, 1.5vh, 1rem); margin: 1rem 0 0; padding: 0; list-style: none; }
+    li { position: relative; padding-left: 1.4rem; color: #d4dfec; font-size: clamp(0.98rem, 1.38vw, 1.3rem); line-height: 1.48; }
+    li::before { position: absolute; left: 0; color: var(--blue-bright); content: "→"; }
+    .challenge li::before { color: #e9a095; content: "×"; }
+    .outcome li::before { color: var(--green); content: "✓"; }
+
+    .prize {
+      margin: clamp(1rem, 2.3vh, 1.6rem) 0 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+      text-align: center;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.84fr 1.16fr;
+      align-items: center;
+      gap: clamp(1.5rem, 4vw, 4rem);
+    }
+
+    .intro-copy p {
+      max-width: 36rem;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 1.48vw, 1.36rem);
+      line-height: 1.55;
+    }
+
+    .product-heading {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: end;
+      gap: clamp(1rem, 3vw, 3rem);
+      margin-bottom: clamp(0.8rem, 1.8vh, 1.3rem);
+    }
+
+    .product-heading .eyebrow { margin-bottom: 0.4rem; }
+    .product-heading h2 { max-width: none; margin-bottom: 0; font-size: clamp(2.35rem, 4vw, 4.35rem); }
+    .product-heading > p { margin: 0; color: var(--muted); font-size: clamp(0.94rem, 1.24vw, 1.16rem); line-height: 1.5; }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(1rem, 2.2vw, 2rem);
+    }
+
+    .workflow-card { padding: clamp(1.15rem, 2vw, 1.75rem); }
+    .workflow-card h2 { max-width: none; margin: 0.35rem 0 1rem; font-size: clamp(1.75rem, 2.8vw, 2.75rem); }
+    .workflow-stage { display: grid; grid-template-columns: 5.8rem 1fr; gap: 0.75rem; padding: 0.72rem 0; border-top: 1px solid var(--line); }
+    .workflow-stage:first-of-type { border-top: 0; }
+    .workflow-stage strong { color: var(--blue-bright); font-size: clamp(0.7rem, 0.82vw, 0.8rem); letter-spacing: 0.1em; text-transform: uppercase; }
+    .workflow-stage span { color: #cbd7e5; font-size: clamp(0.78rem, 1.02vw, 0.96rem); line-height: 1.42; }
+    .workflow-proof { margin: 0.85rem 0 0; color: var(--green); font-size: clamp(0.72rem, 0.88vw, 0.84rem); font-weight: 700; }
+
+    .deliverables-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1fr 1.08fr;
+      gap: 0.8rem;
+    }
+
+    .deliverable-card { padding: clamp(0.9rem, 1.5vw, 1.35rem); }
+    .deliverable-card h3 { color: var(--blue-bright); font-size: clamp(0.78rem, 1vw, 0.94rem); letter-spacing: 0.1em; text-transform: uppercase; }
+    .deliverable-card ul { gap: 0.48rem; margin-top: 0.7rem; }
+    .deliverable-card li { padding-left: 1.15rem; font-size: clamp(0.7rem, 0.88vw, 0.84rem); line-height: 1.36; }
+    .deliverable-card li::before { content: "✓"; color: var(--green); }
+
+    .method {
+      position: relative;
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 2.35rem 7.5rem 1fr;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .step-number {
+      display: grid;
+      width: 2.1rem;
+      height: 2.1rem;
+      place-items: center;
+      background: rgba(66, 150, 232, 0.15);
+      color: var(--blue-bright);
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .step strong { color: var(--ink); font-size: clamp(0.94rem, 1.15vw, 1.12rem); }
+    .step span:last-child { color: var(--muted); font-size: clamp(0.82rem, 1.02vw, 0.98rem); line-height: 1.35; }
+    .journey { margin-top: 1rem; color: var(--muted); font-size: clamp(0.88rem, 1vw, 1rem); text-align: center; }
+    .journey strong { color: var(--blue-bright); }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .package-card { padding: clamp(1.1rem, 2vw, 1.7rem); }
+    .package-card .phase { color: var(--blue-bright); font-size: clamp(0.84rem, 1vw, 0.96rem); font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; }
+    .session { display: grid; grid-template-columns: 2rem 1fr; gap: 0.75rem; margin-top: 1rem; }
+    .session-index { color: var(--blue-bright); font-weight: 800; }
+    .session strong { display: block; margin-bottom: 0.2rem; font-size: clamp(1rem, 1.25vw, 1.18rem); }
+    .session p { margin: 0; color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.4; }
+
+    .investment {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 1.25rem;
+      margin-top: 1rem;
+      padding: 1rem 1.35rem;
+      border: 1px solid rgba(114, 184, 255, 0.42);
+      background: linear-gradient(100deg, rgba(66, 150, 232, 0.18), rgba(66, 150, 232, 0.055));
+    }
+
+    .price { color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 3.6vw, 3.7rem); }
+    .investment-copy { color: var(--muted); font-size: clamp(0.86rem, 1.12vw, 1.06rem); line-height: 1.4; }
+    .investment-copy strong { color: var(--ink); }
+    .timeline { color: var(--green); font-size: clamp(0.9rem, 1.12vw, 1.08rem); font-weight: 800; text-align: right; }
+
+    .controls {
+      position: fixed;
+      right: 1.2rem;
+      bottom: 1rem;
+      z-index: 20;
+      display: flex;
+      gap: 0.45rem;
+    }
+
+    .control {
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 1px solid var(--line);
+      background: rgba(7, 19, 33, 0.85);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .control:hover { border-color: var(--blue); background: rgba(66, 150, 232, 0.18); }
+    .progress { position: fixed; bottom: 0; left: 0; z-index: 30; width: 25%; height: 3px; background: var(--blue); transition: width 250ms ease; }
+
+    @media (max-width: 760px), (max-height: 650px) {
+      .slide { --slide-pad-x: 1.1rem; padding: 1rem var(--slide-pad-x) 1.2rem; gap: 0.75rem; overflow-y: auto; }
+      h1 { font-size: clamp(2.6rem, 13vw, 4.5rem); }
+      h2 { font-size: clamp(2rem, 8vw, 3.2rem); }
+      .credentials, .two-column, .intro-grid, .package-grid, .product-heading, .workflow-grid, .deliverables-grid { grid-template-columns: 1fr; }
+      .credentials { grid-template-columns: repeat(3, 1fr); }
+      .logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 0.9rem; }
+      .intro-grid { align-items: start; }
+      .intro-copy h2 { max-width: none; }
+      .step { grid-template-columns: 2.1rem 6.5rem 1fr; }
+      .investment { grid-template-columns: auto 1fr; }
+      .timeline { grid-column: 1 / -1; text-align: left; }
+    }
+
+    @media print {
+      @page { size: 13.333in 7.5in; margin: 0; }
+      html, body { width: auto; height: auto; overflow: hidden; background: var(--navy); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .deck { height: auto; }
+      .slide {
+        --slide-pad-x: 0.75in;
+        position: relative;
+        display: grid;
+        width: 13.333in;
+        height: 7.5in;
+        padding: 0.55in var(--slide-pad-x) 0.4in;
+        gap: 0.18in;
+        overflow: hidden;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        page-break-after: always;
+      }
+      .credentials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .logo-grid { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+      .two-column { grid-template-columns: 1fr 1fr; }
+      .intro-grid { grid-template-columns: 0.84fr 1.16fr; align-items: center; }
+      .package-grid { grid-template-columns: 1fr 1fr; }
+      .product-heading { grid-template-columns: 0.9fr 1.1fr; }
+      .workflow-grid { grid-template-columns: 1fr 1fr; }
+      .deliverables-grid { grid-template-columns: 0.92fr 1fr 1.08fr; }
+      .intro-copy h2 { max-width: 14ch; }
+      .investment { grid-template-columns: auto 1fr auto; }
+      .timeline { grid-column: auto; text-align: right; }
+      .controls, .progress { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-live="polite">
+    <section class="slide active" data-title="Transformation & Credibility">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>Guided AI Integration</span>
+      </header>
+      <div class="hero">
+        <p class="eyebrow">The transformation</p>
+        <h1><span class="accent">Leverage AI</span> with peace of mind and get time back.</h1>
+        <div class="credentials" aria-label="Credentials">
+          <div class="credential"><strong>20 years</strong><span>working with AI</span></div>
+          <div class="credential"><strong>7 years</strong><span>as a Principal ML Engineer</span></div>
+          <div class="credential"><strong>Over 200 hours</strong><span>tutoring AI</span></div>
+        </div>
+        <div class="experience" aria-label="Companies where Cesar has worked">
+          <div class="experience-label">Experience includes</div>
+          <div class="logo-grid">
+            <span class="company-logo company-google"><img src="assets/company-logos/google.svg" alt=""><span>Google</span></span>
+            <span class="company-logo company-amazon"><img src="assets/company-logos/amazon.svg" alt=""><span>amazon</span></span>
+            <span class="company-logo company-unity"><img src="assets/company-logos/unity.svg" alt=""><span>Unity</span></span>
+            <span class="company-logo company-walmart"><img src="assets/company-logos/walmart.svg" alt=""><span>Walmart</span></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/ouva.svg" alt="Ouva"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/ramenvr.svg" alt="Ramen VR"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/medal.svg" alt="Medal.tv"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/demand-iq.svg" alt="Demand-IQ"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/andesite.svg" alt="Andesite"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/groundlight.svg" alt="Groundlight"></span>
+          </div>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>rfive.ai</span><span>01 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="The Challenge & Desired Outcome">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>The opportunity</span>
+      </header>
+      <div class="content">
+        <p class="eyebrow">From anxiety to productivity</p>
+        <div class="two-column">
+          <article class="card challenge">
+            <span class="card-label">The challenge</span>
+            <ul>
+              <li>Too many AI options and no clear way to evaluate what works for your business.</li>
+              <li>Hours spent on repetitive tasks that could be automated, with no obvious starting point.</li>
+            </ul>
+          </article>
+          <article class="card outcome">
+            <span class="card-label">Imagine instead</span>
+            <ul>
+              <li>Thinking clearly about AI without needing to become an expert in a fast-moving field.</li>
+              <li>Finding real opportunities in your workflows—turning many repetitive tasks from minutes into seconds.</li>
+              <li>Moving forward with a practical framework instead of guesswork.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="prize">So ultimately, you can <span class="accent">use AI with confidence.</span></p>
+      </div>
+      <footer class="slide-footer"><span>rfive.ai</span><span>02 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="The Method">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>The method</span>
+      </header>
+      <div class="content intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow">The method</p>
+          <h2>AI Blueprint for <span class="accent">Non-Tech Businesses</span></h2>
+          <p>A practical five-step method for leaders who need clarity, not complexity.</p>
+          <p>It creates a shared understanding of business value and implementation effort—so the right opportunities rise to the top.</p>
+        </div>
+        <div>
+          <div class="method" aria-label="AI Blueprint for Non-Tech Businesses">
+            <div class="step"><span class="step-number">01</span><strong>Understand</strong><span>Start with your needs and workflows—not a preferred AI platform—and build a practical mental model of what AI can and cannot do.</span></div>
+            <div class="step"><span class="step-number">02</span><strong>Identify</strong><span>Map relevant AI opportunities in your business.</span></div>
+            <div class="step"><span class="step-number">03</span><strong>Estimate</strong><span>You estimate the value. I help you understand the effort.</span></div>
+            <div class="step"><span class="step-number">04</span><strong>Prioritize</strong><span>Together, we rank and prioritize high-impact opportunities using our shared view of value and effort.</span></div>
+            <div class="step"><span class="step-number">05</span><strong>Implement</strong><span>Decide whether to use, connect, build, replace, or avoid tools based on fit, then deploy an integration your team can use confidently.</span></div>
+          </div>
+          <div class="journey">Anxiety &nbsp;→&nbsp; <strong>Productivity</strong></div>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>AI Blueprint for Non-Tech Businesses</span><span>03 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="Workflows in Practice">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>Workflows in practice</span>
+      </header>
+      <div class="content">
+        <p class="eyebrow">From recurring work to repeatable leverage</p>
+        <div class="workflow-grid">
+          <article class="card workflow-card">
+            <span class="card-label">Client workflow</span>
+            <h2>Follow-Up &amp; <span class="accent">CRM</span></h2>
+            <div class="workflow-stage"><strong>Before</strong><span>Switching among email, CRM, and spreadsheets; writing each follow-up from scratch.</span></div>
+            <div class="workflow-stage"><strong>Connect</strong><span>GPT + Gmail + Attio draft personalized follow-ups and add leads to the CRM.</span></div>
+            <div class="workflow-stage"><strong>Result</strong><span>More leads captured, more timely follow-ups, and less manual writing while retaining the client's voice.</span></div>
+          </article>
+          <article class="card workflow-card">
+            <span class="card-label">Learning workflow</span>
+            <h2>Continuous Call <span class="accent">Improvement</span></h2>
+            <div class="workflow-stage"><strong>Before</strong><span>Insights depend on manual notes and lessons are easy to lose before the next client call.</span></div>
+            <div class="workflow-stage"><strong>Automate</strong><span>Meeting capture produces notes, then deeper analysis identifies patterns and specific improvements.</span></div>
+            <div class="workflow-stage"><strong>Result</strong><span>A repeatable learning loop after every client conversation.</span></div>
+            <p class="workflow-proof">Used by me and by at least one client.</p>
+          </article>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>04 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="The Product & Investment">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>The engagement</span>
+      </header>
+      <div class="content">
+        <div class="product-heading">
+          <div>
+            <p class="eyebrow">Introducing</p>
+            <h2>Guided AI <span class="accent">Integration</span></h2>
+          </div>
+          <p>A guided engagement delivered through focused calls and hands-on integration work—designed to increase your team's confidence and productivity with AI within weeks.</p>
+        </div>
+        <div class="deliverables-grid">
+          <article class="card deliverable-card">
+            <h3>Four focused sessions</h3>
+            <ul>
+              <li>AI capabilities opening call</li>
+              <li>Opportunity scoping session</li>
+              <li>Hands-on implementation session</li>
+              <li>Final delivery and handoff call</li>
+            </ul>
+          </article>
+          <article class="card deliverable-card">
+            <h3>Clear decisions</h3>
+            <ul>
+              <li>Practical AI capabilities briefing</li>
+              <li>Workflow and opportunity inventory</li>
+              <li>Value and effort assessment</li>
+              <li>Prioritized opportunity roadmap</li>
+              <li>Personalized tool and approach recommendation</li>
+            </ul>
+          </article>
+          <article class="card deliverable-card">
+            <h3>Integration &amp; handoff</h3>
+            <ul>
+              <li>One high-impact AI integration</li>
+              <li>Demonstration and usage guidance</li>
+              <li>Integration documentation</li>
+              <li>Personalized decision-and-handoff report</li>
+              <li>Recommended next steps</li>
+            </ul>
+          </article>
+        </div>
+        <div class="investment">
+          <div class="price">$2,000</div>
+          <div class="investment-copy"><strong>Four 90-minute sessions</strong><br>Hands-on integration of a high-impact AI opportunity and final delivery.</div>
+          <div class="timeline">Designed to deliver<br>results within weeks</div>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Guided AI Integration</span><span>05 / 05</span></footer>
+    </section>
+  </main>
+
+  <div class="controls" aria-label="Presentation controls">
+    <button class="control" id="previous" title="Previous slide (←)" aria-label="Previous slide">←</button>
+    <button class="control" id="fullscreen" title="Fullscreen (F)" aria-label="Toggle fullscreen">⛶</button>
+    <button class="control" id="next" title="Next slide (→)" aria-label="Next slide">→</button>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const progress = document.querySelector('.progress');
+      let current = Math.max(0, Math.min(slides.length - 1, Number(location.hash.slice(1)) - 1 || 0));
+
+      function show(index) {
+        current = Math.max(0, Math.min(slides.length - 1, index));
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === current);
+          slide.classList.toggle('previous', i < current);
+          slide.setAttribute('aria-hidden', i === current ? 'false' : 'true');
+        });
+        progress.style.width = `${((current + 1) / slides.length) * 100}%`;
+        history.replaceState(null, '', `#${current + 1}`);
+      }
+
+      function toggleFullscreen() {
+        if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+        else document.exitFullscreen?.();
+      }
+
+      document.querySelector('#previous').addEventListener('click', () => show(current - 1));
+      document.querySelector('#next').addEventListener('click', () => show(current + 1));
+      document.querySelector('#fullscreen').addEventListener('click', toggleFullscreen);
+
+      document.querySelector('.deck').addEventListener('click', event => {
+        if (event.clientX < window.innerWidth / 2) show(current - 1);
+        else show(current + 1);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (['ArrowRight', 'ArrowDown', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
+        if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
+        if (event.key.toLowerCase() === 'f') toggleFullscreen();
+        if (event.key === 'Home') show(0);
+        if (event.key === 'End') show(slides.length - 1);
+      });
+
+      show(current);
+    })();
+  </script>
+</body>
+</html>
