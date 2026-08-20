@@ -1,8 +1,8 @@
 :root {
-  --theme-color: #0053a3;
-  --theme-color-dark: #0053a3;
-  --theme-color-darker: #0053a3;
-  --cta-background: #0053a3;
+  --theme-color: #003153;
+  --theme-color-dark: #003153;
+  --theme-color-darker: #003153;
+  --cta-background: #003153;
   --cta-foreground: white;
 }
 
@@ -65,6 +65,10 @@ body[theme="dark"] .main {
   text-align: center;
 }
 
+.home[data-home="posts"] .home-profile {
+  max-width: 56rem;
+}
+
 .home[data-home="posts"] .home-title,
 .home[data-home="posts"] .home-subtitle,
 .home[data-home="posts"] .content {
@@ -73,8 +77,13 @@ body[theme="dark"] .main {
 }
 
 .home[data-home="posts"] .home-title {
-  font-size: 4rem;
+  font-size: clamp(1.45rem, 6.25vw, 4rem);
   line-height: 1.05;
+}
+
+.home[data-home="posts"] .home-title-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .home[data-home="posts"] .home-subtitle {
@@ -148,8 +157,8 @@ body[theme="dark"] .main {
 .single .content .home-cta .home-cta-secondary::after,
 .single .content .home-cta .home-cta-secondary:hover,
 .single .content .home-cta .home-cta-secondary:focus {
-  border-color: #0053a3;
-  color: #0053a3;
+  border-color: #003153;
+  color: #003153;
   background: white;
 }
 
@@ -158,18 +167,14 @@ body[theme="dark"] .main {
 [theme=dark] .single .content .home-cta .home-cta-secondary::after,
 [theme=dark] .single .content .home-cta .home-cta-secondary:hover,
 [theme=dark] .single .content .home-cta .home-cta-secondary:focus {
-  border-color: #0053a3;
-  color: #0053a3;
+  border-color: #003153;
+  color: #003153;
   background: white;
 }
 
 @media (max-width: 680px) {
   .home[data-home="posts"] {
     padding: 3rem 1rem;
-  }
-
-  .home[data-home="posts"] .home-title {
-    font-size: 3rem;
   }
 
   .home[data-home="posts"] .home-subtitle {
@@ -199,7 +204,7 @@ body[theme="dark"] .main {
 .home-latest-card {
   display: grid;
   grid-template-columns: minmax(16rem, 40%) minmax(0, 1fr);
-  border: 1px solid #0053a3;
+  border: 1px solid #003153;
   color: black;
   background: white;
 }
@@ -243,7 +248,7 @@ body[theme="dark"] .main {
 
 .home-latest-card h2 a:hover,
 .home-latest-card h2 a:focus {
-  color: #0053a3;
+  color: #003153;
 }
 
 .home-latest-card p {
@@ -258,9 +263,9 @@ body[theme="dark"] .main {
   min-height: 3rem;
   margin-top: auto;
   padding: 0 1.4rem;
-  border: 1px solid #0053a3;
+  border: 1px solid #003153;
   color: white;
-  background: #0053a3;
+  background: #003153;
   font-weight: 700;
   text-decoration: none;
 }
@@ -271,7 +276,7 @@ body[theme="dark"] .main {
 [theme=dark] .home-latest-button:hover,
 [theme=dark] .home-latest-button:focus {
   color: white;
-  background: #0053a3;
+  background: #003153;
 }
 
 @media (max-width: 680px) {
@@ -307,7 +312,7 @@ body[theme="dark"] .main {
   gap: 0.45rem;
   min-height: 8.5rem;
   padding: 1rem;
-  border: 1px solid #0053a3;
+  border: 1px solid #003153;
   border-radius: 0;
   color: inherit;
   background: white;
@@ -347,7 +352,7 @@ body[theme="dark"] .main {
 [theme=dark] .single .content .booking-option:focus {
   border-color: white;
   color: white;
-  background: #0053a3;
+  background: #003153;
 }
 
 [theme=dark] .single .content .booking-option strong {
@@ -365,12 +370,12 @@ body[theme="dark"] .main {
   align-items: center;
   min-height: 28rem;
   padding: 3rem 0;
-  border-top: 1px solid #0053a3;
+  border-top: 1px solid #003153;
   background: none;
 }
 
 .service-card:last-child {
-  border-bottom: 1px solid #0053a3;
+  border-bottom: 1px solid #003153;
 }
 
 .service-card:nth-child(even) img {
@@ -451,8 +456,8 @@ body[theme="dark"] .main {
 .single .content .service-card-button-secondary,
 .single .content .service-card-button-secondary::before,
 .single .content .service-card-button-secondary::after {
-  border: 1px solid #0053a3;
-  color: #0053a3;
+  border: 1px solid #003153;
+  color: #003153;
   background: white;
 }
 
@@ -462,9 +467,9 @@ body[theme="dark"] .main {
 .single .content .service-card-button-secondary:hover::after,
 .single .content .service-card-button-secondary:focus::before,
 .single .content .service-card-button-secondary:focus::after {
-  border-color: #0053a3;
+  border-color: #003153;
   background: white;
-  color: #0053a3;
+  color: #003153;
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -482,8 +487,8 @@ body[theme="dark"] .main {
 [theme=dark] .single .content .service-card-button-secondary::after,
 [theme=dark] .single .content .service-card-button-secondary:hover,
 [theme=dark] .single .content .service-card-button-secondary:focus {
-  border-color: #0053a3;
-  color: #0053a3;
+  border-color: #003153;
+  color: #003153;
   background: white;
 }
 
@@ -581,7 +586,7 @@ body[theme="dark"] .main {
   display: grid;
   grid-template-columns: minmax(12rem, 34%) minmax(0, 1fr);
   overflow: hidden;
-  border: 1px solid #0053a3;
+  border: 1px solid #003153;
   border-radius: 0;
   background: white;
 }
@@ -656,7 +661,7 @@ body[theme="dark"] .main {
 
 .blog-empty {
   padding: 3rem 1.5rem;
-  border: 1px solid #0053a3;
+  border: 1px solid #003153;
   border-radius: 0;
   background: white;
   text-align: center;
@@ -665,7 +670,7 @@ body[theme="dark"] .main {
 .article-cta {
   margin: 3rem 0 1.25rem;
   padding: 1.5rem;
-  border: 1px solid #0053a3;
+  border: 1px solid #003153;
   border-radius: 0;
   color: black;
   background: white;
