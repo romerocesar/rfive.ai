@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" role="img" aria-labelledby="title description">
+  <title id="title">R5 LinkedIn banner</title>
+  <desc id="description">R5 helps clients use AI to strengthen their businesses and prepare for what comes next.</desc>
+
+  <defs>
+    <pattern id="minor-grid" width="33" height="33" patternUnits="userSpaceOnUse">
+      <path d="M33 0H0V33" fill="none" stroke="#fff" stroke-width="1" opacity=".035"/>
+    </pattern>
+    <pattern id="major-grid" width="132" height="132" patternUnits="userSpaceOnUse">
+      <path d="M132 0H0V132" fill="none" stroke="#fff" stroke-width="1" opacity=".065"/>
+    </pattern>
+  </defs>
+
+  <rect width="1584" height="396" fill="#003153"/>
+  <rect width="1584" height="396" fill="url(#minor-grid)"/>
+  <rect width="1584" height="396" fill="url(#major-grid)"/>
+
+  <g fill="#fff" font-family="IBM Plex Serif, Georgia, 'Times New Roman', serif" dominant-baseline="hanging">
+    <g text-anchor="middle">
+      <text x="565" y="108" font-size="58" font-weight="600">You know your business.</text>
+      <text x="565" y="176" font-size="58" font-weight="600">We know AI.</text>
+    </g>
+    <g text-anchor="end">
+      <text x="1450" y="108" font-size="34" font-weight="400">Move forward with clarity,</text>
+      <text x="1450" y="154" font-size="34" font-weight="400">confidence, and momentum.</text>
+      <text x="1450" y="218" font-size="22" font-weight="600" letter-spacing="3">RFIVE.AI</text>
+    </g>
+  </g>
+
+</svg>
