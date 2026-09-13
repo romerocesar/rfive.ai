@@ -173,7 +173,7 @@
 
     .logo-grid {
       display: grid;
-      grid-template-columns: repeat(10, minmax(0, 1fr));
+      grid-template-columns: repeat(11, minmax(0, 1fr));
       gap: clamp(0.4rem, 0.8vw, 0.8rem);
     }
 
@@ -210,10 +210,7 @@
       height: clamp(2rem, 2.8vw, 2.8rem);
     }
 
-    .company-google { font-weight: 600; letter-spacing: -0.04em; }
-    .company-amazon { font-weight: 500; letter-spacing: -0.04em; }
-    .company-unity { font-weight: 800; text-transform: uppercase; }
-    .company-walmart { font-weight: 800; }
+    .company-logo.dark-logo img { filter: brightness(0); }
 
     .credential, .card {
       border: 1px solid var(--line);
@@ -294,15 +291,14 @@
 
     .deliverables-grid {
       display: grid;
-      grid-template-columns: 0.92fr 1fr 1.08fr;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 0.8rem;
     }
 
-    .deliverable-card { padding: clamp(0.9rem, 1.5vw, 1.35rem); }
-    .deliverable-card h3 { color: var(--blue-bright); font-size: clamp(0.78rem, 1vw, 0.94rem); letter-spacing: 0.1em; text-transform: uppercase; }
-    .deliverable-card ul { gap: 0.48rem; margin-top: 0.7rem; }
-    .deliverable-card li { padding-left: 1.15rem; font-size: clamp(0.7rem, 0.88vw, 0.84rem); line-height: 1.36; }
-    .deliverable-card li::before { content: "✓"; color: var(--green); }
+    .deliverable-card { padding: clamp(1rem, 1.6vw, 1.4rem); }
+    .deliverable-number { color: var(--green); font-size: clamp(0.68rem, 0.82vw, 0.78rem); font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
+    .deliverable-card h3 { margin: 0.65rem 0 0; color: var(--ink); font-size: clamp(1rem, 1.22vw, 1.18rem); line-height: 1.25; }
+    .deliverable-card p { margin: 0.7rem 0 0; color: var(--muted); font-size: clamp(0.76rem, 0.92vw, 0.88rem); line-height: 1.42; }
 
     .method {
       position: relative;
@@ -350,9 +346,9 @@
     .session strong { display: block; margin-bottom: 0.2rem; font-size: clamp(1rem, 1.25vw, 1.18rem); }
     .session p { margin: 0; color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.4; }
 
-    .investment {
+    .delivery-outcome {
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr;
       align-items: center;
       gap: 1.25rem;
       margin-top: 1rem;
@@ -361,10 +357,8 @@
       background: linear-gradient(100deg, rgba(66, 150, 232, 0.18), rgba(66, 150, 232, 0.055));
     }
 
-    .price { color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 3.6vw, 3.7rem); }
-    .investment-copy { color: var(--muted); font-size: clamp(0.86rem, 1.12vw, 1.06rem); line-height: 1.4; }
-    .investment-copy strong { color: var(--ink); }
-    .timeline { color: var(--green); font-size: clamp(0.9rem, 1.12vw, 1.08rem); font-weight: 800; text-align: right; }
+    .delivery-outcome strong { color: var(--green); font-size: clamp(0.9rem, 1.12vw, 1.08rem); }
+    .delivery-outcome span { color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.4; }
 
     .controls {
       position: fixed;
@@ -397,8 +391,7 @@
       .intro-grid { align-items: start; }
       .intro-copy h2 { max-width: none; }
       .step { grid-template-columns: 2.1rem 6.5rem 1fr; }
-      .investment { grid-template-columns: auto 1fr; }
-      .timeline { grid-column: 1 / -1; text-align: left; }
+      .delivery-outcome { grid-template-columns: 1fr; }
     }
 
     @media print {
@@ -420,16 +413,14 @@
         page-break-after: always;
       }
       .credentials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .logo-grid { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+      .logo-grid { grid-template-columns: repeat(11, minmax(0, 1fr)); }
       .two-column { grid-template-columns: 1fr 1fr; }
       .intro-grid { grid-template-columns: 0.84fr 1.16fr; align-items: center; }
       .package-grid { grid-template-columns: 1fr 1fr; }
       .product-heading { grid-template-columns: 0.9fr 1.1fr; }
       .workflow-grid { grid-template-columns: 1fr 1fr; }
-      .deliverables-grid { grid-template-columns: 0.92fr 1fr 1.08fr; }
+      .deliverables-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .intro-copy h2 { max-width: 14ch; }
-      .investment { grid-template-columns: auto 1fr auto; }
-      .timeline { grid-column: auto; text-align: right; }
       .controls, .progress { display: none !important; }
     }
   </style>
@@ -443,7 +434,7 @@
       </header>
       <div class="hero">
         <p class="eyebrow">The transformation</p>
-        <h1><span class="accent">Leverage AI</span> with peace of mind and get time back.</h1>
+        <h1><span class="accent">Put AI to work</span> on your most time-consuming workflows.</h1>
         <div class="credentials" aria-label="Credentials">
           <div class="credential"><strong>20 years</strong><span>working with AI</span></div>
           <div class="credential"><strong>7 years</strong><span>as a Principal ML Engineer</span></div>
@@ -452,16 +443,17 @@
         <div class="experience" aria-label="Companies where Cesar has worked">
           <div class="experience-label">Experience includes</div>
           <div class="logo-grid">
-            <span class="company-logo company-google"><img src="assets/company-logos/google.svg" alt=""><span>Google</span></span>
-            <span class="company-logo company-amazon"><img src="assets/company-logos/amazon.svg" alt=""><span>amazon</span></span>
-            <span class="company-logo company-unity"><img src="assets/company-logos/unity.svg" alt=""><span>Unity</span></span>
-            <span class="company-logo company-walmart"><img src="assets/company-logos/walmart.svg" alt=""><span>Walmart</span></span>
+            <span class="company-logo"><img src="assets/company-logos/google.svg" alt="Google"></span>
+            <span class="company-logo"><img src="assets/company-logos/amazon.svg" alt="Amazon"></span>
+            <span class="company-logo"><img src="assets/company-logos/unity.svg" alt="Unity"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/walmart.svg" alt="Walmart"></span>
             <span class="company-logo wordmark-logo"><img src="assets/company-logos/ouva.svg" alt="Ouva"></span>
             <span class="company-logo wordmark-logo"><img src="assets/company-logos/ramenvr.svg" alt="Ramen VR"></span>
             <span class="company-logo wordmark-logo"><img src="assets/company-logos/medal.svg" alt="Medal.tv"></span>
             <span class="company-logo wordmark-logo"><img src="assets/company-logos/demand-iq.svg" alt="Demand-IQ"></span>
-            <span class="company-logo wordmark-logo"><img src="assets/company-logos/andesite.svg" alt="Andesite"></span>
-            <span class="company-logo wordmark-logo"><img src="assets/company-logos/groundlight.svg" alt="Groundlight"></span>
+            <span class="company-logo wordmark-logo dark-logo"><img src="assets/company-logos/andesite.svg" alt="Andesite"></span>
+            <span class="company-logo wordmark-logo dark-logo"><img src="assets/company-logos/groundlight.svg" alt="Groundlight"></span>
+            <span class="company-logo wordmark-logo"><img src="assets/company-logos/valve.svg" alt="Valve"></span>
           </div>
         </div>
       </div>
@@ -481,11 +473,14 @@
             <ul>
               <li>Too many AI options and no clear way to evaluate what works for your business.</li>
               <li>Hours spent on repetitive tasks that could be automated, with no obvious starting point.</li>
+              <li>Frustration after trying many ways to automate a task that still feels out of reach.</li>
+              <li>Anxiety about what will actually work and how to leverage AI to improve your business.</li>
             </ul>
           </article>
           <article class="card outcome">
             <span class="card-label">Imagine instead</span>
             <ul>
+              <li>Getting time back after streamlining critical, time-consuming workflows.</li>
               <li>Thinking clearly about AI without needing to become an expert in a fast-moving field.</li>
               <li>Finding real opportunities in your workflows—turning many repetitive tasks from minutes into seconds.</li>
               <li>Moving forward with a practical framework instead of guesswork.</li>
@@ -551,7 +546,7 @@
       <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>04 / 05</span></footer>
     </section>
 
-    <section class="slide" data-title="The Product & Investment">
+    <section class="slide" data-title="What You Get">
       <header class="slide-header">
         <div class="brand"><span class="mark">r5</span> rfive.ai</div>
         <span>The engagement</span>
@@ -559,46 +554,36 @@
       <div class="content">
         <div class="product-heading">
           <div>
-            <p class="eyebrow">Introducing</p>
+            <p class="eyebrow">What you get</p>
             <h2>Guided AI <span class="accent">Integration</span></h2>
           </div>
           <p>A guided engagement delivered through focused calls and hands-on integration work—designed to increase your team's confidence and productivity with AI within weeks.</p>
         </div>
         <div class="deliverables-grid">
           <article class="card deliverable-card">
-            <h3>Four focused sessions</h3>
-            <ul>
-              <li>AI capabilities opening call</li>
-              <li>Opportunity scoping session</li>
-              <li>Hands-on implementation session</li>
-              <li>Final delivery and handoff call</li>
-            </ul>
+            <span class="deliverable-number">01 · 90 minutes</span>
+            <h3>Discovery session</h3>
+            <p>We focus on understanding your business and developing a practical way to think about AI in the context of your needs, goals, and workflows.</p>
           </article>
           <article class="card deliverable-card">
-            <h3>Clear decisions</h3>
-            <ul>
-              <li>Practical AI capabilities briefing</li>
-              <li>Workflow and opportunity inventory</li>
-              <li>Value and effort assessment</li>
-              <li>Prioritized opportunity roadmap</li>
-              <li>Personalized tool and approach recommendation</li>
-            </ul>
+            <span class="deliverable-number">02 · 90 minutes</span>
+            <h3>Private Blueprint workshop</h3>
+            <p>We identify opportunities, estimate their value and cost, and prioritize one high-impact workflow to streamline using AI.</p>
           </article>
           <article class="card deliverable-card">
-            <h3>Integration &amp; handoff</h3>
-            <ul>
-              <li>One high-impact AI integration</li>
-              <li>Demonstration and usage guidance</li>
-              <li>Integration documentation</li>
-              <li>Personalized decision-and-handoff report</li>
-              <li>Recommended next steps</li>
-            </ul>
+            <span class="deliverable-number">03 · Offline work</span>
+            <h3>Implementation</h3>
+            <p>I integrate AI into the selected workflow, turning the prioritized opportunity into a working solution.</p>
+          </article>
+          <article class="card deliverable-card">
+            <span class="deliverable-number">04 · 90 minutes</span>
+            <h3>Delivery session</h3>
+            <p>I demonstrate and hand off the solution, provide a detailed report, and answer your questions in a live Q&amp;A.</p>
           </article>
         </div>
-        <div class="investment">
-          <div class="price">$2,000</div>
-          <div class="investment-copy"><strong>Four 90-minute sessions</strong><br>Hands-on integration of a high-impact AI opportunity and final delivery.</div>
-          <div class="timeline">Designed to deliver<br>results within weeks</div>
+        <div class="delivery-outcome">
+          <strong>Three private sessions + offline implementation</strong>
+          <span>A working solution for one high-impact workflow, a detailed report, and clear next steps.</span>
         </div>
       </div>
       <footer class="slide-footer"><span>Guided AI Integration</span><span>05 / 05</span></footer>

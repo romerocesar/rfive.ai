@@ -6,9 +6,9 @@
 
 ## Slide 1: Transformation & Credibility
 
-### Leverage AI with peace of mind and get time back.
+### Put AI to work on your most time-consuming workflows.
 
-**Experience includes:** Google, Amazon, Unity, Walmart, Ouva, RamenVR, Medal.tv, Demand-IQ, Andesite.ai, and Groundlight.
+**Experience includes:** Google, Amazon, Unity, Walmart, Ouva, RamenVR, Medal.tv, Demand-IQ, Andesite.ai, Groundlight, and Valve.
 
 ### Presenter notes
 
@@ -25,9 +25,12 @@
 
 - You're overwhelmed by AI options with no clear way to evaluate what actually works for your business.
 - Your team spends hours on repetitive tasks that could be automated, but you don't know where to start.
+- You're frustrated after trying many ways to automate a task that still feels out of reach.
+- You're anxious because you don't know what will actually work or how to leverage AI to improve your business.
 
 ### Imagine Instead
 
+- Getting time back after streamlining critical, time-consuming workflows.
 - Understanding how to think about AI clearly, without needing to become an expert in a complex, fast-moving field.
 - Identifying real opportunities in your own workflows, and seeing many repetitive tasks go from minutes to seconds—like drafting personalized responses, updating a CRM, translating and formatting documents, or preparing personalized reports.
 - Moving forward with confidence, knowing you have a practical framework instead of guesswork.
@@ -94,39 +97,30 @@ It creates a shared understanding of business value and implementation effort—
 
 ---
 
-## Slide 5: The Product & Investment
+## Slide 5: What You Get
 
 ### Guided AI Integration
 
 A guided engagement delivered through focused calls and hands-on integration work, designed to increase your team's confidence and productivity with AI within weeks.
 
-### Everything You Get
+### 1. 90-Minute Discovery Session
 
-#### Four Focused Sessions
+We focus on understanding your business and developing a practical way to think about AI in the context of your needs, goals, and workflows.
 
-- Opening call to build your practical mental model of AI capabilities.
-- Scoping working session to map, estimate, and prioritize opportunities.
-- Implementation working session to build the selected integration hands-on.
-- Final delivery call to demonstrate, hand off, and close the engagement.
+### 2. 90-Minute Private Blueprint Workshop
 
-#### Clear Decisions
+We work through the AI Blueprint to identify opportunities, estimate their potential value and implementation cost, and prioritize one high-impact workflow to streamline using AI.
 
-- Practical AI capabilities briefing.
-- Workflow and opportunity inventory.
-- Client value estimates and guided implementation-effort assessment.
-- Prioritized high-impact opportunity roadmap.
-- Personalized recommendation for which tools and approach fit your needs.
+### 3. Offline Implementation
 
-#### Working Integration & Handoff
+I implement AI into the selected high-impact workflow, turning the prioritized opportunity into a working solution.
 
-- Hands-on delivery of one selected high-impact integration.
-- Demonstration, handoff, and usage guidance.
-- Personalized decision-and-handoff report covering the opportunity map, value/effort priorities, recommendations, integration documentation, and next steps.
+### 4. 90-Minute Delivery Session
 
-### Four 90-minute sessions, hands-on integration of a high-impact AI opportunity, and final delivery—for $2,000.
+I deliver and demonstrate the solution, provide a detailed report, and answer your questions in a live Q&A.
 
 ### Presenter notes
 
-- Say: Here's everything you get—four focused sessions, one working integration, and a personalized report for $2,000.
-- Make the point: You leave with more than a working tool. You have an opportunity roadmap, a personalized recommendation, documentation, and clear next steps.
+- Say: Here's everything you get—three focused sessions, offline implementation of one high-impact workflow, a working solution, and a detailed report.
+- Make the point: You leave with more than a working solution. You understand where AI fits your business, have a prioritized opportunity roadmap, and receive documentation and clear next steps.
 - Then: This is a focused way to move from anxiety to productivity with AI within weeks.
