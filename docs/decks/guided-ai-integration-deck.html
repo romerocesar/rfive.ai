@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guided AI Integration — rfive.ai</title>
+  <title>Personalized AI Implementation — rfive.ai</title>
   <style>
     :root {
       --ink: #eef5ff;
@@ -88,19 +88,8 @@
       text-transform: uppercase;
     }
 
-    .brand { display: flex; align-items: center; gap: 0.65rem; color: var(--ink); }
-
-    .mark {
-      display: grid;
-      width: 2rem;
-      height: 2rem;
-      place-items: center;
-      border: 1px solid rgba(114, 184, 255, 0.52);
-      background: linear-gradient(145deg, rgba(66, 150, 232, 0.32), rgba(66, 150, 232, 0.06));
-      color: var(--blue-bright);
-      font-size: 0.72rem;
-      letter-spacing: 0;
-    }
+    .brand { color: #fff; font-size: 2rem; line-height: 1; letter-spacing: 0; }
+    .brand sup { font-size: 0.55em; }
 
     .eyebrow {
       margin: 0 0 0.8rem;
@@ -224,6 +213,13 @@
 
     .content { min-height: 0; align-self: center; }
 
+    .testimonial-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .testimonial { margin: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; }
+    .testimonial blockquote { margin: 0; color: var(--ink); font-size: clamp(1rem, 1.45vw, 1.35rem); line-height: 1.5; }
+    .testimonial figcaption { display: grid; gap: 0.25rem; font-size: 0.95rem; }
+    .testimonial figcaption strong { color: var(--blue-bright); }
+    .testimonial figcaption span { color: var(--muted); }
+
     .two-column {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -281,9 +277,9 @@
       gap: clamp(1rem, 2.2vw, 2rem);
     }
 
-    .workflow-card { padding: clamp(1.15rem, 2vw, 1.75rem); }
-    .workflow-card h2 { max-width: none; margin: 0.35rem 0 1rem; font-size: clamp(1.75rem, 2.8vw, 2.75rem); }
-    .workflow-stage { display: grid; grid-template-columns: 5.8rem 1fr; gap: 0.75rem; padding: 0.72rem 0; border-top: 1px solid var(--line); }
+    .workflow-card { padding: clamp(0.85rem, 1.2vw, 1.1rem); }
+    .workflow-card h2 { max-width: none; margin: 0.25rem 0 0.5rem; font-size: clamp(1.35rem, 1.9vw, 1.8rem); }
+    .workflow-stage { display: grid; grid-template-columns: 5.8rem 1fr; gap: 0.75rem; padding: 0.4rem 0; border-top: 1px solid var(--line); }
     .workflow-stage:first-of-type { border-top: 0; }
     .workflow-stage strong { color: var(--blue-bright); font-size: clamp(0.7rem, 0.82vw, 0.8rem); letter-spacing: 0.1em; text-transform: uppercase; }
     .workflow-stage span { color: #cbd7e5; font-size: clamp(0.78rem, 1.02vw, 0.96rem); line-height: 1.42; }
@@ -360,31 +356,20 @@
     .delivery-outcome strong { color: var(--green); font-size: clamp(0.9rem, 1.12vw, 1.08rem); }
     .delivery-outcome span { color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.4; }
 
-    .controls {
-      position: fixed;
-      right: 1.2rem;
-      bottom: 1rem;
-      z-index: 20;
-      display: flex;
-      gap: 0.45rem;
-    }
-
-    .control {
-      width: 2.4rem;
-      height: 2.4rem;
-      border: 1px solid var(--line);
-      background: rgba(7, 19, 33, 0.85);
-      color: var(--ink);
-      cursor: pointer;
-    }
-
-    .control:hover { border-color: var(--blue); background: rgba(66, 150, 232, 0.18); }
     .progress { position: fixed; bottom: 0; left: 0; z-index: 30; width: 25%; height: 3px; background: var(--blue); transition: width 250ms ease; }
+    .shortcut-help { width: min(32rem, 90vw); padding: 2rem; border: 1px solid var(--line); background: var(--navy); color: var(--ink); }
+    .shortcut-help::backdrop { background: rgba(0, 0, 0, 0.7); }
+    .shortcut-help h2 { font-size: 2rem; }
+    .shortcut-help dl { display: grid; grid-template-columns: auto 1fr; gap: 1rem; }
+    .shortcut-help dt { font-weight: 700; color: var(--blue-bright); }
+    .shortcut-help dd { margin: 0; }
+    .shortcut-help button { padding: 0.6rem 1rem; background: transparent; color: var(--ink); border: 1px solid var(--line); cursor: pointer; }
 
     @media (max-width: 760px), (max-height: 650px) {
       .slide { --slide-pad-x: 1.1rem; padding: 1rem var(--slide-pad-x) 1.2rem; gap: 0.75rem; overflow-y: auto; }
       h1 { font-size: clamp(2.6rem, 13vw, 4.5rem); }
       h2 { font-size: clamp(2rem, 8vw, 3.2rem); }
+      .testimonial-grid { grid-template-columns: 1fr; }
       .credentials, .two-column, .intro-grid, .package-grid, .product-heading, .workflow-grid, .deliverables-grid { grid-template-columns: 1fr; }
       .credentials { grid-template-columns: repeat(3, 1fr); }
       .logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 0.9rem; }
@@ -414,6 +399,7 @@
       }
       .credentials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .logo-grid { grid-template-columns: repeat(11, minmax(0, 1fr)); }
+      .testimonial-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .two-column { grid-template-columns: 1fr 1fr; }
       .intro-grid { grid-template-columns: 0.84fr 1.16fr; align-items: center; }
       .package-grid { grid-template-columns: 1fr 1fr; }
@@ -421,7 +407,7 @@
       .workflow-grid { grid-template-columns: 1fr 1fr; }
       .deliverables-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .intro-copy h2 { max-width: 14ch; }
-      .controls, .progress { display: none !important; }
+      .progress, .shortcut-help, .slide[data-optional] { display: none !important; }
     }
   </style>
 </head>
@@ -429,12 +415,11 @@
   <main class="deck" aria-live="polite">
     <section class="slide active" data-title="Transformation & Credibility">
       <header class="slide-header">
-        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
-        <span>Guided AI Integration</span>
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
       </header>
       <div class="hero">
         <p class="eyebrow">The transformation</p>
-        <h1><span class="accent">Put AI to work</span> on your most time-consuming workflows.</h1>
+        <h1>Put <span class="accent">AI</span> to work for you and get <span class="accent">time</span> back.</h1>
         <div class="credentials" aria-label="Credentials">
           <div class="credential"><strong>20 years</strong><span>working with AI</span></div>
           <div class="credential"><strong>7 years</strong><span>as a Principal ML Engineer</span></div>
@@ -462,28 +447,28 @@
 
     <section class="slide" data-title="The Challenge & Desired Outcome">
       <header class="slide-header">
-        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
         <span>The opportunity</span>
       </header>
       <div class="content">
-        <p class="eyebrow">From anxiety to productivity</p>
+        <p class="eyebrow">From uncertainty to productivity</p>
         <div class="two-column">
           <article class="card challenge">
-            <span class="card-label">The challenge</span>
+            <span class="card-label">The problem</span>
             <ul>
-              <li>Too many AI options and no clear way to evaluate what works for your business.</li>
-              <li>Hours spent on repetitive tasks that could be automated, with no obvious starting point.</li>
-              <li>Frustration after trying many ways to automate a task that still feels out of reach.</li>
-              <li>Anxiety about what will actually work and how to leverage AI to improve your business.</li>
+              <li>Anxious about what you should be doing</li>
+              <li>Confused by too many options</li>
+              <li>Frustrated by trial and error</li>
+              <li>Time wasted on repetitive tasks</li>
             </ul>
           </article>
           <article class="card outcome">
-            <span class="card-label">Imagine instead</span>
+            <span class="card-label">The solution</span>
             <ul>
-              <li>Getting time back after streamlining critical, time-consuming workflows.</li>
-              <li>Thinking clearly about AI without needing to become an expert in a fast-moving field.</li>
-              <li>Finding real opportunities in your workflows—turning many repetitive tasks from minutes into seconds.</li>
-              <li>Moving forward with a practical framework instead of guesswork.</li>
+              <li>Know where to start and what to do next.</li>
+              <li>Evaluate tools with clarity.</li>
+              <li>A working solution you can trust.</li>
+              <li>Automate routine work and get time back.</li>
             </ul>
           </article>
         </div>
@@ -492,9 +477,113 @@
       <footer class="slide-footer"><span>rfive.ai</span><span>02 / 05</span></footer>
     </section>
 
-    <section class="slide" data-title="The Method">
+    <section class="slide" data-title="Client Testimonials">
       <header class="slide-header">
-        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>Testimonials</span>
+      </header>
+      <div class="content">
+        <p class="eyebrow">What clients say</p>
+        <div class="testimonial-grid">
+          <figure class="card testimonial">
+            <blockquote>“Cesar is an ideal partner for non-technical leaders. He makes complex AI problems easy to understand, turns them into clear plans, and helps teams work more efficiently.”</blockquote>
+            <figcaption><strong>Austin Rosenbaum</strong><span>CEO, Demand-IQ</span></figcaption>
+          </figure>
+          <figure class="card testimonial">
+            <blockquote>“Cesar was instrumental on a couple of critical projects that set us up for success”</blockquote>
+            <figcaption><strong>Alex Thaman</strong><span>CTO, Andesite.ai</span></figcaption>
+          </figure>
+          <figure class="card testimonial">
+            <blockquote>“this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.”</blockquote>
+            <figcaption><strong>Nea Clark</strong><span>Founder, ADHD University</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>rfive.ai</span><span>03 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="Workflows in Practice">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>Workflows in practice</span>
+      </header>
+      <div class="content">
+        <div class="workflow-grid">
+          <article class="card workflow-card">
+            <h2>Leads <span class="accent">Pipeline</span></h2>
+            <div class="workflow-stage"><strong>Problem</strong><span>Switching between email and CRM, writing everything from scratch, and risking lost deals without follow-up.</span></div>
+            <div class="workflow-stage"><strong>Solution</strong><span>An AI agent adds leads to the CRM and drafts personalized follow-ups automatically and on time.</span></div>
+            <div class="workflow-stage"><strong>Result</strong><span>More engaged leads and less manual work.</span></div>
+          </article>
+          <article class="card workflow-card">
+            <h2>Continuous Call <span class="accent">Improvement</span></h2>
+            <div class="workflow-stage"><strong>Problem</strong><span>Insights depend on manual notes and lessons are easy to lose before the next client call.</span></div>
+            <div class="workflow-stage"><strong>Solution</strong><span>Fireflies produces a transcript; GPT automatically fetches and analyzes each call for insights and action items.</span></div>
+            <div class="workflow-stage"><strong>Result</strong><span>Learning from each call and reliable action items captured.</span></div>
+          </article>
+          <article class="card workflow-card">
+            <h2>Book <span class="accent">Translation</span></h2>
+            <div class="workflow-stage"><strong>Problem</strong><span>Hours editing translated chapters to match the style of the published book in its source language.</span></div>
+            <div class="workflow-stage"><strong>Solution</strong><span>A Claude or Codex skill combines the style from one HTML file with the translated text from another.</span></div>
+            <div class="workflow-stage"><strong>Result</strong><span>Review in minutes instead of hours.</span></div>
+          </article>
+          <article class="card workflow-card">
+            <h2>Construction <span class="accent">Cost Estimation</span></h2>
+            <div class="workflow-stage"><strong>Problem</strong><span>Hours putting together an initial cost estimate for a prospect.</span></div>
+            <div class="workflow-stage"><strong>Solution</strong><span>An agent skill with detailed, reproducible instructions and templates.</span></div>
+            <div class="workflow-stage"><strong>Result</strong><span>Estimates in minutes instead of hours.</span></div>
+          </article>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>04 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="The Product">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>The product</span>
+      </header>
+      <div class="content">
+        <div class="product-heading">
+          <div>
+            <p class="eyebrow">The product</p>
+            <h2>Personalized AI <span class="accent">Implementation</span></h2>
+          </div>
+          <p>A working AI solution tailored to your business—so your team spends less time on repetitive work and uses AI with confidence.</p>
+        </div>
+        <div class="deliverables-grid">
+          <article class="card deliverable-card">
+            <span class="deliverable-number">90 minutes</span>
+            <h3>Discovery session</h3>
+            <p>We focus on understanding your business and identifying your most time-consuming workflows.</p>
+          </article>
+          <article class="card deliverable-card">
+            <span class="deliverable-number">90 minutes</span>
+            <h3>Private Blueprint workshop</h3>
+            <p>We work together to estimate the complexity of each opportunity and pick one high-impact workflow to transform.</p>
+          </article>
+          <article class="card deliverable-card">
+            <span class="deliverable-number">Built for you</span>
+            <h3>Solution development</h3>
+            <p>I take care of building and testing a solution tailored to your selected workflow.</p>
+          </article>
+          <article class="card deliverable-card">
+            <span class="deliverable-number">90 minutes</span>
+            <h3>Delivery session</h3>
+            <p>I demonstrate and hand off the solution, provide a detailed report, and answer your questions in a live Q&amp;A.</p>
+          </article>
+        </div>
+        <div class="delivery-outcome">
+          <strong>Three private sessions + offline implementation</strong>
+          <span>A working solution for one high-impact workflow, a detailed report, and clear next steps.</span>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Personalized AI Implementation</span><span>05 / 05</span></footer>
+    </section>
+
+    <section class="slide" data-title="The Method" data-optional="method">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
         <span>The method</span>
       </header>
       <div class="content intro-grid">
@@ -515,103 +604,56 @@
           <div class="journey">Anxiety &nbsp;→&nbsp; <strong>Productivity</strong></div>
         </div>
       </div>
-      <footer class="slide-footer"><span>AI Blueprint for Non-Tech Businesses</span><span>03 / 05</span></footer>
-    </section>
-
-    <section class="slide" data-title="Workflows in Practice">
-      <header class="slide-header">
-        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
-        <span>Workflows in practice</span>
-      </header>
-      <div class="content">
-        <p class="eyebrow">From recurring work to repeatable leverage</p>
-        <div class="workflow-grid">
-          <article class="card workflow-card">
-            <span class="card-label">Client workflow</span>
-            <h2>Follow-Up &amp; <span class="accent">CRM</span></h2>
-            <div class="workflow-stage"><strong>Before</strong><span>Switching among email, CRM, and spreadsheets; writing each follow-up from scratch.</span></div>
-            <div class="workflow-stage"><strong>Connect</strong><span>GPT + Gmail + Attio draft personalized follow-ups and add leads to the CRM.</span></div>
-            <div class="workflow-stage"><strong>Result</strong><span>More leads captured, more timely follow-ups, and less manual writing while retaining the client's voice.</span></div>
-          </article>
-          <article class="card workflow-card">
-            <span class="card-label">Learning workflow</span>
-            <h2>Continuous Call <span class="accent">Improvement</span></h2>
-            <div class="workflow-stage"><strong>Before</strong><span>Insights depend on manual notes and lessons are easy to lose before the next client call.</span></div>
-            <div class="workflow-stage"><strong>Automate</strong><span>Meeting capture produces notes, then deeper analysis identifies patterns and specific improvements.</span></div>
-            <div class="workflow-stage"><strong>Result</strong><span>A repeatable learning loop after every client conversation.</span></div>
-            <p class="workflow-proof">Used by me and by at least one client.</p>
-          </article>
-        </div>
-      </div>
-      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>04 / 05</span></footer>
-    </section>
-
-    <section class="slide" data-title="What You Get">
-      <header class="slide-header">
-        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
-        <span>The engagement</span>
-      </header>
-      <div class="content">
-        <div class="product-heading">
-          <div>
-            <p class="eyebrow">What you get</p>
-            <h2>Guided AI <span class="accent">Integration</span></h2>
-          </div>
-          <p>A guided engagement delivered through focused calls and hands-on integration work—designed to increase your team's confidence and productivity with AI within weeks.</p>
-        </div>
-        <div class="deliverables-grid">
-          <article class="card deliverable-card">
-            <span class="deliverable-number">01 · 90 minutes</span>
-            <h3>Discovery session</h3>
-            <p>We focus on understanding your business and developing a practical way to think about AI in the context of your needs, goals, and workflows.</p>
-          </article>
-          <article class="card deliverable-card">
-            <span class="deliverable-number">02 · 90 minutes</span>
-            <h3>Private Blueprint workshop</h3>
-            <p>We identify opportunities, estimate their value and cost, and prioritize one high-impact workflow to streamline using AI.</p>
-          </article>
-          <article class="card deliverable-card">
-            <span class="deliverable-number">03 · Offline work</span>
-            <h3>Implementation</h3>
-            <p>I integrate AI into the selected workflow, turning the prioritized opportunity into a working solution.</p>
-          </article>
-          <article class="card deliverable-card">
-            <span class="deliverable-number">04 · 90 minutes</span>
-            <h3>Delivery session</h3>
-            <p>I demonstrate and hand off the solution, provide a detailed report, and answer your questions in a live Q&amp;A.</p>
-          </article>
-        </div>
-        <div class="delivery-outcome">
-          <strong>Three private sessions + offline implementation</strong>
-          <span>A working solution for one high-impact workflow, a detailed report, and clear next steps.</span>
-        </div>
-      </div>
-      <footer class="slide-footer"><span>Guided AI Integration</span><span>05 / 05</span></footer>
+      <footer class="slide-footer"><span>AI Blueprint for Non-Tech Businesses</span><span>Method</span></footer>
     </section>
   </main>
 
-  <div class="controls" aria-label="Presentation controls">
-    <button class="control" id="previous" title="Previous slide (←)" aria-label="Previous slide">←</button>
-    <button class="control" id="fullscreen" title="Fullscreen (F)" aria-label="Toggle fullscreen">⛶</button>
-    <button class="control" id="next" title="Next slide (→)" aria-label="Next slide">→</button>
-  </div>
   <div class="progress" aria-hidden="true"></div>
+
+  <dialog class="shortcut-help" aria-labelledby="shortcut-title">
+    <h2 id="shortcut-title">Keyboard shortcuts</h2>
+    <dl>
+      <dt>J, L, N, Space, →</dt><dd>Next slide</dd>
+      <dt>H, K, ←, Backspace</dt><dd>Previous slide</dd>
+      <dt>1–9</dt><dd>Jump to an available slide</dd>
+      <dt>M</dt><dd>Show method / return to your slide</dd>
+      <dt>F</dt><dd>Toggle fullscreen</dd>
+      <dt>Esc</dt><dd>Close help or exit fullscreen</dd>
+      <dt>?</dt><dd>Toggle this help</dd>
+    </dl>
+    <form method="dialog"><button autofocus>Close</button></form>
+  </dialog>
 
   <script>
     (() => {
       const slides = [...document.querySelectorAll('.slide')];
+      const mainSlides = slides.filter(slide => !slide.hasAttribute('data-optional'));
+      const methodSlide = document.querySelector('[data-optional="method"]');
+      const help = document.querySelector('.shortcut-help');
       const progress = document.querySelector('.progress');
-      let current = Math.max(0, Math.min(slides.length - 1, Number(location.hash.slice(1)) - 1 || 0));
+      let current = Math.max(0, Math.min(mainSlides.length - 1, Number(location.hash.slice(1)) - 1 || 0));
+      let methodVisible = false;
+
+      function render() {
+        const active = methodVisible ? methodSlide : mainSlides[current];
+        slides.forEach(slide => {
+          slide.classList.toggle('active', slide === active);
+          slide.classList.toggle('previous', !methodVisible && mainSlides.indexOf(slide) >= 0 && mainSlides.indexOf(slide) < current);
+          slide.setAttribute('aria-hidden', slide === active ? 'false' : 'true');
+        });
+        progress.style.width = `${((current + 1) / mainSlides.length) * 100}%`;
+        progress.hidden = methodVisible;
+        history.replaceState(null, '', `#${current + 1}`);
+      }
 
       function show(index) {
-        current = Math.max(0, Math.min(slides.length - 1, index));
-        slides.forEach((slide, i) => {
-          slide.classList.toggle('active', i === current);
-          slide.classList.toggle('previous', i < current);
-          slide.setAttribute('aria-hidden', i === current ? 'false' : 'true');
-        });
-        progress.style.width = `${((current + 1) / slides.length) * 100}%`;
-        history.replaceState(null, '', `#${current + 1}`);
+        methodVisible = false;
+        current = Math.max(0, Math.min(mainSlides.length - 1, index));
+        render();
+      }
+
+      function navigate(direction) {
+        show(methodVisible ? current : current + direction);
       }
 
       function toggleFullscreen() {
@@ -619,21 +661,45 @@
         else document.exitFullscreen?.();
       }
 
-      document.querySelector('#previous').addEventListener('click', () => show(current - 1));
-      document.querySelector('#next').addEventListener('click', () => show(current + 1));
-      document.querySelector('#fullscreen').addEventListener('click', toggleFullscreen);
 
       document.querySelector('.deck').addEventListener('click', event => {
-        if (event.clientX < window.innerWidth / 2) show(current - 1);
-        else show(current + 1);
+        if (event.clientX < window.innerWidth / 2) navigate(-1);
+        else navigate(1);
       });
 
       document.addEventListener('keydown', (event) => {
-        if (['ArrowRight', 'ArrowDown', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
-        if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
-        if (event.key.toLowerCase() === 'f') toggleFullscreen();
-        if (event.key === 'Home') show(0);
-        if (event.key === 'End') show(slides.length - 1);
+        if (event.ctrlKey || event.metaKey || event.altKey) return;
+        const key = event.key.toLowerCase();
+        if (key === '?') {
+          event.preventDefault();
+          if (!event.repeat) {
+            if (help.open) help.close();
+            else help.showModal();
+          }
+          return;
+        }
+        if (help.open) return;
+        if (['j', 'l', 'n', ' ', 'arrowright'].includes(key)) {
+          event.preventDefault();
+          navigate(1);
+        } else if (['h', 'k', 'arrowleft', 'backspace'].includes(key)) {
+          event.preventDefault();
+          navigate(-1);
+        } else if (key === 'm') {
+          event.preventDefault();
+          if (!event.repeat) {
+            methodVisible = !methodVisible;
+            render();
+          }
+        } else if (key === 'f') {
+          event.preventDefault();
+          toggleFullscreen();
+        } else if (key === 'escape') {
+          if (document.fullscreenElement) document.exitFullscreen?.();
+        } else if (/^[1-9]$/.test(key)) {
+          event.preventDefault();
+          if (Number(key) <= mainSlides.length) show(Number(key) - 1);
+        }
       });
 
       show(current);
