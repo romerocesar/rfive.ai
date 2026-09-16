@@ -224,6 +224,14 @@
 
     .content { min-height: 0; align-self: center; }
 
+    .testimonial-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem; }
+    .testimonial { margin: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; }
+    .testimonial-featured { grid-row: span 2; }
+    .testimonial blockquote { margin: 0; color: var(--ink); font-size: clamp(1rem, 1.45vw, 1.35rem); line-height: 1.5; }
+    .testimonial figcaption { display: grid; gap: 0.25rem; font-size: 0.95rem; }
+    .testimonial figcaption strong { color: var(--blue-bright); }
+    .testimonial figcaption span { color: var(--muted); }
+
     .two-column {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -385,6 +393,8 @@
       .slide { --slide-pad-x: 1.1rem; padding: 1rem var(--slide-pad-x) 1.2rem; gap: 0.75rem; overflow-y: auto; }
       h1 { font-size: clamp(2.6rem, 13vw, 4.5rem); }
       h2 { font-size: clamp(2rem, 8vw, 3.2rem); }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .testimonial-featured { grid-row: auto; }
       .credentials, .two-column, .intro-grid, .package-grid, .product-heading, .workflow-grid, .deliverables-grid { grid-template-columns: 1fr; }
       .credentials { grid-template-columns: repeat(3, 1fr); }
       .logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 0.9rem; }
@@ -414,6 +424,8 @@
       }
       .credentials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .logo-grid { grid-template-columns: repeat(11, minmax(0, 1fr)); }
+      .testimonial-grid { grid-template-columns: 1.2fr 1fr; }
+      .testimonial-featured { grid-row: span 2; }
       .two-column { grid-template-columns: 1fr 1fr; }
       .intro-grid { grid-template-columns: 0.84fr 1.16fr; align-items: center; }
       .package-grid { grid-template-columns: 1fr 1fr; }
@@ -430,11 +442,10 @@
     <section class="slide active" data-title="Transformation & Credibility">
       <header class="slide-header">
         <div class="brand"><span class="mark">r5</span> rfive.ai</div>
-        <span>Guided AI Integration</span>
       </header>
       <div class="hero">
         <p class="eyebrow">The transformation</p>
-        <h1><span class="accent">Put AI to work</span> on your most time-consuming workflows.</h1>
+        <h1>Put <span class="accent">AI</span> to work for you and get <span class="accent">time</span> back.</h1>
         <div class="credentials" aria-label="Credentials">
           <div class="credential"><strong>20 years</strong><span>working with AI</span></div>
           <div class="credential"><strong>7 years</strong><span>as a Principal ML Engineer</span></div>
@@ -457,7 +468,7 @@
           </div>
         </div>
       </div>
-      <footer class="slide-footer"><span>rfive.ai</span><span>01 / 05</span></footer>
+      <footer class="slide-footer"><span>rfive.ai</span><span>01 / 06</span></footer>
     </section>
 
     <section class="slide" data-title="The Challenge & Desired Outcome">
@@ -466,56 +477,30 @@
         <span>The opportunity</span>
       </header>
       <div class="content">
-        <p class="eyebrow">From anxiety to productivity</p>
+        <p class="eyebrow">From uncertainty to productivity</p>
         <div class="two-column">
           <article class="card challenge">
             <span class="card-label">The challenge</span>
             <ul>
-              <li>Too many AI options and no clear way to evaluate what works for your business.</li>
-              <li>Hours spent on repetitive tasks that could be automated, with no obvious starting point.</li>
-              <li>Frustration after trying many ways to automate a task that still feels out of reach.</li>
-              <li>Anxiety about what will actually work and how to leverage AI to improve your business.</li>
+              <li>Anxious about what you should be doing</li>
+              <li>Confused by too many options</li>
+              <li>Frustrated by trial and error</li>
+              <li>Time wasted on repetitive tasks</li>
             </ul>
           </article>
           <article class="card outcome">
             <span class="card-label">Imagine instead</span>
             <ul>
-              <li>Getting time back after streamlining critical, time-consuming workflows.</li>
-              <li>Thinking clearly about AI without needing to become an expert in a fast-moving field.</li>
-              <li>Finding real opportunities in your workflows—turning many repetitive tasks from minutes into seconds.</li>
-              <li>Moving forward with a practical framework instead of guesswork.</li>
+              <li>Know where to start and what to do next.</li>
+              <li>Evaluate tools with clarity.</li>
+              <li>A working solution you can trust.</li>
+              <li>Automate routine work and get time back.</li>
             </ul>
           </article>
         </div>
         <p class="prize">So ultimately, you can <span class="accent">use AI with confidence.</span></p>
       </div>
-      <footer class="slide-footer"><span>rfive.ai</span><span>02 / 05</span></footer>
-    </section>
-
-    <section class="slide" data-title="The Method">
-      <header class="slide-header">
-        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
-        <span>The method</span>
-      </header>
-      <div class="content intro-grid">
-        <div class="intro-copy">
-          <p class="eyebrow">The method</p>
-          <h2>AI Blueprint for <span class="accent">Non-Tech Businesses</span></h2>
-          <p>A practical five-step method for leaders who need clarity, not complexity.</p>
-          <p>It creates a shared understanding of business value and implementation effort—so the right opportunities rise to the top.</p>
-        </div>
-        <div>
-          <div class="method" aria-label="AI Blueprint for Non-Tech Businesses">
-            <div class="step"><span class="step-number">01</span><strong>Understand</strong><span>Start with your needs and workflows—not a preferred AI platform—and build a practical mental model of what AI can and cannot do.</span></div>
-            <div class="step"><span class="step-number">02</span><strong>Identify</strong><span>Map relevant AI opportunities in your business.</span></div>
-            <div class="step"><span class="step-number">03</span><strong>Estimate</strong><span>You estimate the value. I help you understand the effort.</span></div>
-            <div class="step"><span class="step-number">04</span><strong>Prioritize</strong><span>Together, we rank and prioritize high-impact opportunities using our shared view of value and effort.</span></div>
-            <div class="step"><span class="step-number">05</span><strong>Implement</strong><span>Decide whether to use, connect, build, replace, or avoid tools based on fit, then deploy an integration your team can use confidently.</span></div>
-          </div>
-          <div class="journey">Anxiety &nbsp;→&nbsp; <strong>Productivity</strong></div>
-        </div>
-      </div>
-      <footer class="slide-footer"><span>AI Blueprint for Non-Tech Businesses</span><span>03 / 05</span></footer>
+      <footer class="slide-footer"><span>rfive.ai</span><span>02 / 06</span></footer>
     </section>
 
     <section class="slide" data-title="Workflows in Practice">
@@ -543,7 +528,7 @@
           </article>
         </div>
       </div>
-      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>04 / 05</span></footer>
+      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>03 / 06</span></footer>
     </section>
 
     <section class="slide" data-title="What You Get">
@@ -586,14 +571,65 @@
           <span>A working solution for one high-impact workflow, a detailed report, and clear next steps.</span>
         </div>
       </div>
-      <footer class="slide-footer"><span>Guided AI Integration</span><span>05 / 05</span></footer>
+      <footer class="slide-footer"><span>Guided AI Integration</span><span>04 / 06</span></footer>
+    </section>
+
+    <section class="slide" data-title="Client Testimonials">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>Client testimonials</span>
+      </header>
+      <div class="content">
+        <p class="eyebrow">What clients say</p>
+        <div class="testimonial-grid">
+          <figure class="card testimonial testimonial-featured">
+            <blockquote>“Cesar is the ideal partner to a non-technical founder or business executive. He brings a wealth of experience with engineering, and particularly AI. But where he really shines is his ability to quickly break down complex problems, scope solutions and make it easy for the team to attack them efficiently. He has also been tremendously helpful in helping us redefine the development process to extract more value for our team and improve the developer employee experience.”</blockquote>
+            <figcaption><strong>Austin Rosenbaum</strong><span>CEO, Demand-IQ</span></figcaption>
+          </figure>
+          <figure class="card testimonial">
+            <blockquote>“Cesar was instrumental on a couple of critical projects that set us up for success”</blockquote>
+            <figcaption><strong>Alex Thaman</strong><span>CTO, Andesite.ai</span></figcaption>
+          </figure>
+          <figure class="card testimonial">
+            <blockquote>“this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.”</blockquote>
+            <figcaption><strong>Nea Clark</strong><span>Founder, ADHD University</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>rfive.ai</span><span>05 / 06</span></footer>
+    </section>
+
+    <section class="slide" data-title="The Method">
+      <header class="slide-header">
+        <div class="brand"><span class="mark">r5</span> rfive.ai</div>
+        <span>The method</span>
+      </header>
+      <div class="content intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow">The method</p>
+          <h2>AI Blueprint for <span class="accent">Non-Tech Businesses</span></h2>
+          <p>A practical five-step method for leaders who need clarity, not complexity.</p>
+          <p>It creates a shared understanding of business value and implementation effort—so the right opportunities rise to the top.</p>
+        </div>
+        <div>
+          <div class="method" aria-label="AI Blueprint for Non-Tech Businesses">
+            <div class="step"><span class="step-number">01</span><strong>Understand</strong><span>Start with your needs and workflows—not a preferred AI platform—and build a practical mental model of what AI can and cannot do.</span></div>
+            <div class="step"><span class="step-number">02</span><strong>Identify</strong><span>Map relevant AI opportunities in your business.</span></div>
+            <div class="step"><span class="step-number">03</span><strong>Estimate</strong><span>You estimate the value. I help you understand the effort.</span></div>
+            <div class="step"><span class="step-number">04</span><strong>Prioritize</strong><span>Together, we rank and prioritize high-impact opportunities using our shared view of value and effort.</span></div>
+            <div class="step"><span class="step-number">05</span><strong>Implement</strong><span>Decide whether to use, connect, build, replace, or avoid tools based on fit, then deploy an integration your team can use confidently.</span></div>
+          </div>
+          <div class="journey">Anxiety &nbsp;→&nbsp; <strong>Productivity</strong></div>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>AI Blueprint for Non-Tech Businesses</span><span>06 / 06</span></footer>
     </section>
   </main>
 
   <div class="controls" aria-label="Presentation controls">
-    <button class="control" id="previous" title="Previous slide (←)" aria-label="Previous slide">←</button>
+    <button class="control" id="previous" title="Previous slide (H, K, ←, Backspace)" aria-label="Previous slide">←</button>
     <button class="control" id="fullscreen" title="Fullscreen (F)" aria-label="Toggle fullscreen">⛶</button>
-    <button class="control" id="next" title="Next slide (→)" aria-label="Next slide">→</button>
+    <button class="control" id="next" title="Next slide (J, L, N, Space, →)" aria-label="Next slide">→</button>
   </div>
   <div class="progress" aria-hidden="true"></div>
 
@@ -629,11 +665,23 @@
       });
 
       document.addEventListener('keydown', (event) => {
-        if (['ArrowRight', 'ArrowDown', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
-        if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
-        if (event.key.toLowerCase() === 'f') toggleFullscreen();
-        if (event.key === 'Home') show(0);
-        if (event.key === 'End') show(slides.length - 1);
+        if (event.ctrlKey || event.metaKey || event.altKey) return;
+        const key = event.key.toLowerCase();
+        if (['j', 'l', 'n', ' ', 'arrowright'].includes(key)) {
+          event.preventDefault();
+          show(current + 1);
+        } else if (['h', 'k', 'arrowleft', 'backspace'].includes(key)) {
+          event.preventDefault();
+          show(current - 1);
+        } else if (key === 'f') {
+          event.preventDefault();
+          toggleFullscreen();
+        } else if (key === 'escape') {
+          if (document.fullscreenElement) document.exitFullscreen?.();
+        } else if (/^[1-9]$/.test(key)) {
+          event.preventDefault();
+          if (Number(key) <= slides.length) show(Number(key) - 1);
+        }
       });
 
       show(current);

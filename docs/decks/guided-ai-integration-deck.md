@@ -1,12 +1,12 @@
 # Guided AI Integration
 
-## Five-Slide Core Product Deck
+## Six-Slide Core Product Deck
 
 ---
 
 ## Slide 1: Transformation & Credibility
 
-### Put AI to work on your most time-consuming workflows.
+### Put AI to work for you and get time back.
 
 **Experience includes:** Google, Amazon, Unity, Walmart, Ouva, RamenVR, Medal.tv, Demand-IQ, Andesite.ai, Groundlight, and Valve.
 
@@ -15,25 +15,27 @@
 - Say: “Most non-tech leaders know they need AI, but don't know where to start or who to trust.”
 - Make the point: Your team stays stuck on manual work, and you're overwhelmed by tool options without a clear way to choose what fits your business.
 - Proof: I've worked with AI for 20 years, spent 7 years as a Principal Machine Learning Engineer, and completed over 200 hours tutoring AI—now applying that experience hands-on with four non-tech business clients.
-- Then: Let me show you the three pain points keeping leaders stuck.
+- Then: Let me show you the four pain points keeping leaders stuck.
 
 ---
 
 ## Slide 2: The Challenge & Desired Outcome
 
+### From uncertainty to productivity
+
 ### The Challenge
 
-- You're overwhelmed by AI options with no clear way to evaluate what actually works for your business.
-- Your team spends hours on repetitive tasks that could be automated, but you don't know where to start.
-- You're frustrated after trying many ways to automate a task that still feels out of reach.
-- You're anxious because you don't know what will actually work or how to leverage AI to improve your business.
+- Anxious about what you should be doing
+- Confused by too many options
+- Frustrated by trial and error
+- Time wasted on repetitive tasks
 
 ### Imagine Instead
 
-- Getting time back after streamlining critical, time-consuming workflows.
-- Understanding how to think about AI clearly, without needing to become an expert in a complex, fast-moving field.
-- Identifying real opportunities in your own workflows, and seeing many repetitive tasks go from minutes to seconds—like drafting personalized responses, updating a CRM, translating and formatting documents, or preparing personalized reports.
-- Moving forward with confidence, knowing you have a practical framework instead of guesswork.
+- Know where to start and what to do next.
+- Evaluate tools with clarity.
+- A working solution you can trust.
+- Automate routine work and get time back.
 
 ### So ultimately, you can use AI with confidence.
 
@@ -42,36 +44,11 @@
 - Say: The most common theme is choosing which AI services to use and pay for.
 - Make the point: “They haven't paid for any AI service yet because they don't know how to pick” or “I'm paying for too many services and can probably simplify.” One client asked, “What should I be doing that I'm not yet doing?” A different client had an aha moment: he should think about the inputs and outputs of his team's regular tasks, not AI as a collection of services to learn.
 - Proof: Imagine waking up knowing you don't have to master every AI tool or trend to move forward. You have a clearer mental model, reduced anxiety, and can spot opportunities in your actual business. I've seen tasks like drafting personalized responses, updating a CRM, or formatting documents drop from minutes to seconds.
-- Then: Let me show you the method we use to make those decisions clearly.
+- Then: Let me show you two examples of AI in everyday workflows.
 
 ---
 
-## Slide 3: The Method
-
-### The AI Blueprint for Non-Tech Businesses
-
-A practical five-step method for leaders who need clarity, not complexity.
-
-It creates a shared understanding of business value and implementation effort—so the right opportunities rise to the top.
-
-> **Visual:** Five connected stages showing the journey from “Anxiety” to “Productivity.”
-
-1. **Understand** — Start with your needs and workflows—not a preferred AI platform—and build a practical mental model of what AI can and cannot do.
-2. **Identify** — Map relevant AI opportunities in your business.
-3. **Estimate** — You estimate the value. I help you understand the effort.
-4. **Prioritize** — Together, we rank and prioritize high-impact opportunities using our shared view of value and effort.
-5. **Implement** — Decide whether to use, connect, build, replace, or avoid tools based on fit, then deploy a working integration your team can use confidently.
-
-### Presenter notes
-
-- Say: This is the AI Blueprint for Non-Tech Businesses—a practical method that takes leaders from anxiety to productivity with AI.
-- Make the point: Understand what AI actually does; Identify where it fits your work; Estimate what's realistic; Prioritize what matters most; Implement something real.
-- Proof: This method is informed by my 20 years working with AI and by applying that expertise hands-on with non-tech businesses.
-- Then: Here are two examples of what this looks like in practice.
-
----
-
-## Slide 4: Workflows in Practice
+## Slide 3: Workflows in Practice
 
 ### Client Follow-Up and CRM
 
@@ -97,7 +74,7 @@ It creates a shared understanding of business value and implementation effort—
 
 ---
 
-## Slide 5: What You Get
+## Slide 4: What You Get
 
 ### Guided AI Integration
 
@@ -123,4 +100,48 @@ I deliver and demonstrate the solution, provide a detailed report, and answer yo
 
 - Say: Here's everything you get—three focused sessions, offline implementation of one high-impact workflow, a working solution, and a detailed report.
 - Make the point: You leave with more than a working solution. You understand where AI fits your business, have a prioritized opportunity roadmap, and receive documentation and clear next steps.
-- Then: This is a focused way to move from anxiety to productivity with AI within weeks.
+- Then: Here’s what clients say about working together.
+
+---
+
+
+## Slide 5: Client Testimonials
+
+### What clients say
+
+> Cesar is the ideal partner to a non-technical founder or business executive. He brings a wealth of experience with engineering, and particularly AI. But where he really shines is his ability to quickly break down complex problems, scope solutions and make it easy for the team to attack them efficiently. He has also been tremendously helpful in helping us redefine the development process to extract more value for our team and improve the developer employee experience.
+
+**Austin Rosenbaum — CEO, Demand-IQ**
+
+> Cesar was instrumental on a couple of critical projects that set us up for success
+
+**Alex Thaman — CTO, Andesite.ai**
+
+> this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.
+
+**Nea Clark — Founder, ADHD University**
+
+---
+
+## Slide 6: The Method
+
+### The AI Blueprint for Non-Tech Businesses
+
+A practical five-step method for leaders who need clarity, not complexity.
+
+It creates a shared understanding of business value and implementation effort—so the right opportunities rise to the top.
+
+> **Visual:** Five connected stages showing the journey from “Anxiety” to “Productivity.”
+
+1. **Understand** — Start with your needs and workflows—not a preferred AI platform—and build a practical mental model of what AI can and cannot do.
+2. **Identify** — Map relevant AI opportunities in your business.
+3. **Estimate** — You estimate the value. I help you understand the effort.
+4. **Prioritize** — Together, we rank and prioritize high-impact opportunities using our shared view of value and effort.
+5. **Implement** — Decide whether to use, connect, build, replace, or avoid tools based on fit, then deploy a working integration your team can use confidently.
+
+### Presenter notes
+
+- Say: This is the AI Blueprint for Non-Tech Businesses—a practical method that takes leaders from anxiety to productivity with AI.
+- Make the point: Understand what AI actually does; Identify where it fits your work; Estimate what's realistic; Prioritize what matters most; Implement something real.
+- Proof: This method is informed by my 20 years working with AI and by applying that expertise hands-on with non-tech businesses.
+- Close: Let’s identify the workflow where this method can make the biggest difference for your business.
