@@ -1,8 +1,8 @@
-# Personalized AI Implementation
+# Custom AI Solution
 
-## Five-Slide Core Product Deck + Optional Method
+## Five-Slide Core Product Deck + Optional Method and Value Calculator
 
-Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; M toggles the method and returns to the previous slide; F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help.
+Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; M toggles the method; V toggles the value calculator. Toggle again to return to the previous main slide. F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help. Arrow keys adjust a focused slider.
 
 ---
 
@@ -107,15 +107,15 @@ Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9
 
 - Say: AI becomes useful when it disappears into workflows people already understand.
 - Make the point: These are not generic demonstrations. Each workflow begins with a recurring task, its inputs and outputs, and the services already in use.
-- Then: Personalized AI Implementation applies this same approach to one high-impact opportunity in your business.
+- Then: Custom AI Solution applies this same approach to one high-impact opportunity in your business.
 
 ---
 
 ## Slide 5: The Product
 
-### Personalized AI Implementation
+### Custom AI Solution
 
-A working AI solution tailored to your business—so your team spends less time on repetitive work and uses AI with confidence.
+Turn hours into minutes.
 
 ### 90-Minute Discovery Session
 
@@ -137,7 +137,7 @@ I deliver and demonstrate the solution, provide a detailed report, and answer yo
 
 ### Presenter notes
 
-- Say: Here's everything you get—three focused sessions, offline implementation of one high-impact workflow, a working solution, and a detailed report.
+- Say: Here's everything you get—three private sessions and custom development. A working solution to save you hours every week, a detailed report, and clear next steps.
 - Make the point: You leave with more than a working solution. You understand where AI fits your business, have a prioritized opportunity roadmap, and receive documentation and clear next steps.
 - Optional: Press M to walk through the method if useful, then press M again to return.
 
@@ -165,3 +165,40 @@ It creates a shared understanding of business value and implementation effort—
 - Make the point: Understand what AI actually does; Identify where it fits your work; Estimate what's realistic; Prioritize what matters most; Implement something real.
 - Proof: This method is informed by my 20 years working with AI and by applying that expertise hands-on with non-tech businesses.
 - Close: Let’s identify the workflow where this method can make the biggest difference for your business.
+
+---
+
+## Optional Slide: The Value
+
+**Custom AI Solution**
+
+### Turn hours into minutes.
+
+Press **V** to toggle the interactive calculator. It stays outside the five-slide sequence and print output. Values persist when switching slides.
+
+### Deliverables
+
+- Discovery of your most time-consuming workflows
+- A private workshop to choose one high-impact opportunity
+- A solution built and tested for your workflow
+- A live handoff and Q&A session
+- A detailed report and clear next steps
+
+### Monthly Savings Calculator
+
+| Slider | Range | Initial value |
+| --- | --- | --- |
+| Current time per task | 1–10 hours | 3 hours |
+| Hourly rate | $25–$250 | $75 |
+| Times per week | 1–40 | 5 |
+| New time per task | 1–30 minutes | 15 minutes |
+
+- **Current monthly cost:** hours × hourly rate × times per week × 4
+- **Estimated monthly cost:** new minutes ÷ 60 × hourly rate × times per week × 4
+- **Estimated monthly savings:** current monthly cost − estimated monthly cost
+- **Weekly hours saved:** (current hours − new minutes ÷ 60) × times per week
+- **Weekly dollars saved:** weekly hours saved × hourly rate
+- **Monthly savings:** weekly savings × 4, for both hours and dollars
+- **Annual savings:** weekly savings × 52, for both hours and dollars
+
+The results table shows weekly, monthly, and annual savings in hours and dollars. Monthly savings use four weeks; annual savings use 52 weeks, at the same hourly rate. Shows the value of time saved, before solution and software costs. Dollar results display in whole US dollars; hours display with up to two decimal places.

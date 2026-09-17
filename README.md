@@ -23,6 +23,20 @@ hugo --gc --minify
 
 Generated assets land in `public/`.
 
+## Presentation Deck
+
+Edit `docs/decks/custom-ai-solution.html` for the interactive deck and
+`docs/decks/custom-ai-solution.md` for its companion content and presenter notes.
+The PDF in the same directory is an existing export; builds do not regenerate it.
+
+Hugo's file mounts publish the HTML as `/decks/custom-ai-solution/index.html`
+and copy `docs/decks/assets/` alongside it. The normal build and local server
+both use these mounts, so no separate copy or build step is needed. The Markdown,
+PDF, and other documentation are not included in this route.
+
+- Local preview: `http://localhost:1313/decks/custom-ai-solution/`
+- Published URL: `https://rfive.ai/decks/custom-ai-solution/`
+
 ## Publishing a Blog Article
 
 Create a page bundle for the article:
