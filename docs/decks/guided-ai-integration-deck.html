@@ -357,6 +357,26 @@
     .delivery-outcome span { color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.4; }
 
     .progress { position: fixed; bottom: 0; left: 0; z-index: 30; width: 25%; height: 3px; background: var(--blue); transition: width 250ms ease; }
+    .value-layout { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 2rem; align-items: center; }
+    .value-deliverables h2 { max-width: none; font-size: clamp(2rem, 3vw, 3rem); }
+    .value-deliverables li { margin-bottom: 0.4rem; }
+    .value-calculator { padding: clamp(1rem, 2vw, 2rem); }
+    .value-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem 1.5rem; }
+    .value-field label { display: flex; justify-content: space-between; gap: 0.5rem; font-size: 0.95rem; }
+    .value-field output { color: var(--blue-bright); font-weight: 700; white-space: nowrap; }
+    .value-field input { width: 100%; margin: 1rem 0 0; accent-color: var(--blue-bright); cursor: pointer; }
+    .value-field input:focus-visible { outline: 2px solid var(--blue-bright); outline-offset: 4px; }
+    .value-costs { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: 1rem; }
+    .value-costs span { display: block; color: var(--muted); font-size: 0.9rem; }
+    .value-costs output { display: block; margin-top: 0.4rem; font-size: clamp(1.3rem, 2vw, 2rem); font-variant-numeric: tabular-nums; }
+    .value-savings { width: 100%; border-collapse: collapse; margin-top: 1rem; background: rgba(115, 220, 175, 0.08); border: 1px solid var(--green); font-variant-numeric: tabular-nums; }
+    .value-savings caption { text-align: left; color: var(--green); font-weight: 700; padding-bottom: 0.6rem; }
+    .value-savings th, .value-savings td { padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--line); text-align: right; }
+    .value-savings th:first-child { text-align: left; }
+    .value-savings thead th { color: var(--muted); font-size: 0.85rem; font-weight: 500; }
+    .value-savings tbody th { font-size: 0.95rem; }
+    .value-savings output { color: var(--green); font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 700; white-space: nowrap; }
+    .value-assumption { margin: 0.8rem 0 0; color: var(--muted); font-size: 0.8rem; line-height: 1.4; }
     .shortcut-help { width: min(32rem, 90vw); padding: 2rem; border: 1px solid var(--line); background: var(--navy); color: var(--ink); }
     .shortcut-help::backdrop { background: rgba(0, 0, 0, 0.7); }
     .shortcut-help h2 { font-size: 2rem; }
@@ -370,6 +390,8 @@
       h1 { font-size: clamp(2.6rem, 13vw, 4.5rem); }
       h2 { font-size: clamp(2rem, 8vw, 3.2rem); }
       .testimonial-grid { grid-template-columns: 1fr; }
+      .value-layout, .value-inputs { grid-template-columns: 1fr; }
+      .value-savings th, .value-savings td { padding: 0.6rem 0.4rem; }
       .credentials, .two-column, .intro-grid, .package-grid, .product-heading, .workflow-grid, .deliverables-grid { grid-template-columns: 1fr; }
       .credentials { grid-template-columns: repeat(3, 1fr); }
       .logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 0.9rem; }
@@ -574,8 +596,8 @@
           </article>
         </div>
         <div class="delivery-outcome">
-          <strong>Three private sessions + offline implementation</strong>
-          <span>A working solution for one high-impact workflow, a detailed report, and clear next steps.</span>
+          <strong>Three private sessions + custom development</strong>
+          <span>A working solution to save you hours every week, a detailed report, and clear next steps.</span>
         </div>
       </div>
       <footer class="slide-footer"><span>Personalized AI Implementation</span><span>05 / 05</span></footer>
@@ -606,6 +628,60 @@
       </div>
       <footer class="slide-footer"><span>AI Blueprint for Non-Tech Businesses</span><span>Method</span></footer>
     </section>
+    <section class="slide" data-title="The Value" data-optional="value">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>The value</span>
+      </header>
+      <div class="content value-layout">
+        <div class="value-deliverables">
+          <p class="eyebrow">Personalized AI Implementation</p>
+          <h2>A working solution.<br><span class="accent">Time back every month.</span></h2>
+          <ul>
+            <li>Discovery of your most time-consuming workflows</li>
+            <li>A private workshop to choose one high-impact opportunity</li>
+            <li>A solution built and tested for your workflow</li>
+            <li>A live handoff and Q&amp;A session</li>
+            <li>A detailed report and clear next steps</li>
+          </ul>
+        </div>
+        <div class="card value-calculator" aria-label="Monthly savings calculator">
+          <div class="value-inputs">
+            <div class="value-field">
+              <label for="value-hours">Current time per task <output id="value-hours-label" for="value-hours">3 hrs</output></label>
+              <input id="value-hours" type="range" min="1" max="10" step="1" value="3">
+            </div>
+            <div class="value-field">
+              <label for="value-rate">Hourly rate <output id="value-rate-label" for="value-rate">$75</output></label>
+              <input id="value-rate" type="range" min="25" max="250" step="5" value="75">
+            </div>
+            <div class="value-field">
+              <label for="value-frequency">Times per week <output id="value-frequency-label" for="value-frequency">5</output></label>
+              <input id="value-frequency" type="range" min="1" max="40" step="1" value="5">
+            </div>
+            <div class="value-field">
+              <label for="value-minutes">New time per task <output id="value-minutes-label" for="value-minutes">15 min</output></label>
+              <input id="value-minutes" type="range" min="1" max="30" step="1" value="15">
+            </div>
+          </div>
+          <div class="value-costs">
+            <div><span>Current monthly cost</span><output id="value-current"></output></div>
+            <div><span>Estimated monthly cost</span><output id="value-estimated"></output></div>
+          </div>
+          <table class="value-savings" aria-live="polite">
+            <caption>Estimated savings</caption>
+            <thead><tr><th scope="col">Period</th><th scope="col">Hours saved</th><th scope="col">Dollars saved</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Weekly</th><td><output id="value-weekly-hours"></output></td><td><output id="value-weekly-dollars"></output></td></tr>
+              <tr><th scope="row">Monthly</th><td><output id="value-monthly-hours"></output></td><td><output id="value-monthly-dollars"></output></td></tr>
+              <tr><th scope="row">Annual</th><td><output id="value-annual-hours"></output></td><td><output id="value-annual-dollars"></output></td></tr>
+            </tbody>
+          </table>
+          <p class="value-assumption">Current cost − estimated cost. Monthly savings use 4 weeks; annual savings use 52 weeks, at the same hourly rate. Shows the value of time saved, before solution and software costs.</p>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Personalized AI Implementation</span><span>Value</span></footer>
+    </section>
   </main>
 
   <div class="progress" aria-hidden="true"></div>
@@ -617,6 +693,7 @@
       <dt>H, K, ←, Backspace</dt><dd>Previous slide</dd>
       <dt>1–9</dt><dd>Jump to an available slide</dd>
       <dt>M</dt><dd>Show method / return to your slide</dd>
+      <dt>V</dt><dd>Show value calculator / return to your slide</dd>
       <dt>F</dt><dd>Toggle fullscreen</dd>
       <dt>Esc</dt><dd>Close help or exit fullscreen</dd>
       <dt>?</dt><dd>Toggle this help</dd>
@@ -628,32 +705,66 @@
     (() => {
       const slides = [...document.querySelectorAll('.slide')];
       const mainSlides = slides.filter(slide => !slide.hasAttribute('data-optional'));
-      const methodSlide = document.querySelector('[data-optional="method"]');
+      const optionalSlides = {
+        m: document.querySelector('[data-optional="method"]'),
+        v: document.querySelector('[data-optional="value"]')
+      };
       const help = document.querySelector('.shortcut-help');
       const progress = document.querySelector('.progress');
       let current = Math.max(0, Math.min(mainSlides.length - 1, Number(location.hash.slice(1)) - 1 || 0));
-      let methodVisible = false;
+      let optionalSlide = null;
+
+      const calculator = document.querySelector('.value-calculator');
+      const fields = Object.fromEntries(['hours', 'rate', 'frequency', 'minutes'].map(name => [name, document.querySelector(`#value-${name}`)]));
+      const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+      function updateValue() {
+        const hours = Number(fields.hours.value);
+        const rate = Number(fields.rate.value);
+        const frequency = Number(fields.frequency.value);
+        const minutes = Number(fields.minutes.value);
+        const currentCost = hours * rate * frequency * 4;
+        const estimatedCost = minutes / 60 * rate * frequency * 4;
+        const labels = { hours: `${hours} ${hours === 1 ? 'hr' : 'hrs'}`, rate: money.format(rate), frequency: String(frequency), minutes: `${minutes} min` };
+        Object.entries(labels).forEach(([name, label]) => {
+          document.querySelector(`#value-${name}-label`).value = label;
+          fields[name].setAttribute('aria-valuetext', label);
+        });
+        document.querySelector('#value-current').value = money.format(currentCost);
+        document.querySelector('#value-estimated').value = money.format(estimatedCost);
+        const weeklyHoursSaved = (hours - minutes / 60) * frequency;
+        const hoursFormat = new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 });
+        Object.entries({ weekly: 1, monthly: 4, annual: 52 }).forEach(([period, weeks]) => {
+          const savedHours = weeklyHoursSaved * weeks;
+          document.querySelector(`#value-${period}-hours`).value = hoursFormat.format(savedHours);
+          document.querySelector(`#value-${period}-dollars`).value = money.format(savedHours * rate);
+        });
+      }
+      calculator.addEventListener('input', updateValue);
+      updateValue();
 
       function render() {
-        const active = methodVisible ? methodSlide : mainSlides[current];
+        const active = optionalSlide || mainSlides[current];
+        if (document.activeElement?.closest('.slide') !== active && document.activeElement?.closest('.slide')) document.activeElement.blur();
         slides.forEach(slide => {
           slide.classList.toggle('active', slide === active);
-          slide.classList.toggle('previous', !methodVisible && mainSlides.indexOf(slide) >= 0 && mainSlides.indexOf(slide) < current);
+          slide.classList.toggle('previous', !optionalSlide && mainSlides.indexOf(slide) >= 0 && mainSlides.indexOf(slide) < current);
           slide.setAttribute('aria-hidden', slide === active ? 'false' : 'true');
+          slide.inert = slide !== active;
         });
         progress.style.width = `${((current + 1) / mainSlides.length) * 100}%`;
-        progress.hidden = methodVisible;
+        progress.hidden = Boolean(optionalSlide);
         history.replaceState(null, '', `#${current + 1}`);
       }
 
       function show(index) {
-        methodVisible = false;
+        optionalSlide = null;
         current = Math.max(0, Math.min(mainSlides.length - 1, index));
         render();
       }
 
       function navigate(direction) {
-        show(methodVisible ? current : current + direction);
+        show(optionalSlide ? current : current + direction);
       }
 
       function toggleFullscreen() {
@@ -663,6 +774,7 @@
 
 
       document.querySelector('.deck').addEventListener('click', event => {
+        if (event.target.closest('.value-calculator, input, button, a, label')) return;
         if (event.clientX < window.innerWidth / 2) navigate(-1);
         else navigate(1);
       });
@@ -679,16 +791,17 @@
           return;
         }
         if (help.open) return;
+        if (event.target.matches('input[type="range"]') && ['arrowleft', 'arrowright', 'arrowup', 'arrowdown', 'home', 'end', 'pageup', 'pagedown', ' '].includes(key)) return;
         if (['j', 'l', 'n', ' ', 'arrowright'].includes(key)) {
           event.preventDefault();
           navigate(1);
         } else if (['h', 'k', 'arrowleft', 'backspace'].includes(key)) {
           event.preventDefault();
           navigate(-1);
-        } else if (key === 'm') {
+        } else if (key === 'm' || key === 'v') {
           event.preventDefault();
           if (!event.repeat) {
-            methodVisible = !methodVisible;
+            optionalSlide = optionalSlide === optionalSlides[key] ? null : optionalSlides[key];
             render();
           }
         } else if (key === 'f') {
