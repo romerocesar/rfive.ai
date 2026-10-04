@@ -38,9 +38,7 @@ body[theme="dark"] .main {
   box-sizing: border-box;
   width: 100vw;
   max-width: none;
-  min-height: calc(100vh - var(--header-height) - 4rem);
-  max-height: calc(100vh - var(--header-height) - 4rem);
-  aspect-ratio: 16 / 9;
+  min-height: 28rem;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   padding: 2rem 1rem;

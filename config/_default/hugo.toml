@@ -54,8 +54,8 @@ copyright = "© {{ now.Year }} R5 LLC"
   [params.home]
     [params.home.profile]
       enable = true
-      title = '<span class="home-title-line">You know your business.</span><span class="home-title-line">We know AI.</span>'
-      subtitle = "Move forward with clarity, confidence, and momentum."
+      title = '<span class="home-title-line">Turn hours into minutes</span>'
+      subtitle = "Use AI to get time back"
       typeit = false
       social = false
       imageUrl = "img/rfive-logo.svg"
