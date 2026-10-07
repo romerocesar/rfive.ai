@@ -1,6 +1,6 @@
-# Custom AI Solution
+# AI for Non-Tech Businesses
 
-## Five-Slide Core Product Deck + Optional Method and Value Calculator
+## Seven-Slide Product Deck + Optional Method and Value Calculator
 
 Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; M toggles the method; V toggles the value calculator. Toggle again to return to the previous main slide. F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help. Arrow keys adjust a focused slider.
 
@@ -8,7 +8,9 @@ Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9
 
 ## Slide 1: Transformation & Credibility
 
-### Put AI to work for you and get time back.
+### Turn hours into minutes.
+
+Use AI to get time back.
 
 **Experience includes:** Google, Amazon, Unity, Walmart, Ouva, RamenVR, Medal.tv, Demand-IQ, Andesite.ai, Groundlight, and Valve.
 
@@ -107,11 +109,61 @@ Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9
 
 - Say: AI becomes useful when it disappears into workflows people already understand.
 - Make the point: These are not generic demonstrations. Each workflow begins with a recurring task, its inputs and outputs, and the services already in use.
-- Then: Custom AI Solution applies this same approach to one high-impact opportunity in your business.
+- Then: There are three ways to work together: Workshops to build confidence, Audits to choose what matters, and Solutions to transform a workflow.
 
 ---
 
-## Slide 5: The Product
+## Slide 5: Workshops
+
+### Learn to use AI with confidence.
+
+For leaders and teams who want a practical starting point.
+
+### What we work on
+
+- Build a practical understanding of what AI can and cannot do.
+- Explore tools through tasks your team already does.
+- Practice with the inputs and outputs of real workflows.
+
+### What you take away
+
+- A clearer way to evaluate AI tools.
+- Hands-on practice applying AI to your work.
+- Practical next steps for your team.
+
+### Presenter notes
+
+- Say: Workshops help your team build confidence by applying AI to familiar work.
+- Then: If you need to decide where to invest, start with an audit.
+
+---
+
+## Slide 6: Audits
+
+### Find where AI can save you time.
+
+For businesses that want to choose the right opportunities before investing.
+
+### What we review
+
+- Your recurring workflows and time-consuming tasks.
+- The tools you use and how work moves between them.
+- The potential value and effort of AI opportunities.
+
+### What you take away
+
+- A clear view of where AI fits your business.
+- A prioritized set of opportunities.
+- Recommendations and a practical plan for next steps.
+
+### Presenter notes
+
+- Say: An audit helps you choose opportunities using a shared view of value and effort.
+- Then: When you have a high-impact workflow to transform, we can build a custom solution.
+
+---
+
+## Slide 7: Solutions
 
 ### Custom AI Solution
 
@@ -174,7 +226,7 @@ It creates a shared understanding of business value and implementation effort—
 
 ### Turn hours into minutes.
 
-Press **V** to toggle the interactive calculator. It stays outside the five-slide sequence and print output. Values persist when switching slides.
+Press **V** to toggle the interactive calculator. It stays outside the seven-slide sequence and print output. Values persist when switching slides.
 
 ### Deliverables
 

@@ -17,11 +17,11 @@ copyright = "© {{ now.Year }} R5 LLC"
     source = "static"
     target = "static"
   [[module.mounts]]
-    source = "docs/decks/custom-ai-solution.html"
-    target = "static/decks/custom-ai-solution/index.html"
+    source = "docs/decks/nontech.html"
+    target = "static/decks/nontech/index.html"
   [[module.mounts]]
     source = "docs/decks/assets"
-    target = "static/decks/custom-ai-solution/assets"
+    target = "static/decks/nontech/assets"
   [[module.imports]]
     path = "github.com/dillonzq/LoveIt"
 

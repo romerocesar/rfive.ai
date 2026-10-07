@@ -25,17 +25,19 @@ Generated assets land in `public/`.
 
 ## Presentation Deck
 
-Edit `docs/decks/custom-ai-solution.html` for the interactive deck and
-`docs/decks/custom-ai-solution.md` for its companion content and presenter notes.
-The PDF in the same directory is an existing export; builds do not regenerate it.
+Edit `docs/decks/nontech.html` for the interactive deck and
+`docs/decks/nontech.md` for its companion content and presenter notes.
+The deck covers Workshops, Audits, and Solutions for non-tech businesses.
+The existing `docs/decks/custom-ai-solution.pdf` is a previous export.
+Regenerate the PDF once deck edits are final; Hugo builds do not regenerate it.
 
-Hugo's file mounts publish the HTML as `/decks/custom-ai-solution/index.html`
+Hugo's file mounts publish the HTML as `/decks/nontech/index.html`
 and copy `docs/decks/assets/` alongside it. The normal build and local server
 both use these mounts, so no separate copy or build step is needed. The Markdown,
 PDF, and other documentation are not included in this route.
 
-- Local preview: `http://localhost:1313/decks/custom-ai-solution/`
-- Published URL: `https://rfive.ai/decks/custom-ai-solution/`
+- Local preview: `http://localhost:1313/decks/nontech/`
+- Published URL: `https://rfive.ai/decks/nontech/`
 
 ## Publishing a Blog Article
 
