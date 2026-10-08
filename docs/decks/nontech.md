@@ -1,8 +1,8 @@
 # AI for Non-Tech Businesses
 
-## Four-Slide Product Deck + Optional Examples, Workshops, Method and Value Calculator
+## Two-Slide Product Deck + Optional Testimonials, Examples, Workshops, Audits, Solutions, Personalized Offer, Method and Value Calculator
 
-Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; E toggles the examples; W toggles workshops; M toggles the method; V toggles the value calculator. Toggle again to return to the previous main slide. F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help. Arrow keys adjust a focused slider.
+Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; T toggles testimonials; E toggles the examples; W toggles workshops; A toggles audits; S toggles the custom solution; O or C toggles the personalized offer; M toggles the method; V toggles the value calculator. Toggle again to return to the previous main slide. F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help. Arrow keys adjust a focused slider.
 
 ---
 
@@ -39,7 +39,7 @@ Use AI to get time back.
 
 > this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.
 
-**Nea Clark — Founder, ADHD University**
+**Nea Clark — Founder, ADHD Universe**
 
 ### Presenter notes
 
@@ -50,6 +50,24 @@ Use AI to get time back.
 
 ---
 
+
+## Optional Slide: Client Testimonials
+
+### What clients say
+
+> Cesar is an ideal partner for non-technical leaders. He makes complex AI problems easy to understand, turns them into clear plans, and helps teams work more efficiently.
+
+**Austin Rosenbaum — CEO, Demand-IQ**
+
+> Cesar was instrumental on a couple of critical projects that set us up for success
+
+**Alex Thaman — CTO, Andesite.ai**
+
+> this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.
+
+**Nea Clark — Founder, ADHD Universe**
+
+---
 
 ## Optional Slide: Examples
 
@@ -128,7 +146,7 @@ One or two 90-minute sessions. Topics are selected based on your team's needs an
 
 ---
 
-## Slide 3: Audits
+## Optional Slide: Audits
 
 ### Find where AI can save you time.
 
@@ -142,7 +160,7 @@ For businesses that want to choose the right opportunities before investing.
 
 ### What you take away
 
-- A clear view of where AI fits your business.
+- Recommendations for which tools to add, keep, replace, or remove from your subscriptions.
 - A prioritized set of opportunities.
 - Recommendations and a practical plan for next steps.
 
@@ -153,19 +171,15 @@ For businesses that want to choose the right opportunities before investing.
 
 ---
 
-## Slide 4: Solutions
+## Optional Slide: Solutions
 
 ### Custom AI Solution
 
 Turn hours into minutes.
 
-### 90-Minute Discovery Session
+### Discovery Sessions
 
-We focus on understanding your business and identifying your most time-consuming workflows.
-
-### 90-Minute Private Blueprint Workshop
-
-We work together to estimate the complexity of each opportunity and pick one high-impact workflow to transform.
+One or more 90-minute sessions to understand your business and identify your most time-consuming workflows.
 
 ### Solution Development
 
@@ -179,9 +193,29 @@ I deliver and demonstrate the solution, provide a detailed report, and answer yo
 
 ### Presenter notes
 
-- Say: Here's everything you get—three private sessions and custom development. A working solution to save you hours every week, a detailed report, and clear next steps.
+- Say: We begin with one or more discovery sessions, build and test your solution, then demonstrate it and hand it off in a delivery session.
 - Make the point: You leave with more than a working solution. You understand where AI fits your business, have a prioritized opportunity roadmap, and receive documentation and clear next steps.
 - Optional: Press M to walk through the method if useful, then press M again to return.
+
+---
+
+## Optional Slide: Personalized Offer
+
+### AI support built around your team.
+
+Create your personalized offer.
+
+| Product | Price (USD) | Features |
+| --- | ---: | --- |
+| Private AI Workshop | $1,000 | Two 90-minute sessions; topics and tools based on your team's needs; hands-on practice with the concepts covered. |
+| AI Audit | $1,000 | Review of workflows and tools; a report recommending tools to add, keep, replace, or remove from subscriptions; prioritized opportunities and next steps; a 90-minute delivery call with live Q&A. |
+| Custom AI Solution | $6,000 | One or more 90-minute discovery sessions; a solution built and tested for your workflow; a final detailed report with instructions and recommendations; a 90-minute delivery session with live Q&A. |
+
+**Total for all three: $8,000 USD.** Excluding a product strikes through its price and features and removes it from the total. Its feature selections and price are preserved, and feature controls are disabled while the product is excluded. Including it again restores the offer with the same selections and price.
+
+Every feature is included by default and shows a ✓ button. Click it to exclude the feature; the button changes to × and strikes through the feature and subtracts 20% of that product's original price. Discounts add up within each product: one removed feature gives 20% off, two give 40%, three give 60%, and four give 80%. Click × to bring the feature back and reverse its discount. Other products' prices are unaffected.
+
+Press **O** or **C** to show the personalized offer; press either key again to return. Product selections and removed features persist when switching slides.
 
 ---
 
@@ -216,7 +250,7 @@ It creates a shared understanding of business value and implementation effort—
 
 ### Turn hours into minutes.
 
-Press **V** to toggle the interactive calculator. It stays outside the four-slide sequence and print output. Values persist when switching slides.
+Press **V** to toggle the interactive calculator. It stays outside the two-slide sequence and print output. Values persist when switching slides.
 
 ### Deliverables
 
