@@ -1,14 +1,16 @@
-# Custom AI Solution
+# AI for Non-Tech Businesses
 
-## Five-Slide Core Product Deck + Optional Method and Value Calculator
+## Two-Slide Product Deck + Optional Testimonials, Examples, Workshops, Audits, Solutions, Personalized Offer, Method and Value Calculator
 
-Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; M toggles the method; V toggles the value calculator. Toggle again to return to the previous main slide. F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help. Arrow keys adjust a focused slider.
+Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9 jump to an available main slide; T toggles testimonials; E toggles the examples; W toggles workshops; A toggles audits; S toggles the custom solution; O or C toggles the personalized offer; M toggles the method; V toggles the value calculator. Toggle again to return to the previous main slide. F toggles fullscreen; Esc closes help or exits fullscreen; ? toggles shortcut help. Arrow keys adjust a focused slider.
 
 ---
 
 ## Slide 1: Transformation & Credibility
 
-### Put AI to work for you and get time back.
+### Turn hours into minutes.
+
+Use AI to get time back.
 
 **Experience includes:** Google, Amazon, Unity, Walmart, Ouva, RamenVR, Medal.tv, Demand-IQ, Andesite.ai, Groundlight, and Valve.
 
@@ -23,35 +25,33 @@ Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9
 
 ## Slide 2: The Challenge & Desired Outcome
 
-### From uncertainty to productivity
-
 ### The Problem
 
-- Anxious about what you should be doing
-- Confused by too many options
-- Frustrated by trial and error
-- Time wasted on repetitive tasks
+- Anxious about what you should be doing or what else you should learn
+- Confused about too many options and what you should be paying for
+- Frustrated by trial and error, failures or wasted time
 
 ### The Solution
 
-- Know where to start and what to do next.
-- Evaluate tools with clarity.
-- A working solution you can trust.
-- Automate routine work and get time back.
+- A private workshop for you and your team to master key AI concepts
+- An AI audit to gain confidence that you have access to valuable tools and aren't paying for what you don't need
+- A custom AI solution that works reliably and gives you time back
 
-### So ultimately, you can use AI with confidence.
+> this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.
+
+**Nea Clark — Founder, ADHD Universe**
 
 ### Presenter notes
 
 - Say: The most common theme is choosing which AI services to use and pay for.
 - Make the point: “They haven't paid for any AI service yet because they don't know how to pick” or “I'm paying for too many services and can probably simplify.” One client asked, “What should I be doing that I'm not yet doing?” A different client had an aha moment: he should think about the inputs and outputs of his team's regular tasks, not AI as a collection of services to learn.
 - Proof: Imagine waking up knowing you don't have to master every AI tool or trend to move forward. You have a clearer mental model, reduced anxiety, and can spot opportunities in your actual business. I've seen tasks like drafting personalized responses, updating a CRM, or formatting documents drop from minutes to seconds.
-- Then: Here’s what clients say about working together.
+- Optional: Press E to show examples of AI applied to everyday workflows, then press E again to return.
 
 ---
 
 
-## Slide 3: Client Testimonials
+## Optional Slide: Client Testimonials
 
 ### What clients say
 
@@ -65,11 +65,11 @@ Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9
 
 > this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.
 
-**Nea Clark — Founder, ADHD University**
+**Nea Clark — Founder, ADHD Universe**
 
 ---
 
-## Slide 4: Workflows in Practice
+## Optional Slide: Examples
 
 ### Leads Pipeline
 
@@ -107,23 +107,79 @@ Keyboard shortcuts: J/L/N/Space/Right advance; H/K/Left/Backspace go back; 1–9
 
 - Say: AI becomes useful when it disappears into workflows people already understand.
 - Make the point: These are not generic demonstrations. Each workflow begins with a recurring task, its inputs and outputs, and the services already in use.
-- Then: Custom AI Solution applies this same approach to one high-impact opportunity in your business.
+- Then: There are three ways to work together: Workshops to build confidence, Audits to choose what matters, and Solutions to transform a workflow.
 
 ---
 
-## Slide 5: The Product
+## Optional Slide: Workshops
+
+### Learn to use AI with confidence.
+
+For leaders and teams who want to improve their understanding of AI.
+
+### Key AI concepts
+
+- Prompts
+- Structured output
+- Harnesses
+- Skills
+- Agents
+- Projects
+- Context
+- Models
+- MCP servers
+- File formats
+- Existing services
+
+One or two 90-minute sessions. Topics are selected based on your team's needs and current understanding of AI.
+
+### For every concept
+
+- **Explain** — Understand the concept and when it is useful.
+- **Demonstrate** — See it applied to a relevant task.
+- **Practice** — Participants put it into practice themselves.
+
+### Presenter notes
+
+- Say: Workshops help your team build confidence by applying AI to familiar work.
+- Then: If you need to decide where to invest, start with an audit.
+
+---
+
+## Optional Slide: Audits
+
+### Find where AI can save you time.
+
+For businesses that want to choose the right opportunities before investing.
+
+### What we review
+
+- Your recurring workflows and time-consuming tasks.
+- The tools you use and how work moves between them.
+- The potential value and effort of AI opportunities.
+
+### What you take away
+
+- Recommendations for which tools to add, keep, replace, or remove from your subscriptions.
+- A prioritized set of opportunities.
+- Recommendations and a practical plan for next steps.
+
+### Presenter notes
+
+- Say: An audit helps you choose opportunities using a shared view of value and effort.
+- Then: When you have a high-impact workflow to transform, we can build a custom solution.
+
+---
+
+## Optional Slide: Solutions
 
 ### Custom AI Solution
 
 Turn hours into minutes.
 
-### 90-Minute Discovery Session
+### Discovery Sessions
 
-We focus on understanding your business and identifying your most time-consuming workflows.
-
-### 90-Minute Private Blueprint Workshop
-
-We work together to estimate the complexity of each opportunity and pick one high-impact workflow to transform.
+One or more 90-minute sessions to understand your business and identify your most time-consuming workflows.
 
 ### Solution Development
 
@@ -137,9 +193,29 @@ I deliver and demonstrate the solution, provide a detailed report, and answer yo
 
 ### Presenter notes
 
-- Say: Here's everything you get—three private sessions and custom development. A working solution to save you hours every week, a detailed report, and clear next steps.
+- Say: We begin with one or more discovery sessions, build and test your solution, then demonstrate it and hand it off in a delivery session.
 - Make the point: You leave with more than a working solution. You understand where AI fits your business, have a prioritized opportunity roadmap, and receive documentation and clear next steps.
 - Optional: Press M to walk through the method if useful, then press M again to return.
+
+---
+
+## Optional Slide: Personalized Offer
+
+### AI support built around your team.
+
+Create your personalized offer.
+
+| Product | Price (USD) | Features |
+| --- | ---: | --- |
+| Private AI Workshop | $1,000 | Two 90-minute sessions; topics and tools based on your team's needs; hands-on practice with the concepts covered. |
+| AI Audit | $1,000 | Review of workflows and tools; a report recommending tools to add, keep, replace, or remove from subscriptions; prioritized opportunities and next steps; a 90-minute delivery call with live Q&A. |
+| Custom AI Solution | $6,000 | One or more 90-minute discovery sessions; a solution built and tested for your workflow; a final detailed report with instructions and recommendations; a 90-minute delivery session with live Q&A. |
+
+**Total for all three: $8,000 USD.** Excluding a product strikes through its price and features and removes it from the total. Its feature selections and price are preserved, and feature controls are disabled while the product is excluded. Including it again restores the offer with the same selections and price.
+
+Every feature is included by default and shows a ✓ button. Click it to exclude the feature; the button changes to × and strikes through the feature and subtracts 20% of that product's original price. Discounts add up within each product: one removed feature gives 20% off, two give 40%, three give 60%, and four give 80%. Click × to bring the feature back and reverse its discount. Other products' prices are unaffected.
+
+Press **O** or **C** to show the personalized offer; press either key again to return. Product selections and removed features persist when switching slides.
 
 ---
 
@@ -174,7 +250,7 @@ It creates a shared understanding of business value and implementation effort—
 
 ### Turn hours into minutes.
 
-Press **V** to toggle the interactive calculator. It stays outside the five-slide sequence and print output. Values persist when switching slides.
+Press **V** to toggle the interactive calculator. It stays outside the two-slide sequence and print output. Values persist when switching slides.
 
 ### Deliverables
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Custom AI Solution — rfive.ai</title>
+  <title>AI for Non-Tech Businesses — rfive.ai</title>
   <style>
     :root {
       --ink: #eef5ff;
@@ -237,13 +237,16 @@
     .challenge li::before { color: #e9a095; content: "×"; }
     .outcome li::before { color: var(--green); content: "✓"; }
 
-    .prize {
-      margin: clamp(1rem, 2.3vh, 1.6rem) 0 0;
-      color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    .opportunity-testimonial {
+      max-width: 64rem;
+      margin: clamp(1rem, 2.3vh, 1.6rem) auto 0;
       text-align: center;
     }
+
+
+    .workshop-concepts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem 1rem; }
+    .workshop-concepts li { font-size: clamp(0.95rem, 1.2vw, 1.15rem); }
+    .workshop-scope { margin: 1rem 0 0; color: var(--muted); font-size: 0.95rem; line-height: 1.45; }
 
     .intro-grid {
       display: grid;
@@ -284,7 +287,7 @@
 
     .deliverables-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0.8rem;
     }
 
@@ -353,6 +356,30 @@
     .delivery-outcome strong { color: var(--green); font-size: clamp(0.9rem, 1.12vw, 1.08rem); }
     .delivery-outcome span { color: var(--muted); font-size: clamp(0.84rem, 1.05vw, 1rem); line-height: 1.4; }
 
+    .product-calculator-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .product-choice { display: flex; align-items: center; gap: 0.65rem; cursor: pointer; }
+    .product-choice input { appearance: none; flex: 0 0 auto; display: grid; place-items: center; width: 1.65rem; height: 1.65rem; margin: 0; border: 1px solid #e9a095; color: #e9a095; background: transparent; font: inherit; font-size: 1.15rem; line-height: 1.2; cursor: pointer; }
+    .product-choice input::before { content: "×"; }
+    .product-choice input:checked { color: var(--green); border-color: var(--green); }
+    .product-choice input:checked::before { content: "✓"; }
+    .product-choice input:focus-visible { outline: 2px solid var(--blue-bright); outline-offset: 4px; }
+    .product-choice h3 { margin: 0; line-height: 1.2; }
+    .product-price { margin: 1rem 0; color: var(--blue-bright); font-size: clamp(2rem, 3.5vw, 3.5rem); font-weight: 700; }
+    .product-calculator-grid li { font-size: clamp(0.9rem, 1.1vw, 1.1rem); }
+    .product-feature { display: flex; align-items: flex-start; gap: 0.65rem; padding-left: 0; }
+    .product-feature::before { content: none; }
+    .product-feature > span { flex: 1; }
+    .product-feature.removed > span,
+    .product-excluded .product-price,
+    .product-excluded .product-feature > span { text-decoration: line-through; color: var(--muted); }
+    .feature-toggle { flex: 0 0 auto; width: 1.65rem; min-height: 1.65rem; padding: 0; border: 1px solid var(--line); color: var(--ink); background: transparent; font-size: 1.15rem; line-height: 1.2; cursor: pointer; }
+    .feature-toggle[aria-pressed="false"] { color: var(--green); border-color: var(--green); }
+    .feature-toggle[aria-pressed="true"] { color: #e9a095; border-color: #e9a095; }
+    .feature-toggle:focus-visible { outline: 2px solid var(--blue-bright); outline-offset: 3px; }
+    .feature-toggle:disabled { opacity: 0.6; cursor: default; }
+    .product-total { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.5rem; padding: 1rem 1.5rem; border: 1px solid var(--green); font-size: clamp(1.4rem, 2vw, 2rem); }
+    .product-total output { color: var(--green); font-weight: 700; font-variant-numeric: tabular-nums; }
+
     .progress { position: fixed; bottom: 0; left: 0; z-index: 30; width: 25%; height: 3px; background: var(--blue); transition: width 250ms ease; }
     .value-layout { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 2rem; align-items: center; }
     .value-deliverables h2 { max-width: none; font-size: clamp(2rem, 3vw, 3rem); }
@@ -386,7 +413,7 @@
       .slide { --slide-pad-x: 1.1rem; padding: 1rem var(--slide-pad-x) 1.2rem; gap: 0.75rem; overflow-y: auto; }
       h1 { font-size: clamp(2.6rem, 13vw, 4.5rem); }
       h2 { font-size: clamp(2rem, 8vw, 3.2rem); }
-      .testimonial-grid { grid-template-columns: 1fr; }
+      .testimonial-grid, .product-calculator-grid { grid-template-columns: 1fr; }
       .value-layout, .value-inputs { grid-template-columns: 1fr; }
       .value-savings th, .value-savings td { padding: 0.6rem 0.4rem; }
       .credentials, .two-column, .intro-grid, .package-grid, .product-heading, .workflow-grid, .deliverables-grid { grid-template-columns: 1fr; }
@@ -424,7 +451,7 @@
       .package-grid { grid-template-columns: 1fr 1fr; }
       .product-heading { grid-template-columns: 0.9fr 1.1fr; }
       .workflow-grid { grid-template-columns: 1fr 1fr; }
-      .deliverables-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .deliverables-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .intro-copy h2 { max-width: 14ch; }
       .progress, .shortcut-help, .slide[data-optional] { display: none !important; }
     }
@@ -438,7 +465,8 @@
       </header>
       <div class="hero">
         <p class="eyebrow">The transformation</p>
-        <h1>Put <span class="accent">AI</span> to work for you and get <span class="accent">time</span> back.</h1>
+        <h1>Turn <span class="accent">hours into minutes.</span></h1>
+        <p class="hero-copy">Use AI to get time back.</p>
         <div class="credentials" aria-label="Credentials">
           <div class="credential"><strong>20 years</strong><span>working with AI</span></div>
           <div class="credential"><strong>7 years</strong><span>as a Principal ML Engineer</span></div>
@@ -461,7 +489,7 @@
           </div>
         </div>
       </div>
-      <footer class="slide-footer"><span>rfive.ai</span><span>01 / 05</span></footer>
+      <footer class="slide-footer"><span>rfive.ai</span><span>01 / 02</span></footer>
     </section>
 
     <section class="slide" data-title="The Challenge & Desired Outcome">
@@ -470,33 +498,33 @@
         <span>The opportunity</span>
       </header>
       <div class="content">
-        <p class="eyebrow">From uncertainty to productivity</p>
         <div class="two-column">
           <article class="card challenge">
             <span class="card-label">The problem</span>
             <ul>
-              <li>Anxious about what you should be doing</li>
-              <li>Confused by too many options</li>
-              <li>Frustrated by trial and error</li>
-              <li>Time wasted on repetitive tasks</li>
+              <li>Anxious about what you should be doing or what else you should learn</li>
+              <li>Confused about too many options and what you should be paying for</li>
+              <li>Frustrated by trial and error, failures or wasted time</li>
             </ul>
           </article>
           <article class="card outcome">
             <span class="card-label">The solution</span>
             <ul>
-              <li>Know where to start and what to do next.</li>
-              <li>Evaluate tools with clarity.</li>
-              <li>A working solution you can trust.</li>
-              <li>Automate routine work and get time back.</li>
+              <li>A private workshop for you and your team to master key AI concepts</li>
+              <li>An AI audit to gain confidence that you have access to valuable tools and aren't paying for what you don't need</li>
+              <li>A custom AI solution that works reliably and gives you time back</li>
             </ul>
           </article>
         </div>
-        <p class="prize">So ultimately, you can <span class="accent">use AI with confidence.</span></p>
+          <figure class="testimonial opportunity-testimonial">
+            <blockquote>“this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.”</blockquote>
+            <figcaption><strong>Nea Clark</strong><span>Founder, ADHD Universe</span></figcaption>
+          </figure>
       </div>
-      <footer class="slide-footer"><span>rfive.ai</span><span>02 / 05</span></footer>
+      <footer class="slide-footer"><span>rfive.ai</span><span>02 / 02</span></footer>
     </section>
 
-    <section class="slide" data-title="Client Testimonials">
+    <section class="slide" data-title="Client Testimonials" data-optional="testimonials">
       <header class="slide-header">
         <div class="brand" aria-label="R five">R<sup>5</sup></div>
         <span>Testimonials</span>
@@ -514,17 +542,17 @@
           </figure>
           <figure class="card testimonial">
             <blockquote>“this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.”</blockquote>
-            <figcaption><strong>Nea Clark</strong><span>Founder, ADHD University</span></figcaption>
+            <figcaption><strong>Nea Clark</strong><span>Founder, ADHD Universe</span></figcaption>
           </figure>
         </div>
       </div>
-      <footer class="slide-footer"><span>rfive.ai</span><span>03 / 05</span></footer>
+      <footer class="slide-footer"><span>rfive.ai</span><span>Testimonials</span></footer>
     </section>
 
-    <section class="slide" data-title="Workflows in Practice">
+    <section class="slide" data-title="Examples" data-optional="example">
       <header class="slide-header">
         <div class="brand" aria-label="R five">R<sup>5</sup></div>
-        <span>Workflows in practice</span>
+        <span>Examples</span>
       </header>
       <div class="content">
         <div class="workflow-grid">
@@ -554,18 +582,93 @@
           </article>
         </div>
       </div>
-      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>04 / 05</span></footer>
+      <footer class="slide-footer"><span>Practical AI in existing workflows</span><span>Examples</span></footer>
     </section>
 
-    <section class="slide" data-title="The Product">
+    <section class="slide" data-title="Workshops" data-optional="workshops">
       <header class="slide-header">
         <div class="brand" aria-label="R five">R<sup>5</sup></div>
-        <span>The product</span>
+        <span>Workshops · Audits · Solutions</span>
+      </header>
+      <div class="content">
+        <div class="product-heading">
+          <p class="eyebrow">Workshops</p>
+          <h2>Learn to use AI with <span class="accent">confidence.</span></h2>
+          <p>For leaders and teams who want to improve their understanding of AI.</p>
+        </div>
+        <div class="two-column">
+          <article class="card">
+            <span class="card-label">Key AI concepts</span>
+            <ul class="workshop-concepts">
+              <li>Prompts</li>
+              <li>Structured output</li>
+              <li>Harnesses</li>
+              <li>Skills</li>
+              <li>Agents</li>
+              <li>Projects</li>
+              <li>Context</li>
+              <li>Models</li>
+              <li>MCP servers</li>
+              <li>File formats</li>
+              <li>Existing services</li>
+            </ul>
+            <p class="workshop-scope">One or two 90-minute sessions. Topics are selected based on your team's needs and current understanding of AI.</p>
+          </article>
+          <article class="card outcome">
+            <span class="card-label">For every concept</span>
+            <ul>
+              <li><strong>Explain</strong> — Understand the concept and when it is useful.</li>
+              <li><strong>Demonstrate</strong> — See it applied to a relevant task.</li>
+              <li><strong>Practice</strong> — Participants put it into practice themselves.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Workshops: build confidence</span><span>Workshops</span></footer>
+    </section>
+
+    <section class="slide" data-title="Audits" data-optional="audits">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>Workshops · Audits · Solutions</span>
+      </header>
+      <div class="content">
+        <div class="product-heading">
+          <p class="eyebrow">Audits</p>
+          <h2>Find where AI can <span class="accent">save you time.</span></h2>
+          <p>For businesses that want to choose the right opportunities before investing.</p>
+        </div>
+        <div class="two-column">
+          <article class="card">
+            <span class="card-label">What we review</span>
+            <ul>
+              <li>Your recurring workflows and time-consuming tasks.</li>
+              <li>The tools you use and how work moves between them.</li>
+              <li>The potential value and effort of AI opportunities.</li>
+            </ul>
+          </article>
+          <article class="card outcome">
+            <span class="card-label">What you take away</span>
+            <ul>
+              <li>Recommendations for which tools to add, keep, replace, or remove from your subscriptions.</li>
+              <li>A prioritized set of opportunities.</li>
+              <li>Recommendations and a practical plan for next steps.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <footer class="slide-footer"><span>Audits: choose what matters</span><span>Audits</span></footer>
+    </section>
+
+    <section class="slide" data-title="Solutions" data-optional="solutions">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>Workshops · Audits · Solutions</span>
       </header>
       <div class="content">
         <div class="product-heading">
           <div>
-            <p class="eyebrow">The product</p>
+            <p class="eyebrow">Solutions</p>
             <h2>Custom AI <span class="accent">Solution</span></h2>
           </div>
           <p>Turn hours into minutes.</p>
@@ -573,13 +676,8 @@
         <div class="deliverables-grid">
           <article class="card deliverable-card">
             <span class="deliverable-number">90 minutes</span>
-            <h3>Discovery session</h3>
-            <p>We focus on understanding your business and identifying your most time-consuming workflows.</p>
-          </article>
-          <article class="card deliverable-card">
-            <span class="deliverable-number">90 minutes</span>
-            <h3>Private Blueprint workshop</h3>
-            <p>We work together to estimate the complexity of each opportunity and pick one high-impact workflow to transform.</p>
+            <h3>Discovery sessions</h3>
+            <p>One or more 90-minute sessions to understand your business and identify your most time-consuming workflows.</p>
           </article>
           <article class="card deliverable-card">
             <span class="deliverable-number">Built for you</span>
@@ -592,12 +690,54 @@
             <p>I demonstrate and hand off the solution, provide a detailed report, and answer your questions in a live Q&amp;A.</p>
           </article>
         </div>
-        <div class="delivery-outcome">
-          <strong>Three private sessions + custom development</strong>
-          <span>A working solution to save you hours every week, a detailed report, and clear next steps.</span>
-        </div>
       </div>
-      <footer class="slide-footer"><span>Custom AI Solution</span><span>05 / 05</span></footer>
+      <footer class="slide-footer"><span>Custom AI Solution</span><span>Solutions</span></footer>
+    </section>
+
+    <section class="slide" data-title="Personalized Offer" data-optional="offer">
+      <header class="slide-header">
+        <div class="brand" aria-label="R five">R<sup>5</sup></div>
+        <span>Personalized Offer</span>
+      </header>
+      <div class="content product-calculator">
+        <div class="product-heading">
+          <h2>AI support built around <span class="accent">your team.</span></h2>
+          <p>Create your personalized offer.</p>
+        </div>
+        <div class="product-calculator-grid">
+          <article class="card">
+            <label class="product-choice"><input type="checkbox" name="product" value="1000" checked><span>Private AI Workshop</span></label>
+            <p class="product-price" aria-live="polite">$1,000</p>
+            <ul>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: Two 90-minute sessions">✓</button><span>Two 90-minute sessions</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: Topics and tools based on your team&#x27;s needs">✓</button><span>Topics and tools based on your team's needs</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: Hands-on practice with the concepts covered">✓</button><span>Hands-on practice with the concepts covered</span></li>
+            </ul>
+          </article>
+          <article class="card">
+            <label class="product-choice"><input type="checkbox" name="product" value="1000" checked><span>AI Audit</span></label>
+            <p class="product-price" aria-live="polite">$1,000</p>
+            <ul>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: Review of your workflows and tools">✓</button><span>Review of your workflows and tools</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: A report recommending tools to add, keep, replace, or remove from subscriptions">✓</button><span>A report recommending tools to add, keep, replace, or remove from subscriptions</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: Prioritized opportunities and next steps">✓</button><span>Prioritized opportunities and next steps</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: A 90-minute delivery call with live Q&amp;A">✓</button><span>A 90-minute delivery call with live Q&amp;A</span></li>
+            </ul>
+          </article>
+          <article class="card">
+            <label class="product-choice"><input type="checkbox" name="product" value="6000" checked><span>Custom AI Solution</span></label>
+            <p class="product-price" aria-live="polite">$6,000</p>
+            <ul>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: One or more 90-minute discovery sessions">✓</button><span>One or more 90-minute discovery sessions</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: A solution built and tested for your workflow">✓</button><span>A solution built and tested for your workflow</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: A final detailed report with instructions and recommendations">✓</button><span>A final detailed report with instructions and recommendations</span></li>
+              <li class="product-feature"><button type="button" class="feature-toggle" aria-pressed="false" aria-label="Remove feature: A 90-minute delivery session with live Q&amp;A">✓</button><span>A 90-minute delivery session with live Q&amp;A</span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="product-total"><strong>Total (USD)</strong><output id="product-total" aria-live="polite" aria-label="Total price">$8,000</output></div>
+      </div>
+      <footer class="slide-footer"><span>Workshops · Audits · Solutions</span><span>Personalized Offer</span></footer>
     </section>
 
     <section class="slide" data-title="The Method" data-optional="method">
@@ -689,6 +829,12 @@
       <dt>J, L, N, Space, →</dt><dd>Next slide</dd>
       <dt>H, K, ←, Backspace</dt><dd>Previous slide</dd>
       <dt>1–9</dt><dd>Jump to an available slide</dd>
+      <dt>T</dt><dd>Show testimonials / return to your slide</dd>
+      <dt>E</dt><dd>Show examples / return to your slide</dd>
+      <dt>W</dt><dd>Show workshops / return to your slide</dd>
+      <dt>A</dt><dd>Show audits / return to your slide</dd>
+      <dt>S</dt><dd>Show custom solution / return to your slide</dd>
+      <dt>O, C</dt><dd>Show personalized offer / return to your slide</dd>
       <dt>M</dt><dd>Show method / return to your slide</dd>
       <dt>V</dt><dd>Show value calculator / return to your slide</dd>
       <dt>F</dt><dd>Toggle fullscreen</dd>
@@ -704,7 +850,14 @@
       const mainSlides = slides.filter(slide => !slide.hasAttribute('data-optional'));
       const optionalSlides = {
         m: document.querySelector('[data-optional="method"]'),
-        v: document.querySelector('[data-optional="value"]')
+        v: document.querySelector('[data-optional="value"]'),
+        e: document.querySelector('[data-optional="example"]'),
+        w: document.querySelector('[data-optional="workshops"]'),
+        a: document.querySelector('[data-optional="audits"]'),
+        s: document.querySelector('[data-optional="solutions"]'),
+        t: document.querySelector('[data-optional="testimonials"]'),
+        c: document.querySelector('[data-optional="offer"]'),
+        o: document.querySelector('[data-optional="offer"]')
       };
       const help = document.querySelector('.shortcut-help');
       const progress = document.querySelector('.progress');
@@ -714,6 +867,43 @@
       const calculator = document.querySelector('.value-calculator');
       const fields = Object.fromEntries(['hours', 'rate', 'frequency', 'minutes'].map(name => [name, document.querySelector(`#value-${name}`)]));
       const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+      const productCalculator = document.querySelector('.product-calculator');
+      const productChoices = [...productCalculator.querySelectorAll('input[name="product"]')];
+      function updateProductTotal() {
+        const total = productChoices.reduce((sum, choice) => {
+          const card = choice.closest('.card');
+          const removedCount = card.querySelectorAll('.product-feature.removed').length;
+          const price = Math.round(Number(choice.value) * Math.max(0, 1 - removedCount * 0.2));
+          card.querySelector('.product-price').textContent = money.format(price);
+          card.classList.toggle('product-excluded', !choice.checked);
+          card.querySelectorAll('.feature-toggle').forEach(button => {
+            button.disabled = !choice.checked;
+          });
+          return sum + (choice.checked ? price : 0);
+        }, 0);
+        document.querySelector('#product-total').value = money.format(total);
+      }
+      function setFeatureRemoved(feature, removed) {
+        const button = feature.querySelector('.feature-toggle');
+        feature.classList.toggle('removed', removed);
+        button.setAttribute('aria-pressed', String(removed));
+        button.setAttribute('aria-label', `${removed ? 'Restore' : 'Remove'} feature: ${feature.querySelector('span').textContent}`);
+        button.textContent = removed ? '×' : '✓';
+      }
+      productCalculator.addEventListener('click', event => {
+        const button = event.target.closest('.feature-toggle');
+        if (!button || button.disabled) return;
+        const feature = button.closest('.product-feature');
+        setFeatureRemoved(feature, !feature.classList.contains('removed'));
+        updateProductTotal();
+      });
+      productCalculator.addEventListener('change', event => {
+        const choice = event.target;
+        if (!choice.matches('input[name="product"]')) return;
+        updateProductTotal();
+      });
+      updateProductTotal();
 
       function updateValue() {
         const hours = Number(fields.hours.value);
@@ -771,7 +961,7 @@
 
 
       document.querySelector('.deck').addEventListener('click', event => {
-        if (event.target.closest('.value-calculator, input, button, a, label')) return;
+        if (event.target.closest('.value-calculator, .product-calculator, input, button, a, label')) return;
         if (event.clientX < window.innerWidth / 2) navigate(-1);
         else navigate(1);
       });
@@ -788,6 +978,7 @@
           return;
         }
         if (help.open) return;
+        if (event.target.matches('input, button, a') && [' ', 'enter'].includes(key)) return;
         if (event.target.matches('input[type="range"]') && ['arrowleft', 'arrowright', 'arrowup', 'arrowdown', 'home', 'end', 'pageup', 'pagedown', ' '].includes(key)) return;
         if (['j', 'l', 'n', ' ', 'arrowright'].includes(key)) {
           event.preventDefault();
@@ -795,7 +986,7 @@
         } else if (['h', 'k', 'arrowleft', 'backspace'].includes(key)) {
           event.preventDefault();
           navigate(-1);
-        } else if (key === 'm' || key === 'v') {
+        } else if (Object.hasOwn(optionalSlides, key)) {
           event.preventDefault();
           if (!event.repeat) {
             optionalSlide = optionalSlide === optionalSlides[key] ? null : optionalSlides[key];
