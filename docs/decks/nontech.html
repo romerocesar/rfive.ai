@@ -239,9 +239,18 @@
 
     .opportunity-testimonial {
       max-width: 64rem;
-      margin: clamp(1rem, 2.3vh, 1.6rem) auto 0;
+      margin: clamp(2rem, 5vh, 3.5rem) auto 0;
       text-align: center;
     }
+
+    .opportunity-questions { display: grid; gap: clamp(1rem, 2.5vh, 1.8rem); }
+    .opportunity-question { padding-bottom: clamp(1rem, 2.5vh, 1.8rem); border-bottom: 1px solid var(--line); }
+    .opportunity-question:last-child { padding-bottom: 0; border-bottom: 0; }
+    .opportunity-question h3 { margin: 0 0 0.55rem; font-size: clamp(1.1rem, 1.7vw, 1.6rem); line-height: 1.35; }
+    .opportunity-question p { margin: 0; color: #d4dfec; font-size: clamp(1rem, 1.4vw, 1.3rem); line-height: 1.5; }
+    .opportunity-question .emotion { color: var(--green); font-weight: 700; }
+    .opportunity-question .negative-emotion { color: #e9a095; }
+    .opportunity-question .product { color: var(--blue-bright); }
 
 
     .workshop-concepts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem 1rem; }
@@ -411,6 +420,8 @@
 
     @media (max-width: 760px), (max-height: 650px) {
       .slide { --slide-pad-x: 1.1rem; padding: 1rem var(--slide-pad-x) 1.2rem; gap: 0.75rem; overflow-y: auto; }
+      .opportunity-slide { grid-template-rows: auto auto auto; align-content: start; }
+      .opportunity-slide > .content { min-height: auto; }
       h1 { font-size: clamp(2.6rem, 13vw, 4.5rem); }
       h2 { font-size: clamp(2rem, 8vw, 3.2rem); }
       .testimonial-grid, .product-calculator-grid { grid-template-columns: 1fr; }
@@ -452,6 +463,7 @@
       .product-heading { grid-template-columns: 0.9fr 1.1fr; }
       .workflow-grid { grid-template-columns: 1fr 1fr; }
       .deliverables-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .opportunity-slide { grid-template-rows: auto 1fr auto; align-content: normal; }
       .intro-copy h2 { max-width: 14ch; }
       .progress, .shortcut-help, .slide[data-optional] { display: none !important; }
     }
@@ -492,28 +504,24 @@
       <footer class="slide-footer"><span>rfive.ai</span><span>01 / 02</span></footer>
     </section>
 
-    <section class="slide" data-title="The Challenge & Desired Outcome">
+    <section class="slide opportunity-slide" data-title="Your AI Questions">
       <header class="slide-header">
         <div class="brand" aria-label="R five">R<sup>5</sup></div>
         <span>The opportunity</span>
       </header>
       <div class="content">
-        <div class="two-column">
-          <article class="card challenge">
-            <span class="card-label">The problem</span>
-            <ul>
-              <li>Anxious about what you should be doing or what else you should learn</li>
-              <li>Confused about too many options and what you should be paying for</li>
-              <li>Frustrated by trial and error, failures or wasted time</li>
-            </ul>
+        <div class="opportunity-questions">
+          <article class="opportunity-question">
+            <h3><span class="negative-emotion">Anxious</span> about what you should be doing or what else you should learn?</h3>
+            <p><span class="emotion">Gain peace of mind</span> after understanding key AI concepts and how to apply them in a <span class="product">Private AI Workshop</span>.</p>
           </article>
-          <article class="card outcome">
-            <span class="card-label">The solution</span>
-            <ul>
-              <li>A private workshop for you and your team to master key AI concepts</li>
-              <li>An AI audit to gain confidence that you have access to valuable tools and aren't paying for what you don't need</li>
-              <li>A custom AI solution that works reliably and gives you time back</li>
-            </ul>
+          <article class="opportunity-question">
+            <h3><span class="negative-emotion">Confused</span> about too many options and what you should be paying for?</h3>
+            <p><span class="emotion">Gain confidence</span> that you have valuable tools and aren't paying for what you don't need with an <span class="product">AI Audit</span>.</p>
+          </article>
+          <article class="opportunity-question">
+            <h3><span class="negative-emotion">Frustrated</span> by trial and error, failures or wasted time?</h3>
+            <p><span class="emotion">Get time back</span> after improving your workflows with a <span class="product">Custom AI Solution</span>.</p>
           </article>
         </div>
           <figure class="testimonial opportunity-testimonial">

@@ -19,23 +19,23 @@ Use AI to get time back.
 - Say: “Most non-tech leaders know they need AI, but don't know where to start or who to trust.”
 - Make the point: Your team stays stuck on manual work, and you're overwhelmed by tool options without a clear way to choose what fits your business.
 - Proof: I've worked with AI for 20 years, spent 7 years as a Principal Machine Learning Engineer, and completed over 200 hours tutoring AI—now applying that experience hands-on with four non-tech business clients.
-- Then: Let me show you the four pain points keeping leaders stuck.
+- Then: Let me show you three common problems and the product that addresses each one.
 
 ---
 
-## Slide 2: The Challenge & Desired Outcome
+## Slide 2: Your AI Questions
 
-### The Problem
+### Anxious about what you should be doing or what else you should learn?
 
-- Anxious about what you should be doing or what else you should learn
-- Confused about too many options and what you should be paying for
-- Frustrated by trial and error, failures or wasted time
+**Gain peace of mind** after understanding key AI concepts and how to apply them in a **Private AI Workshop**.
 
-### The Solution
+### Confused about too many options and what you should be paying for?
 
-- A private workshop for you and your team to master key AI concepts
-- An AI audit to gain confidence that you have access to valuable tools and aren't paying for what you don't need
-- A custom AI solution that works reliably and gives you time back
+**Gain confidence** that you have valuable tools and aren't paying for what you don't need with an **AI Audit**.
+
+### Frustrated by trial and error, failures or wasted time?
+
+**Get time back** after improving your workflows with a **Custom AI Solution**.
 
 > this is absolutely brilliant, totally genius. You are not just offering training on how to use AI, you are actually offering a solution to a real headache.
 
@@ -43,6 +43,7 @@ Use AI to get time back.
 
 ### Presenter notes
 
+- Read each question, then lead with the benefit and explain how the corresponding product helps. Workshops bring peace of mind, audits build confidence, and custom solutions give time back.
 - Say: The most common theme is choosing which AI services to use and pay for.
 - Make the point: “They haven't paid for any AI service yet because they don't know how to pick” or “I'm paying for too many services and can probably simplify.” One client asked, “What should I be doing that I'm not yet doing?” A different client had an aha moment: he should think about the inputs and outputs of his team's regular tasks, not AI as a collection of services to learn.
 - Proof: Imagine waking up knowing you don't have to master every AI tool or trend to move forward. You have a clearer mental model, reduced anxiety, and can spot opportunities in your actual business. I've seen tasks like drafting personalized responses, updating a CRM, or formatting documents drop from minutes to seconds.
