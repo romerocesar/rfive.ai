@@ -1,0 +1,3214 @@
+{
+  "version": 1,
+  "historyId": "cbefc62e-bd52-4055-8318-3e68ecf3ae61",
+  "currentRevision": "0b35267f-e868-4064-881a-d005e4862a89",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1b/1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "CLAUDE.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1b/1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "hyperframes.json": {
+      "hash": "71ddd93c6a2555dafd317e97af9de078a97919feb67d03444918f0958ce436b9",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/71/71ddd93c6a2555dafd317e97af9de078a97919feb67d03444918f0958ce436b9"
+    },
+    "index.html": {
+      "hash": "e7764bfed6097033db61b24801faa42635322bddd1c75889020ceeb21f8af9fa",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/e7/e7764bfed6097033db61b24801faa42635322bddd1c75889020ceeb21f8af9fa"
+    },
+    "meta.json": {
+      "hash": "4d40306493831808094427a81ee7f86141e4fde020316b43315a8b36b4523d07",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/4d/4d40306493831808094427a81ee7f86141e4fde020316b43315a8b36b4523d07"
+    },
+    "package.json": {
+      "hash": "648355a252b356402aeac9523781dea5693f3a63def938e4b9ae174f1f2a0484",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/64/648355a252b356402aeac9523781dea5693f3a63def938e4b9ae174f1f2a0484"
+    },
+    "assets/fonts/IBMPlexSerif-Regular.ttf": {
+      "hash": "e882efa9c41949a528ac2369079ec5ef050c1c996bbd0bacce3c3326d44cf80d",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/e8/e882efa9c41949a528ac2369079ec5ef050c1c996bbd0bacce3c3326d44cf80d"
+    },
+    "assets/fonts/OFL.txt": {
+      "hash": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7e/7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "compositions/components/chat-message.html": {
+      "hash": "b1a4e3ae158713d924acfe1eebfdf95e6b18939beb5934bfffdf10d369701b12",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/b1/b1a4e3ae158713d924acfe1eebfdf95e6b18939beb5934bfffdf10d369701b12"
+    },
+    "compositions/opening.html": {
+      "hash": "8eaed5cf867861968211eea905459165a93d5a969aa1706aa970cba5e93433c9",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/8e/8eaed5cf867861968211eea905459165a93d5a969aa1706aa970cba5e93433c9"
+    },
+    "hyperframes.lock.json": {
+      "hash": "d5d10e7bddb22567bb66df3cd2c8b70936bddab569b118696f628670e96da7c0",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d5/d5d10e7bddb22567bb66df3cd2c8b70936bddab569b118696f628670e96da7c0"
+    },
+    "index.motion.json": {
+      "hash": "74b414295492c49832fce94bdc139a3114631db08dd53620eabc54702e0053bd",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/74/74b414295492c49832fce94bdc139a3114631db08dd53620eabc54702e0053bd"
+    },
+    "REVIEW.md": {
+      "hash": "a9dd26fb0bb710e30874d6c0f5d45a003ad91dc17be886345c7425ee3918051c",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a9/a9dd26fb0bb710e30874d6c0f5d45a003ad91dc17be886345c7425ee3918051c"
+    },
+    "assets/rfive-logo.svg": {
+      "hash": "2d5fbd9ed52acb27dc8b32e22628a5da76ffabac613ca4a5065357185f7679cf",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/2d/2d5fbd9ed52acb27dc8b32e22628a5da76ffabac613ca4a5065357185f7679cf"
+    },
+    "compositions/closer.html": {
+      "hash": "27df65a92723967b0270c7854fc565cb2d76b69e58c53fdc922752e439703160",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/27/27df65a92723967b0270c7854fc565cb2d76b69e58c53fdc922752e439703160"
+    },
+    "compositions/cta.html": {
+      "hash": "d8e4171f046ae057b58a2020f187add0851da7c7c3241f8b30150d87551b217c",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d8/d8e4171f046ae057b58a2020f187add0851da7c7c3241f8b30150d87551b217c"
+    },
+    "compositions/how.html": {
+      "hash": "b2ace3d8fba4e36c2cfdca5da258a0b371323fc1774e0d9417a0fed957ea5839",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/b2/b2ace3d8fba4e36c2cfdca5da258a0b371323fc1774e0d9417a0fed957ea5839"
+    },
+    "compositions/mcp.html": {
+      "hash": "6eab386e8fe345096c0436388d312e12690feadf42ef415b811ffd5e390d7f48",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/6e/6eab386e8fe345096c0436388d312e12690feadf42ef415b811ffd5e390d7f48"
+    },
+    "compositions/offer.html": {
+      "hash": "a8a9655a3f335b4eee57d1b6db66f84e063a6b9709028d5bc759c949f167abf6",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a8/a8a9655a3f335b4eee57d1b6db66f84e063a6b9709028d5bc759c949f167abf6"
+    },
+    "compositions/proof.html": {
+      "hash": "6e9732c5b109946b528df22ef57cd364132943c65b5d2a1f761a77d19355f033",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/6e/6e9732c5b109946b528df22ef57cd364132943c65b5d2a1f761a77d19355f033"
+    },
+    "compositions/question.html": {
+      "hash": "fb4950b6d8190ce9ceeda0b4784e6d2af395f22681385102e19dd06fe864e12d",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/fb/fb4950b6d8190ce9ceeda0b4784e6d2af395f22681385102e19dd06fe864e12d"
+    },
+    "compositions/tension.html": {
+      "hash": "d431cc21b45568c783af0abb8a2ae2273feefb5626bff27a0980605972abf379",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d4/d431cc21b45568c783af0abb8a2ae2273feefb5626bff27a0980605972abf379"
+    },
+    "SPEC.md": {
+      "hash": "22d6cd0782b6e43d8771c10513e0cafdfeda0e545adfb963da2f196e03cd1315",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/22/22d6cd0782b6e43d8771c10513e0cafdfeda0e545adfb963da2f196e03cd1315"
+    },
+    "assets/mcp-logo-white.svg": {
+      "hash": "08f63cb8ff556cf2241d5a5b1633989bc872238a015a4789fc5dbee30babd9b0",
+      "content": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/08/08f63cb8ff556cf2241d5a5b1633989bc872238a015a4789fc5dbee30babd9b0"
+    }
+  },
+  "revisions": {
+    "2fe701af-9969-4566-b796-6c4d22c2a39e": {
+      "actor": {
+        "kind": "agent",
+        "name": "pi"
+      },
+      "label": "Build five-second VSL opening",
+      "startedAt": 1792800496419,
+      "endedAt": 1792800713952.813,
+      "files": {
+        "assets/fonts/IBMPlexSerif-Regular.ttf": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/e8/e882efa9c41949a528ac2369079ec5ef050c1c996bbd0bacce3c3326d44cf80d"
+        },
+        "assets/fonts/OFL.txt": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7e/7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        "compositions/components/chat-message.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/fe/fe9b9e0dd4c886843713116811688565c6fea3995cbb52f8c2e044106072715a"
+        },
+        "compositions/opening.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/4e/4ea4741d2b841bbf3f6ad77b8c8fdae85325ef5b3ffefe6e4c42d9fc2c686441"
+        },
+        "compositions/opening.motion.json": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/74/74b414295492c49832fce94bdc139a3114631db08dd53620eabc54702e0053bd"
+        },
+        "hyperframes.json": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/71/71ddd93c6a2555dafd317e97af9de078a97919feb67d03444918f0958ce436b9"
+        },
+        "hyperframes.lock.json": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d5/d5d10e7bddb22567bb66df3cd2c8b70936bddab569b118696f628670e96da7c0"
+        },
+        "index.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/f6/f647f277b2a0acb4998a7f79a757efbc20f620e4fc95407bd99ee36732764a62",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7a/7a2112e6c47bb9709f794512ab0fd5647fb015a30e82ff8742b23ec0c5a97827"
+        }
+      }
+    },
+    "4b40097f-7a19-4d61-929e-2b1eef01ffe6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792800730906,
+      "endedAt": 1792800730910,
+      "files": {
+        "compositions/components/chat-message.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/fe/fe9b9e0dd4c886843713116811688565c6fea3995cbb52f8c2e044106072715a",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/b1/b1a4e3ae158713d924acfe1eebfdf95e6b18939beb5934bfffdf10d369701b12"
+        },
+        "compositions/opening.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/4e/4ea4741d2b841bbf3f6ad77b8c8fdae85325ef5b3ffefe6e4c42d9fc2c686441",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/54/549461e0e7bdfd8629970f235846e46c9b1b3e306d9528fa7cacc45488758de9"
+        },
+        "index.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7a/7a2112e6c47bb9709f794512ab0fd5647fb015a30e82ff8742b23ec0c5a97827",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1c/1cf291a9aded62cc8027c0752dcf8891cf6c03015017b87e05632e9bf040e0b3"
+        }
+      }
+    },
+    "f2794e40-5f7e-4044-a99e-58fdc7266a13": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792800742744,
+      "endedAt": 1792800744745,
+      "files": {
+        "compositions/opening.motion.json": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/74/74b414295492c49832fce94bdc139a3114631db08dd53620eabc54702e0053bd",
+          "after": null
+        },
+        "index.motion.json": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/74/74b414295492c49832fce94bdc139a3114631db08dd53620eabc54702e0053bd"
+        }
+      }
+    },
+    "e5851746-a51e-4155-a81e-5aff27e6a23a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792800748656,
+      "endedAt": 1792800750656,
+      "files": {
+        "compositions/opening.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/54/549461e0e7bdfd8629970f235846e46c9b1b3e306d9528fa7cacc45488758de9",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1b/1bdd04bb496e1818c03bf4838063491a758b9a77231e683ae053c10c1f64ab79"
+        }
+      }
+    },
+    "be8ba225-4985-4a61-887c-74fee1f54fe9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792800785879,
+      "endedAt": 1792800787880,
+      "files": {
+        "REVIEW.md": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/47/47665decc58b763a2588f9289e79ed23a72548f4a40f8bc7b55a63962b5b255b"
+        }
+      }
+    },
+    "80b0247f-2640-4b06-873b-ef8573f1c026": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/opening.html",
+          "hfId": "hf-45hz",
+          "selector": ".op-request-body",
+          "selectorIndex": 0
+        }
+      ],
+      "label": "Move layer",
+      "startedAt": 1792800898837,
+      "endedAt": 1792800898837,
+      "files": {
+        "compositions/opening.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1b/1bdd04bb496e1818c03bf4838063491a758b9a77231e683ae053c10c1f64ab79",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/8e/8eaed5cf867861968211eea905459165a93d5a969aa1706aa970cba5e93433c9"
+        }
+      }
+    },
+    "16e7f6c2-f1b1-4e8c-9bfe-7cad1e69850c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120751871,
+      "endedAt": 1793120751882,
+      "files": {
+        "assets/rfive-logo.svg": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/2d/2d5fbd9ed52acb27dc8b32e22628a5da76ffabac613ca4a5065357185f7679cf"
+        },
+        "compositions/closer.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/94/949be08fe2d83e3375246816838d4c68012702f91ac5721f292100976fbdd7bb"
+        },
+        "compositions/cta.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d8/d8e4171f046ae057b58a2020f187add0851da7c7c3241f8b30150d87551b217c"
+        },
+        "compositions/how.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d0/d09c3223a86ee754d4f59c552c8f3b377153054a69275780d68f2430d6314e70"
+        },
+        "compositions/mcp.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/84/84a7c36fd6800469cb8346594540cad1c7ec63625959b5b931872f674bf9e7d0"
+        },
+        "compositions/offer.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7b/7ba37746571b4b751978a9f45bfcf594ec7812b57bf4dd97ff5b3c598bf112e8"
+        },
+        "compositions/proof.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1a/1a0ded1844d05fd6fb6a376912e3afb7da231f8c236bd3dd038d1e8ab7fb9740"
+        },
+        "compositions/question.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/4e/4ecc226dac47066f74d9783dba70bd9aef9618e5ff21fcb0e553c2b7742ad94e"
+        },
+        "compositions/tension.html": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/6f/6fcacd700be07f0747883825750265ebf37a0bb5bc971f042af352aa0b3c95b8"
+        },
+        "index.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1c/1cf291a9aded62cc8027c0752dcf8891cf6c03015017b87e05632e9bf040e0b3",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/da/da6bba2168fdd4f68697f8de6ad04b21c96066622a0cf8707162757e8c81be68"
+        },
+        "SPEC.md": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/28/284b681e0b5188018c2239ff6cafd75f11ae19a90eb5b4a54c80f1e6ff078a61"
+        }
+      }
+    },
+    "be387a9f-d7c6-4a07-80f1-32e563c19213": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120775097,
+      "endedAt": 1793120775099,
+      "files": {
+        "compositions/closer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/94/949be08fe2d83e3375246816838d4c68012702f91ac5721f292100976fbdd7bb",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d4/d408c3578cddd7b70111a016e45f28289d0dc2a21285f86a72618ac397751519"
+        },
+        "index.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/da/da6bba2168fdd4f68697f8de6ad04b21c96066622a0cf8707162757e8c81be68",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/21/2111515efeee40f370108530d71a32962e439f56195aaecff9d39258e69fd95f"
+        }
+      }
+    },
+    "a45e898a-5d08-40de-89e4-163b4a95ad57": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120811717,
+      "endedAt": 1793120811722,
+      "files": {
+        "compositions/how.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d0/d09c3223a86ee754d4f59c552c8f3b377153054a69275780d68f2430d6314e70",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/c9/c93403281c35e2e45fdc64e741f5b28114cc7c38f57cee3c7512b23b2bb7b210"
+        },
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/84/84a7c36fd6800469cb8346594540cad1c7ec63625959b5b931872f674bf9e7d0",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/fe/fe50327e862668eb39964beaf4796e56edb0c830b36c9bff5bec60b489370911"
+        },
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7b/7ba37746571b4b751978a9f45bfcf594ec7812b57bf4dd97ff5b3c598bf112e8",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/34/349b7d3e4dc1999b4a0cd944e6f9b02623199e6365132e342892be882029bb0c"
+        },
+        "compositions/proof.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1a/1a0ded1844d05fd6fb6a376912e3afb7da231f8c236bd3dd038d1e8ab7fb9740",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/e9/e95931b58ad3603cd56d5f799016263f5cffdf9ca828bb9122a1412032221f62"
+        },
+        "compositions/question.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/4e/4ecc226dac47066f74d9783dba70bd9aef9618e5ff21fcb0e553c2b7742ad94e",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/f0/f06fecf9a2888ba33aff178a2fb56a965b95bb715a3c493de23067f2a35abdf3"
+        },
+        "compositions/tension.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/6f/6fcacd700be07f0747883825750265ebf37a0bb5bc971f042af352aa0b3c95b8",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d4/d431cc21b45568c783af0abb8a2ae2273feefb5626bff27a0980605972abf379"
+        }
+      }
+    },
+    "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120874361,
+      "endedAt": 1793120874367,
+      "files": {
+        "compositions/closer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/d4/d408c3578cddd7b70111a016e45f28289d0dc2a21285f86a72618ac397751519",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/27/27df65a92723967b0270c7854fc565cb2d76b69e58c53fdc922752e439703160"
+        },
+        "compositions/how.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/c9/c93403281c35e2e45fdc64e741f5b28114cc7c38f57cee3c7512b23b2bb7b210",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/b2/b2ace3d8fba4e36c2cfdca5da258a0b371323fc1774e0d9417a0fed957ea5839"
+        },
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/fe/fe50327e862668eb39964beaf4796e56edb0c830b36c9bff5bec60b489370911",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1c/1c8b5529be5c6438e3aa3c7716393af285b7850ae6555d460e20d6e8565792c9"
+        },
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/34/349b7d3e4dc1999b4a0cd944e6f9b02623199e6365132e342892be882029bb0c",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/ee/ee57879be472bd47d5445e2de43e637dfd79d9d1569953004204eece9cdbfa6c"
+        },
+        "compositions/proof.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/e9/e95931b58ad3603cd56d5f799016263f5cffdf9ca828bb9122a1412032221f62",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/c0/c0e5352d468791bbe6d95afb5a854275902dd291fcd17c4a7061638381fb69ac"
+        },
+        "compositions/question.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/f0/f06fecf9a2888ba33aff178a2fb56a965b95bb715a3c493de23067f2a35abdf3",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/fb/fb4950b6d8190ce9ceeda0b4784e6d2af395f22681385102e19dd06fe864e12d"
+        }
+      }
+    },
+    "e4feeffa-6a54-4d95-8346-683933d2a7bd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120914723,
+      "endedAt": 1793120914725,
+      "files": {
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/1c/1c8b5529be5c6438e3aa3c7716393af285b7850ae6555d460e20d6e8565792c9",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/53/534580f54c51cbb78f852742b238ea09246507445999fff7e4b10d818046f664"
+        },
+        "compositions/proof.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/c0/c0e5352d468791bbe6d95afb5a854275902dd291fcd17c4a7061638381fb69ac",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/6e/6e9732c5b109946b528df22ef57cd364132943c65b5d2a1f761a77d19355f033"
+        }
+      }
+    },
+    "f4dc8a79-a7eb-4335-ae54-23425e3df600": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120925945,
+      "endedAt": 1793120927945,
+      "files": {
+        "REVIEW.md": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/47/47665decc58b763a2588f9289e79ed23a72548f4a40f8bc7b55a63962b5b255b",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a9/a9dd26fb0bb710e30874d6c0f5d45a003ad91dc17be886345c7425ee3918051c"
+        }
+      }
+    },
+    "bac1f3d9-db50-4c2a-b079-63c937117f4a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122571534,
+      "endedAt": 1793122573529,
+      "files": {
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/53/534580f54c51cbb78f852742b238ea09246507445999fff7e4b10d818046f664",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/2b/2b84f6a53feb562815b6898ff636b4dac4dcdabed848139bfa7ae3482c835667"
+        }
+      }
+    },
+    "cc06684c-63fb-44c1-a374-5f82eca0d9b8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122669129,
+      "endedAt": 1793122671129,
+      "files": {
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/2b/2b84f6a53feb562815b6898ff636b4dac4dcdabed848139bfa7ae3482c835667",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a6/a6d5ce37e086df642abcc48b13008420c4532d4009214fd8bf208054068e2a55"
+        }
+      }
+    },
+    "7823bdb8-d0f1-44ef-8539-6ba33e6e48fb": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122890748,
+      "endedAt": 1793122892777,
+      "files": {
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a6/a6d5ce37e086df642abcc48b13008420c4532d4009214fd8bf208054068e2a55",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/07/079755d1e5b5deefd3f7407c08ea8ac67e62cee0a311ae94b97ae46cfa2d5f24"
+        }
+      }
+    },
+    "b46e936f-e364-495f-bf46-4a26e209a160": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122956027,
+      "endedAt": 1793122958027,
+      "files": {
+        "compositions/mcp.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/07/079755d1e5b5deefd3f7407c08ea8ac67e62cee0a311ae94b97ae46cfa2d5f24",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/6e/6eab386e8fe345096c0436388d312e12690feadf42ef415b811ffd5e390d7f48"
+        }
+      }
+    },
+    "41ed3c53-5e3f-4e31-bbc5-c3d50e191663": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122966028,
+      "endedAt": 1793122968028,
+      "files": {
+        "SPEC.md": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/28/284b681e0b5188018c2239ff6cafd75f11ae19a90eb5b4a54c80f1e6ff078a61",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/22/22d6cd0782b6e43d8771c10513e0cafdfeda0e545adfb963da2f196e03cd1315"
+        }
+      }
+    },
+    "f0c18791-7eeb-43b2-b0ff-af21f0f13032": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123120770,
+      "endedAt": 1793123122770,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/ee/ee57879be472bd47d5445e2de43e637dfd79d9d1569953004204eece9cdbfa6c",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/f4/f47e5fed816910d36049a34c550adb4104df3bb108aa17ecf50752d83325aadd"
+        }
+      }
+    },
+    "8b6a8cdb-2156-43d7-beea-5392f80fee9e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123228819,
+      "endedAt": 1793123230819,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/f4/f47e5fed816910d36049a34c550adb4104df3bb108aa17ecf50752d83325aadd",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/9a/9a1d8f2da2dbe938a5cc159ed0d26c7cd41864c2c560b190c9bd1b42bbe573b0"
+        }
+      }
+    },
+    "d1794d79-9966-43ab-a615-0741afc4460e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123297109,
+      "endedAt": 1793123299109,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/9a/9a1d8f2da2dbe938a5cc159ed0d26c7cd41864c2c560b190c9bd1b42bbe573b0",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/85/858edf9036bda0ca2c48f6f98f33bf8f628fa72de6c0c8ceb4ccb80a707c6f09"
+        }
+      }
+    },
+    "f546e599-8113-4d12-b4c2-7d55c0ac5d83": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123553637,
+      "endedAt": 1793123555637,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/85/858edf9036bda0ca2c48f6f98f33bf8f628fa72de6c0c8ceb4ccb80a707c6f09",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7f/7fad14ca61269e71232d1b20382707f2f030e87c137705d74a75411602e7280f"
+        }
+      }
+    },
+    "f6b0c8f2-308e-4083-8d79-15e67c6c079a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123565430,
+      "endedAt": 1793123567430,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/7f/7fad14ca61269e71232d1b20382707f2f030e87c137705d74a75411602e7280f",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/12/1281c8de81138e4cc5fa1e822bc7871ad3f1fc6c2c4f8f194e675211c452de2c"
+        }
+      }
+    },
+    "558e6163-285f-447b-8883-6caf0afab3a6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123911658,
+      "endedAt": 1793123913658,
+      "files": {
+        "assets/mcp-logo-white.svg": {
+          "before": null,
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/08/08f63cb8ff556cf2241d5a5b1633989bc872238a015a4789fc5dbee30babd9b0"
+        }
+      }
+    },
+    "5bffa193-e944-4aa6-a40f-39ff1761c41e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123924666,
+      "endedAt": 1793123928089,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/12/1281c8de81138e4cc5fa1e822bc7871ad3f1fc6c2c4f8f194e675211c452de2c",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/2c/2cbf9752ebfe3f453af47524abbe84d0f275e74285ce998eac116e3204f1de0f"
+        },
+        "index.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/21/2111515efeee40f370108530d71a32962e439f56195aaecff9d39258e69fd95f",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/e7/e7764bfed6097033db61b24801faa42635322bddd1c75889020ceeb21f8af9fa"
+        }
+      }
+    },
+    "9215e291-7d4f-439b-ad04-0da28137c41a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123943492,
+      "endedAt": 1793123945492,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/2c/2cbf9752ebfe3f453af47524abbe84d0f275e74285ce998eac116e3204f1de0f",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a5/a506d7722c444284821cbaa4f70da1a88d057d4ccf995bded1d6e661020bc37f"
+        }
+      }
+    },
+    "23ea90e8-5306-4057-86b4-3f50f0fecc2c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793124419781,
+      "endedAt": 1793124421782,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a5/a506d7722c444284821cbaa4f70da1a88d057d4ccf995bded1d6e661020bc37f",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/11/1140b5ac529791bb40279535b2bf62a83dd0b990646db8e158fd70788e7aa5f4"
+        }
+      }
+    },
+    "61f281b5-0ab7-46b4-b953-8be25a75d1a5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793124925123,
+      "endedAt": 1793124927122,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/11/1140b5ac529791bb40279535b2bf62a83dd0b990646db8e158fd70788e7aa5f4",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/ec/ec99ed77a9b63a4cb6abbfe80458ccb04a898b9ae6a0713742df24761eff62dc"
+        }
+      }
+    },
+    "13a702e0-125c-4f72-9498-e039fe06b2e6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793124958136,
+      "endedAt": 1793124960136,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/ec/ec99ed77a9b63a4cb6abbfe80458ccb04a898b9ae6a0713742df24761eff62dc",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/74/745d7f2a8e8e10a0fafc11964bbb35a423dc5adbd9101c429a43fe228bdacb88"
+        }
+      }
+    },
+    "18a5eebc-832a-4965-a410-4dc5b590a856": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793124981875,
+      "endedAt": 1793124983875,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/74/745d7f2a8e8e10a0fafc11964bbb35a423dc5adbd9101c429a43fe228bdacb88",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/c4/c4e230c38f565709f988b3394b5f91be6b3bb8e5b2ccf218a3a2054e1c91dca1"
+        }
+      }
+    },
+    "0b35267f-e868-4064-881a-d005e4862a89": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793125208944,
+      "endedAt": 1793125210945,
+      "files": {
+        "compositions/offer.html": {
+          "before": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/c4/c4e230c38f565709f988b3394b5f91be6b3bb8e5b2ccf218a3a2054e1c91dca1",
+          "after": "/home/cesar/.cache/hyperframes/history/cbefc62e-bd52-4055-8318-3e68ecf3ae61/blobs/a8/a8a9655a3f335b4eee57d1b6db66f84e063a6b9709028d5bc759c949f167abf6"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "0b35267f-e868-4064-881a-d005e4862a89",
+      "id": "848311e2-7e8f-42f5-8dfb-d471b2184c46"
+    },
+    "revisions": {
+      "2fe701af-9969-4566-b796-6c4d22c2a39e": [
+        {
+          "id": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/53e9adae-35c0-4ed0-a24c-bbe5de97c02e.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": true,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792800720443,
+          "contentHash": "b05ddc435d12e7e42d90dbcc0f2f26391259205e0acc849e40cca2624f821021",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "e5851746-a51e-4155-a81e-5aff27e6a23a": [
+        {
+          "id": "6668ab49-47e3-4546-91e9-0daefdc12fa5",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/6668ab49-47e3-4546-91e9-0daefdc12fa5.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792800765182,
+          "contentHash": "5aae86b3c90c25142f63b1a955764ec4540104137c0f790db3998f1af6d48ac4",
+          "revision": "e5851746-a51e-4155-a81e-5aff27e6a23a",
+          "inputFingerprint": "3a9d3c969aa5392d818c7620fb11644eb3530ef57320b1fbe82b7ffde34256f4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "16e7f6c2-f1b1-4e8c-9bfe-7cad1e69850c": [
+        {
+          "id": "2f3794f7-7d91-4b76-8be3-1a1b331bf72d",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/2f3794f7-7d91-4b76-8be3-1a1b331bf72d.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120759082,
+          "contentHash": "fe33e9bebff0d4306231cca411a643ca8c92ad70cc60c09ae20989eb240cf7c2",
+          "revision": "16e7f6c2-f1b1-4e8c-9bfe-7cad1e69850c",
+          "inputFingerprint": "3d8a0c22d50faa7ed2a6e35ea38cf564c5276230c1daab421800fc1f1e25c1a7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "4632dc87-51f1-49a6-ac10-59f002b5fc12",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/4632dc87-51f1-49a6-ac10-59f002b5fc12.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120767983,
+          "contentHash": "fe33e9bebff0d4306231cca411a643ca8c92ad70cc60c09ae20989eb240cf7c2",
+          "revision": "16e7f6c2-f1b1-4e8c-9bfe-7cad1e69850c",
+          "inputFingerprint": "3d8a0c22d50faa7ed2a6e35ea38cf564c5276230c1daab421800fc1f1e25c1a7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "be387a9f-d7c6-4a07-80f1-32e563c19213": [
+        {
+          "id": "2567e83a-730a-4aa2-aa27-141f50b976ec",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/2567e83a-730a-4aa2-aa27-141f50b976ec.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120781493,
+          "contentHash": "d365980497728bf6c7763f6c539ee693711193c9c4cfdb640a708a2f279d43ee",
+          "revision": "be387a9f-d7c6-4a07-80f1-32e563c19213",
+          "inputFingerprint": "e970d0af14f18d1f775a0f04e5501eb52db32498d55f0294917c870a21bc9d04",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "a45e898a-5d08-40de-89e4-163b4a95ad57": [
+        {
+          "id": "a35829a5-b2af-41f9-a0e8-938b9b22cbfa",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/a35829a5-b2af-41f9-a0e8-938b9b22cbfa.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120818402,
+          "contentHash": "3a026caf81b36097609f901083f0304c12041dbcf0513166d1ef693806030b70",
+          "revision": "a45e898a-5d08-40de-89e4-163b4a95ad57",
+          "inputFingerprint": "4278f45a71d0582003f2fab66c2dd92365a5f0b2547f3f8f7176017b139776a2",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "07369154-7a28-4e76-894a-edbabb411a51",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/07369154-7a28-4e76-894a-edbabb411a51.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120836481,
+          "contentHash": "8bbf1d5a2648eb7d9233e3a120de3016329dcaa6a27b851f72caea20b8795b7d",
+          "revision": "a45e898a-5d08-40de-89e4-163b4a95ad57",
+          "inputFingerprint": "4278f45a71d0582003f2fab66c2dd92365a5f0b2547f3f8f7176017b139776a2",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5": [
+        {
+          "id": "03f66fd9-862f-4881-b922-eef30a7f8bc3",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/03f66fd9-862f-4881-b922-eef30a7f8bc3.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120880260,
+          "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "7af8af2a-367b-4c64-bcfa-54516b0528d5",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/7af8af2a-367b-4c64-bcfa-54516b0528d5.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120908350,
+          "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "bac1f3d9-db50-4c2a-b079-63c937117f4a": [
+        {
+          "id": "71c55ddd-0623-4a92-8184-fd9810f21f0e",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/71c55ddd-0623-4a92-8184-fd9810f21f0e.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793122579703,
+          "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+          "revision": "bac1f3d9-db50-4c2a-b079-63c937117f4a",
+          "inputFingerprint": "4f2816a057ca0f639d07ae23cd044868f5b181c4c32f35876f8d041b4f6d2d80",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "7823bdb8-d0f1-44ef-8539-6ba33e6e48fb": [
+        {
+          "id": "320ee9bb-7bc8-4075-bf38-b739fbc4f7ca",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/320ee9bb-7bc8-4075-bf38-b739fbc4f7ca.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793122900475,
+          "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+          "revision": "7823bdb8-d0f1-44ef-8539-6ba33e6e48fb",
+          "inputFingerprint": "e3944b8d52a9b0b2cc1ddeb4cfc687e0c9f4b92ba35ff334b9ea825442acaf3c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "f546e599-8113-4d12-b4c2-7d55c0ac5d83": [
+        {
+          "id": "11fdcd5f-188b-45eb-846e-589646c5fe1b",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/11fdcd5f-188b-45eb-846e-589646c5fe1b.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793123561921,
+          "contentHash": "4968b1816fa7fb3a4cb36898e8b65e761b37c8ea3c6b68d62d2a1de8a3c0482e",
+          "revision": "f546e599-8113-4d12-b4c2-7d55c0ac5d83",
+          "inputFingerprint": "a9182fa67e2796b5cbabde2c7a17accda76a763bd53ff5488e0ecc2b878eadaa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "5bffa193-e944-4aa6-a40f-39ff1761c41e": [
+        {
+          "id": "b3bce613-35a9-4134-b76e-f30c8904d5a3",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/b3bce613-35a9-4134-b76e-f30c8904d5a3.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793123934783,
+          "contentHash": "831c8b66ccc10eb498c77c6bc1a87a8f2827f97c85c6903e356b9c01f3011005",
+          "revision": "5bffa193-e944-4aa6-a40f-39ff1761c41e",
+          "inputFingerprint": "6bb8a55b539d13ec5ae31b106fd201c140a2ae76d1fb805d34c299614c4a4939",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "9215e291-7d4f-439b-ad04-0da28137c41a": [
+        {
+          "id": "a1b1d25b-ae4a-45e8-b447-c96a3f30d783",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/a1b1d25b-ae4a-45e8-b447-c96a3f30d783.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793123951730,
+          "contentHash": "5fb5db89ae7ecbc8b14fc3a247985e94b208ca81ac4b75ba1a748054d5b4c0e7",
+          "revision": "9215e291-7d4f-439b-ad04-0da28137c41a",
+          "inputFingerprint": "5cf8165e74f277c01480879fe681edff64e0d7bdf2caac09b5ed5840f51e9317",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "23ea90e8-5306-4057-86b4-3f50f0fecc2c": [
+        {
+          "id": "e4765806-9086-4ae1-adc7-ace2009a6c37",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/e4765806-9086-4ae1-adc7-ace2009a6c37.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793124428707,
+          "contentHash": "5fb5db89ae7ecbc8b14fc3a247985e94b208ca81ac4b75ba1a748054d5b4c0e7",
+          "revision": "23ea90e8-5306-4057-86b4-3f50f0fecc2c",
+          "inputFingerprint": "0687e0f07ed2dd4a32b4f93ec9ead83e579ee5c2005eac84f1947bb11df4a10e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "61f281b5-0ab7-46b4-b953-8be25a75d1a5": [
+        {
+          "id": "37a055e3-214c-4f63-8e80-c0aadb6cd6dd",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/37a055e3-214c-4f63-8e80-c0aadb6cd6dd.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793124934198,
+          "contentHash": "d23fbfa7081145111caa03aea780b7f26f841ff1e7365d50e75b0c744b22166d",
+          "revision": "61f281b5-0ab7-46b4-b953-8be25a75d1a5",
+          "inputFingerprint": "20df383b83cbf0d63e82f2cb1e26e2d5fd7cf6dbbc30528ffa71e0fef1224807",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "39bc1315-452d-4985-bb95-fdec74db8f99",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/39bc1315-452d-4985-bb95-fdec74db8f99.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793124945980,
+          "contentHash": "d23fbfa7081145111caa03aea780b7f26f841ff1e7365d50e75b0c744b22166d",
+          "revision": "61f281b5-0ab7-46b4-b953-8be25a75d1a5",
+          "inputFingerprint": "20df383b83cbf0d63e82f2cb1e26e2d5fd7cf6dbbc30528ffa71e0fef1224807",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "13a702e0-125c-4f72-9498-e039fe06b2e6": [
+        {
+          "id": "2f911030-2a37-47bd-86cb-f9aeb33ad913",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/2f911030-2a37-47bd-86cb-f9aeb33ad913.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793124974293,
+          "contentHash": "2cf014b5c3180010c37520d70977edec80c1bc8adaae3290551d1575cd009652",
+          "revision": "13a702e0-125c-4f72-9498-e039fe06b2e6",
+          "inputFingerprint": "979f62ec57e05e767ed1047f4d76d5a1c23b1898867b3d8c3cdc0310dd8acd61",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "0b35267f-e868-4064-881a-d005e4862a89": [
+        {
+          "id": "848311e2-7e8f-42f5-8dfb-d471b2184c46",
+          "scope": "project",
+          "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/848311e2-7e8f-42f5-8dfb-d471b2184c46.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793125218635,
+          "contentHash": "5fb5db89ae7ecbc8b14fc3a247985e94b208ca81ac4b75ba1a748054d5b4c0e7",
+          "revision": "0b35267f-e868-4064-881a-d005e4862a89",
+          "inputFingerprint": "12e7b805974f246e969e8ed983ad8917a4423f89dc4881a23c041f7c766a152b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "7845a3cd-06d3-49f3-9839-732da660e643",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/7845a3cd-06d3-49f3-9839-732da660e643.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793122676569,
+        "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+        "revision": null,
+        "inputFingerprint": "b880cb081b3160c5652e9cfc68ee75b2ac25ba45d3a19a5ccc6650fab4c906f0",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "5a32afb4-e33f-47aa-9eed-44e9e48a9a0a",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/5a32afb4-e33f-47aa-9eed-44e9e48a9a0a.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793122963637,
+        "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+        "revision": null,
+        "inputFingerprint": "1d6f1f3f34c5e5b1bd202051309f7b1d3bc69512c8764f2060afa07790f558ae",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "61e74992-b848-41d6-bbf4-ca58e9f56425",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/61e74992-b848-41d6-bbf4-ca58e9f56425.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793123128464,
+        "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+        "revision": null,
+        "inputFingerprint": "c5b949072806003075bb160c907002bef8c84e5f8be0d05f9a694c164ab687be",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "d705d95b-ce9d-4acc-89ef-27ea0976a7de",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/d705d95b-ce9d-4acc-89ef-27ea0976a7de.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793123236127,
+        "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+        "revision": null,
+        "inputFingerprint": "39ce8ac9e50baf24b59ad4f685e5bd6dca260603cd38fba30de4748a776486df",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "56acf68f-c8b1-4e5a-95e2-d34b73d64605",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/56acf68f-c8b1-4e5a-95e2-d34b73d64605.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793123573335,
+        "contentHash": "41c701a4469d2e8731e20f6e356f6b7fd97ab06ee34375ccdbf15921f4166a02",
+        "revision": null,
+        "inputFingerprint": "aa79d91d3f9e78e4d5a1f5eaa433961d62c8a87387c86b46b9f860bf60ee237d",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "e7ba46a1-a445-49b0-84da-cb118bcec8e3",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/e7ba46a1-a445-49b0-84da-cb118bcec8e3.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793124965160,
+        "contentHash": "2cf014b5c3180010c37520d70977edec80c1bc8adaae3290551d1575cd009652",
+        "revision": null,
+        "inputFingerprint": "979f62ec57e05e767ed1047f4d76d5a1c23b1898867b3d8c3cdc0310dd8acd61",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "85fc4629-bf2f-4395-bcd3-7888928e719d",
+        "scope": "project",
+        "report": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/checks/85fc4629-bf2f-4395-bcd3-7888928e719d.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793124988786,
+        "contentHash": "5fb5db89ae7ecbc8b14fc3a247985e94b208ca81ac4b75ba1a748054d5b4c0e7",
+        "revision": null,
+        "inputFingerprint": "c454d54993fa56140843e199f89c34b9c14c40404b95e7ba0ec616f1de26c294",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+      "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-60"
+    },
+    "revisions": {
+      "2fe701af-9969-4566-b796-6c4d22c2a39e": [
+        {
+          "id": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e-0",
+          "scope": "full",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-00-at-0.3s.png",
+          "time": 0.278,
+          "metadata": {
+            "checkId": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e",
+            "width": 1920,
+            "height": 1080
+          },
+          "createdAt": 1792800720443,
+          "contentHash": "55d9c7f2e5493286b2c541e1e52acabea2874c4cc21c22df1cb4364b589b48e8",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e-1",
+          "scope": "full",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-01-at-1.4s.png",
+          "time": 1.389,
+          "metadata": {
+            "checkId": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e",
+            "width": 1920,
+            "height": 1080
+          },
+          "createdAt": 1792800720443,
+          "contentHash": "9b65fbeb93c6704cd1a2745877f0589637fcb0f51eba0630cf3cb1fdaf22df61",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e-2",
+          "scope": "full",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-02-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "checkId": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e",
+            "width": 1920,
+            "height": 1080
+          },
+          "createdAt": 1792800720443,
+          "contentHash": "b0fbcc54b7a545bd4c7921b8635fabe34ecf0fe20e8bb09b15d6259f6107b2a6",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e-3",
+          "scope": "full",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-03-at-3.6s.png",
+          "time": 3.611,
+          "metadata": {
+            "checkId": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e",
+            "width": 1920,
+            "height": 1080
+          },
+          "createdAt": 1792800720443,
+          "contentHash": "586f4926a30fbe2df5c8f98b8b5be0193d645fefa5af9b9c9b2794baf3d0c8ef",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e-4",
+          "scope": "full",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-04-at-4.7s.png",
+          "time": 4.722,
+          "metadata": {
+            "checkId": "53e9adae-35c0-4ed0-a24c-bbe5de97c02e",
+            "width": 1920,
+            "height": 1080
+          },
+          "createdAt": 1792800720443,
+          "contentHash": "586f4926a30fbe2df5c8f98b8b5be0193d645fefa5af9b9c9b2794baf3d0c8ef",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-0",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-01-at-0.5s.png",
+          "time": 0.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "t=0.5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "92d4294adc8cdfca2d5ab9eda0b5b79b89ad49aa4e314b6fb3571ce6c5d61cd4",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-1",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-02-at-0.65s.png",
+          "time": 0.65,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "beat:Customer request"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "bed352f8c38c48181f1299b7079307cdd1a4f359d9a9616512081b701a0c1498",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-2",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-03-at-1.5s.png",
+          "time": 1.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "t=1.5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "9c581be7d355c33fcf37b5eba692056ef32c24ecfb84910b31f5243310e86eb6",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-3",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-04-at-1.85s.png",
+          "time": 1.85,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "beat:Agent acts"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "73d1e84d99108ffc912f94dc3ac11be01ac49776bac42c962b88f4d52779836a",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-4",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-05-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "t=2.5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "b0fbcc54b7a545bd4c7921b8635fabe34ecf0fe20e8bb09b15d6259f6107b2a6",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-5",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-06-at-3.15s.png",
+          "time": 3.15,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "beat:Completed action"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "0ca4ba4210065bb0fb0a17aecb78e7187a4ef73ea6dea1bb5ca2e6b483cc9a71",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-6",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-07-at-3.5s.png",
+          "time": 3.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "t=3.5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "586f4926a30fbe2df5c8f98b8b5be0193d645fefa5af9b9c9b2794baf3d0c8ef",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f82d751d-6175-42a6-9118-dfcae86eb6b3-7",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/909e06ee-dab3-4c6e-b969-cd88ac72d861/beat-08-at-4.5s.png",
+          "time": 4.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "t=4.5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800728466,
+          "contentHash": "586f4926a30fbe2df5c8f98b8b5be0193d645fefa5af9b9c9b2794baf3d0c8ef",
+          "revision": "2fe701af-9969-4566-b796-6c4d22c2a39e",
+          "inputFingerprint": "1ba4d1750eccf92d9b809b4dc970a318d01608ccbb923dc15a33a439c726d940",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "e5851746-a51e-4155-a81e-5aff27e6a23a": [
+        {
+          "scope": "full",
+          "id": "d30721dd-06f8-49cc-99e7-4a5ac04bdf4d-0",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/bd54b9ba-6276-436b-8763-cd86888449cb/frame-00-at-3.6s.png",
+          "time": 3.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792800767251,
+          "contentHash": "16dd6cec432953f69a75d687d56ba949d5e3072d9f644cc105ab138714bcf360",
+          "revision": "e5851746-a51e-4155-a81e-5aff27e6a23a",
+          "inputFingerprint": "3a9d3c969aa5392d818c7620fb11644eb3530ef57320b1fbe82b7ffde34256f4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5": [
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-0",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-01-at-0.3s.png",
+          "time": 0.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "opening"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895563,
+          "contentHash": "552da45eba572365f6a335f1fcfb2df98e4e9d47a04e18cb9c43da68fcfcf569",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-1",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-02-at-0.65s.png",
+          "time": 0.65,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "beat:Customer request"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "d6241d91b65c6f35bd49de5c19fa42c56e0cc411d1783db2028f3497e72cbcee",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-2",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-03-at-1.85s.png",
+          "time": 1.85,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "beat:Agent acts"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "07fb31dc45b0f96ed9c8063f2202a5e58dc639ae47a10102468626323f01719d",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-3",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-04-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "opening mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "4722fc1645f59c97e5b4fa9e004fab3adabb21d3a713932258cb8c47e6c8850c",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-4",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-05-at-3.15s.png",
+          "time": 3.15,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "beat:Completed action"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "37bff8e96452b933537e2323bbabdc4afc2ac15152824272bcfded177c346f27",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-5",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-06-at-5.3s.png",
+          "time": 5.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "question"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "78f7ced2500e8a92d5bd70fda4dc32d3597a06516cabf9c40adfea7baf4e491c",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-6",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-07-at-9s.png",
+          "time": 9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "question mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "945ddc31ef8305e7d12610a36a29fa5704001263794499ed4f8474dc3e5889a2",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-7",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-08-at-13.3s.png",
+          "time": 13.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "tension"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "ad939f838cd70c7bd88e4ec217941bec7d74f5672ab4b3a5eb8cbea80e6cab38",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-8",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-09-at-17.5s.png",
+          "time": 17.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "tension mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "a69bf732b22d1dd109597ef21e6d83d899afcf05f46886bbeaef89af5eb1a2be",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-9",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-10-at-22.3s.png",
+          "time": 22.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "mcp"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "dee9258e1a5f82c351bd1d7cd68632149e6c40371342fd6bb3d23a29dcb5862b",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-10",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-11-at-28s.png",
+          "time": 28,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "mcp mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "70c9d551c67689b7245332b3eea7167a7a825b56c75ee45ed5d8db852e77d69b",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-11",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-12-at-34.3s.png",
+          "time": 34.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "proof"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "f4cb211a493f05cb23931cc9159e367e5cce79cb8ba40b06d2f64d1f5ec95150",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-12",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-13-at-40.5s.png",
+          "time": 40.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "proof mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "cd844572889dac88c0ed3d8dc81cd6c7ccb908ce0e4ffe23e94855caf8e40a81",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-13",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-14-at-47.3s.png",
+          "time": 47.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "offer"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895564,
+          "contentHash": "1b89cd800fd66d76fe08bd172d7d91b3360362a4460a58295163206d2f4fcb93",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-14",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-15-at-53s.png",
+          "time": 53,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "offer mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "2f1981b5194007236b2129a5cfb1192c1b30c62dbb0e89f8e9bc0911bbcb4a44",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-15",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-16-at-59.3s.png",
+          "time": 59.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "how"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "d029e298f3eccb0e128724ebc99bbcc4c4abeb6f4d4d9239db41d0ebae55858d",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-16",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-17-at-66s.png",
+          "time": 66,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "how mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "a1c9eb04a203fc9adfc2e7a22dfedc310d91cde7470001da78fead432c3df95e",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-17",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-18-at-73.3s.png",
+          "time": 73.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "cta"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "693b2b911bab82d601a295fbeda711b24f252f720ab47a9b6fea5d53230d437b",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-18",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-19-at-77s.png",
+          "time": 77,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "cta mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "9b6af5615a3cfe57c31b22a59b068bfaf02a478697ea025e96ff7a03a6c5fd88",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-19",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-20-at-81.3s.png",
+          "time": 81.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "closer"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "e7efbab170e9929592f8f3d264cd2e234ad5d5e498affa1cc0442e4274e58b7d",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-20",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/beat-21-at-85.5s.png",
+          "time": 85.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "closer mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "da9880c2e6dc12a1eed754b397236c636f442629b0ac7ea08ca2d59dd9d5ebc0",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-21",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-01-1-at-4.8s.png",
+          "time": 4.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "814f13f1d4690464945e39a83c2efc4bfd0b97c55a22f7df9f79983a502989b0",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-22",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-01-2-at-4.9s.png",
+          "time": 4.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "814f13f1d4690464945e39a83c2efc4bfd0b97c55a22f7df9f79983a502989b0",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-23",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-01-3-at-5s.png",
+          "time": 5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut opening -> question"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "2f1981b5194007236b2129a5cfb1192c1b30c62dbb0e89f8e9bc0911bbcb4a44",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-24",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-01-4-at-5.1s.png",
+          "time": 5.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "a74e5e4184e7b66b79b7cc392723c7140f0ccfa04f48629da7d19709e56b0a9b",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-25",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-01-5-at-5.2s.png",
+          "time": 5.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "be0840b4d541cb4a20e803ce2d5ad37be426735426854f4c3ffe63feaf9002ac",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-26",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-02-1-at-12.8s.png",
+          "time": 12.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "2b5ffacad785da407e3175ca03e0a3a3d6455040f2e710b4941db9a0e19cbe82",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-27",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-02-2-at-12.9s.png",
+          "time": 12.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895565,
+          "contentHash": "2b5ffacad785da407e3175ca03e0a3a3d6455040f2e710b4941db9a0e19cbe82",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-28",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-02-3-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut question -> tension"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-29",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-02-4-at-13.1s.png",
+          "time": 13.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "61150ffca25a49421835abe28456dc323e05a0b1f5b89280228d1ae56075b4d0",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-30",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-02-5-at-13.2s.png",
+          "time": 13.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "526cd0f9f0e68708b1ba54d7b06ed86e36c13db30c70d42a0e0c19e2ba8cfa50",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-31",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-03-1-at-21.8s.png",
+          "time": 21.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "c2a7fb5ea17a5af0331c12e3745029462bf2d80950d0114fdbc7117c0e4f82e7",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-32",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-03-2-at-21.9s.png",
+          "time": 21.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "c2a7fb5ea17a5af0331c12e3745029462bf2d80950d0114fdbc7117c0e4f82e7",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-33",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-03-3-at-22s.png",
+          "time": 22,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut tension -> mcp"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "4278677dee07a01d8fb93279776e3b79c81ceea9f8aa401069fe65b856968d9c",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-34",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-03-4-at-22.1s.png",
+          "time": 22.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "01154d48d9e48103968c229410b9164f2037e8e1b67be79779bd6bb8985deeb0",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-35",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-03-5-at-22.2s.png",
+          "time": 22.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "e6d22de3c2c26ddfc0d6d35e3966fdd247fdaf85bb39bf521c34c5228d537927",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-36",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-04-1-at-33.8s.png",
+          "time": 33.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "026b2447262c4acca2c416e9649323d4e27f4ec25126fb5804bc684dbd429b73",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-37",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-04-2-at-33.9s.png",
+          "time": 33.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "026b2447262c4acca2c416e9649323d4e27f4ec25126fb5804bc684dbd429b73",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-38",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-04-3-at-34s.png",
+          "time": 34,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut mcp -> proof"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-39",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-04-4-at-34.1s.png",
+          "time": 34.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895566,
+          "contentHash": "5628d6ae8da98ebe4f01969601e98ab38e46a2ef3443486fa2c92047e5764990",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-40",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-04-5-at-34.2s.png",
+          "time": 34.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "79c0456ab294e72b71e5622bb19138126957d57fc323bdff0dc4442218cb27b3",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-41",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-05-1-at-46.8s.png",
+          "time": 46.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "54a3248175144dbd5ac30532f1cbca84b351b7e4c3639d20dad496c33e75f860",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-42",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-05-2-at-46.9s.png",
+          "time": 46.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "54a3248175144dbd5ac30532f1cbca84b351b7e4c3639d20dad496c33e75f860",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-43",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-05-3-at-47s.png",
+          "time": 47,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut proof -> offer"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "2f1981b5194007236b2129a5cfb1192c1b30c62dbb0e89f8e9bc0911bbcb4a44",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-44",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-05-4-at-47.1s.png",
+          "time": 47.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "3de5d918c6d385f45d03ffb68661e83706d4c9c5ad6adf94013e9800473fbc03",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-45",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-05-5-at-47.2s.png",
+          "time": 47.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "87ca00dfdf0c87583463be312ef6c35bec86884bc92ba4d3b62acdff5eb2c56b",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-46",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-06-1-at-58.8s.png",
+          "time": 58.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "3f6a8a5957c3ed0f8be5b067952c10fef957c2346bd679f62621525750276690",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-47",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-06-2-at-58.9s.png",
+          "time": 58.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "3f6a8a5957c3ed0f8be5b067952c10fef957c2346bd679f62621525750276690",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-48",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-06-3-at-59s.png",
+          "time": 59,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut offer -> how"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-49",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-06-4-at-59.1s.png",
+          "time": 59.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895567,
+          "contentHash": "65cb3f1dd10d168978bfb8f3d98733ad891c7d06891af5ad0ffb5a74b52d73e7",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-50",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-06-5-at-59.2s.png",
+          "time": 59.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "b6e1d278d4fa06db059aa367eccd4377c69935a445ea2716045f399c9a6f20a5",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-51",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-07-1-at-72.8s.png",
+          "time": 72.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "1551a2c276dda3d4420145d0022fe429d11a323bd1a834f1015c73d2b5828ca6",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-52",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-07-2-at-72.9s.png",
+          "time": 72.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "1551a2c276dda3d4420145d0022fe429d11a323bd1a834f1015c73d2b5828ca6",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-53",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-07-3-at-73s.png",
+          "time": 73,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut how -> cta"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-54",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-07-4-at-73.1s.png",
+          "time": 73.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "e4ea3256bc2568496f5f0cc08737656927135125e7099e6d3b14674b2282983a",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-55",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-07-5-at-73.2s.png",
+          "time": 73.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "da9f35e3c33449ae11c9a1eba21203ea904e22ba4973823f86795a7479cd4c33",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-56",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-08-1-at-80.8s.png",
+          "time": 80.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "62af7b774d2d26b7966677c4b957ee1d77d7682342297c001c97ef8a3d11d60d",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-57",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-08-2-at-80.9s.png",
+          "time": 80.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "62af7b774d2d26b7966677c4b957ee1d77d7682342297c001c97ef8a3d11d60d",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-58",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-08-3-at-81s.png",
+          "time": 81,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut cta -> closer"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895568,
+          "contentHash": "4278677dee07a01d8fb93279776e3b79c81ceea9f8aa401069fe65b856968d9c",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-59",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-08-4-at-81.1s.png",
+          "time": 81.1,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895569,
+          "contentHash": "d0c0d67f87c2d423ab5a0e961633c164257feef0e84eb3765d7eddeb1258e797",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "47ac286f-ba7d-47b9-9729-08d06e98c751-60",
+          "image": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/.hyperframes/artifacts/snapshots/68f35584-6e38-457e-bc62-27478d6183f2/seam-08-5-at-81.2s.png",
+          "time": 81.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793120895569,
+          "contentHash": "8c1c88fc21152fb1ebab6152eaca8d73077f74ca8e0fdb57a79d5f626074bc88",
+          "revision": "771aeb79-4e80-4e9a-8f1c-f84b4bb7e2c5",
+          "inputFingerprint": "c1b39685c88a659cb8f66c7105b96eac64ed71729d27175818b842a02aeef86b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  }
+}

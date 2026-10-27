@@ -1,0 +1,139 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 2
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.389,
+        "selector": "#op-subject",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 192,
+          "top": 492,
+          "right": 653.22,
+          "bottom": 638,
+          "width": 461.22,
+          "height": 146
+        },
+        "containerSelector": "div.op-ground",
+        "text": "AI agents",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.67,
+        "dataAttributes": {
+          "data-var-text": "subject"
+        },
+        "sourceFile": "compositions/opening.html",
+        "bbox": {
+          "x": 192,
+          "y": 492,
+          "width": 461.22,
+          "height": 146
+        },
+        "firstSeen": 1.389,
+        "lastSeen": 1.389,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.389
+        ]
+      }
+    ],
+    "duration": 5,
+    "samples": [
+      0.278,
+      0.833,
+      1.389,
+      1.944,
+      2.5,
+      3.056,
+      3.611,
+      4.167,
+      4.722
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.278,
+      1.389,
+      2.5,
+      3.611,
+      4.722
+    ],
+    "checked": 40,
+    "passed": 40
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 40
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-00-at-0.3s.png",
+      ".hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-01-at-1.4s.png",
+      ".hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-02-at-2.5s.png",
+      ".hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-03-at-3.6s.png",
+      ".hyperframes/artifacts/snapshots/ca48e1de-5f19-4cf9-8a2c-e4d7d670d00c/frame-04-at-4.7s.png"
+    ],
+    "times": [
+      0.278,
+      1.389,
+      2.5,
+      3.611,
+      4.722
+    ],
+    "findingFiles": []
+  }
+}

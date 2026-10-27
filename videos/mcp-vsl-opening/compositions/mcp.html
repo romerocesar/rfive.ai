@@ -1,0 +1,78 @@
+<template>
+  <style>
+    @font-face { font-family: 'IBM Plex Serif'; src: url('assets/fonts/IBMPlexSerif-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    #root { position: absolute; inset: 0; color: #fff; font-family: 'IBM Plex Serif', serif; background-color: var(--blue, #003153); background-image: linear-gradient(#ffffff08 1px, transparent 1px), linear-gradient(90deg, #ffffff08 1px, transparent 1px), linear-gradient(#ffffff0c 1px, transparent 1px), linear-gradient(90deg, #ffffff0c 1px, transparent 1px); background-size: 24px 24px, 24px 24px, 96px 96px, 96px 96px; }
+    .m-mono { font-family: 'IBM Plex Mono', monospace; }
+    #m-title { position: absolute; left: 192px; top: 150px; font-size: 230px; letter-spacing: -8px; line-height: 1; }
+    #m-caption { position: absolute; left: 192px; top: 430px; width: 780px; font-size: 44px; letter-spacing: -1.5px; line-height: 1.3; }
+    .m-diagram { position: absolute; left: 1000px; top: 430px; display: flex; align-items: center; }
+    .m-node { border: 1px solid #ffffff80; padding: 22px 0 25px; font: 30px 'IBM Plex Mono', monospace; letter-spacing: 2px; width: 280px; text-align: center; }
+    .m-hub { width: 180px; text-align: center; background: #fff; color: var(--blue, #003153); padding: 22px 0 25px; font: 34px 'IBM Plex Mono', monospace; letter-spacing: 3px; }
+    .m-link { width: 70px; height: 2px; background: #ffffff80; transform-origin: left; }
+    .m-timeline { position: absolute; left: 192px; top: 770px; width: 1536px; }
+    .m-track { position: relative; height: 170px; }
+    #m-tl-rule { position: absolute; top: 7px; left: 0; width: 1168px; height: 2px; background: #ffffff80; transform-origin: left; }
+    .m-cell { position: absolute; top: 44px; width: 354px; }
+    #m-cell-1 { left: 0; } #m-cell-2 { left: 384px; } #m-cell-3 { left: 768px; } #m-cell-4 { left: 1152px; }
+    .m-step { position: absolute; top: -37px; left: 0; width: 16px; height: 16px; background: #fff; }
+    .m-step-label { font: 28px 'IBM Plex Mono', monospace; letter-spacing: 2px; line-height: 1.5; }
+  </style>
+  <div data-hf-id="hf-m001" id="root" data-composition-id="mcp" data-width="1920" data-height="1080" data-duration="12">
+    <div data-hf-id="hf-m002" id="m-title-clip" class="clip" data-start="0" data-duration="12" data-track-index="1">
+      <h1 data-hf-id="hf-m003" id="m-title">MCP</h1>
+    </div>
+    <div data-hf-id="hf-m004" id="m-caption-clip" class="clip" data-start="0.5" data-duration="11.5" data-track-index="2">
+      <p data-hf-id="hf-m005" id="m-caption">MCP &mdash; the Model Context Protocol &mdash; gives AI applications a standard way to interact with your product.</p>
+    </div>
+    <div data-hf-id="hf-m006" id="m-diagram-clip" class="clip" data-start="1.4" data-duration="10.6" data-track-index="3">
+      <div data-hf-id="hf-m007" class="m-diagram" data-hold>
+        <div data-hf-id="hf-m008" class="m-node">AI AGENTS</div>
+        <div data-hf-id="hf-m009" id="m-link-a" class="m-link" aria-hidden="true"></div>
+        <div data-hf-id="hf-m010" id="m-hub" class="m-hub">MCP</div>
+        <div data-hf-id="hf-m011" id="m-link-b" class="m-link" aria-hidden="true"></div>
+        <div data-hf-id="hf-m012" class="m-node">YOUR SYSTEMS</div>
+      </div>
+    </div>
+    <div data-hf-id="hf-m013" id="m-timeline-clip" class="clip" data-start="6.5" data-duration="5.5" data-track-index="4">
+      <div data-hf-id="hf-m014" class="m-timeline">
+        <p data-hf-id="hf-m015" class="m-mono" style="font-size:28px; letter-spacing:3px; margin-bottom:30px; color:#ffffffb3;">AN OPEN STANDARD</p>
+        <div data-hf-id="hf-m034" class="m-track">
+          <div data-hf-id="hf-m016" id="m-tl-rule" aria-hidden="true"></div>
+          <div data-hf-id="hf-m035" id="m-cell-1" class="m-cell">
+            <span data-hf-id="hf-m017" id="m-step-1" class="m-step" aria-hidden="true"></span>
+            <p data-hf-id="hf-m020" id="m-lab-1" class="m-step-label">PROPOSED NOV 2024<br data-hf-id="hf-x5px" />BY ANTHROPIC</p>
+          </div>
+          <div data-hf-id="hf-m036" id="m-cell-2" class="m-cell">
+            <span data-hf-id="hf-m018" id="m-step-2" class="m-step" aria-hidden="true"></span>
+            <p data-hf-id="hf-m021" id="m-lab-2" class="m-step-label">ADOPTED MAR 2025<br data-hf-id="hf-rsrt" />BY THE AI INDUSTRY</p>
+          </div>
+          <div data-hf-id="hf-m037" id="m-cell-3" class="m-cell">
+            <span data-hf-id="hf-m019" id="m-step-3" class="m-step" aria-hidden="true"></span>
+            <p data-hf-id="hf-m022" id="m-lab-3" class="m-step-label">GOVERNED DEC 2025<br data-hf-id="hf-szow" />VENDOR-NEUTRAL<br data-hf-id="hf-szow2" />LINUX FOUNDATION</p>
+          </div>
+          <div data-hf-id="hf-m038" id="m-cell-4" class="m-cell">
+            <span data-hf-id="hf-m039" id="m-step-4" class="m-step" aria-hidden="true"></span>
+            <p data-hf-id="hf-m040" id="m-lab-4" class="m-step-label">LISTED OCT 2026<br data-hf-id="hf-szow3" />45,000 SERVERS<br data-hf-id="hf-szow4" />OFFICIAL REGISTRY</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#m-title', { opacity: 0, clipPath: 'inset(0 100% 0 0)' }, { opacity: 1, clipPath: 'inset(0 0% 0 0)', duration: 0.7, ease: 'power4.out' }, 0);
+    tl.fromTo('#m-caption', { opacity: 0, filter: 'blur(6px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.45, ease: 'power2.out' }, 0.5);
+    tl.fromTo('.m-diagram .m-node', { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out', stagger: 0.25 }, 1.4);
+    tl.fromTo('#m-link-a', { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: 'power2.inOut' }, 1.9);
+    tl.fromTo('#m-hub', { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: 'back.out(1.4)' }, 2.25);
+    tl.fromTo('#m-link-b', { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: 'power2.inOut' }, 2.6);
+    // Open-standard timeline
+    tl.fromTo('.m-timeline', { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'none' }, 6.5);
+    tl.fromTo('#m-tl-rule', { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: 'power2.inOut' }, 6.6);
+    tl.fromTo('#m-step-1, #m-lab-1', { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'none' }, 6.7);
+    tl.fromTo('#m-step-2, #m-lab-2', { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'none' }, 7.7);
+    tl.fromTo('#m-step-3, #m-lab-3', { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'none' }, 8.7);
+    tl.fromTo('#m-step-4, #m-lab-4', { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'none' }, 9.7);
+    window.__timelines = window.__timelines || {};
+    window.__timelines.mcp = tl;
+  </script>
+</template>

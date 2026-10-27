@@ -1,0 +1,581 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 2,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 18.708,
+        "selector": "#t-cap2",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 192,
+          "top": 195,
+          "right": 778.47,
+          "bottom": 270,
+          "width": 586.47,
+          "height": 75
+        },
+        "containerSelector": "#t-cap3-clip > p:nth-of-type(1)",
+        "text": "Agents can’t, by default.",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-hf-id": "hf-t013"
+        },
+        "sourceFile": "compositions/tension.html",
+        "bbox": {
+          "x": 192,
+          "y": 195,
+          "width": 586.47,
+          "height": 75
+        },
+        "firstSeen": 18.708,
+        "lastSeen": 21.742,
+        "occurrences": 7,
+        "heldMs": 3034.0000000000023,
+        "times": [
+          18.708,
+          19.213,
+          19.719,
+          20.225,
+          20.73,
+          21.236,
+          21.742
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 25,
+        "selector": "div.m-diagram > div:nth-of-type(5)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1810,
+          "top": 223,
+          "right": 1950,
+          "bottom": 301,
+          "width": 140,
+          "height": 78
+        },
+        "containerSelector": "#root",
+        "text": "YOUR SYSTEMS",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "right": 30
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-m012"
+        },
+        "sourceFile": "compositions/mcp.html",
+        "bbox": {
+          "x": 1810,
+          "y": 223,
+          "width": 140,
+          "height": 78
+        },
+        "firstSeen": 25,
+        "lastSeen": 25,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          25
+        ]
+      },
+      {
+        "code": "escaped_container",
+        "severity": "info",
+        "time": 25,
+        "selector": "#m-hub",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": 1270,
+          "top": 408,
+          "right": 1550,
+          "bottom": 499,
+          "width": 280,
+          "height": 91
+        },
+        "containerSelector": "div.m-diagram",
+        "text": "MCP",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 1080,
+          "top": 200,
+          "right": 1740,
+          "bottom": 288,
+          "width": 660,
+          "height": 88
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-m010"
+        },
+        "sourceFile": "compositions/mcp.html",
+        "bbox": {
+          "x": 1270,
+          "y": 408,
+          "width": 280,
+          "height": 91
+        },
+        "firstSeen": 25,
+        "lastSeen": 25,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          25
+        ]
+      }
+    ],
+    "duration": 90,
+    "samples": [
+      5,
+      15,
+      25,
+      35,
+      45,
+      55,
+      65,
+      75,
+      85
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 3,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "specPath": "/home/cesar/src/rfive.ai/videos/mcp-vsl-opening/index.motion.json",
+    "samples": 101
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      5,
+      25,
+      45,
+      65,
+      85
+    ],
+    "checked": 17,
+    "passed": 17
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 14,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 90 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.61 s (5.41–9.02 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 5.409,
+        "seconds": 3.606,
+        "floorSeconds": 3,
+        "until": 9.015
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"ILLUSTRATIVE SITE\" renders at 26 px for 8.72 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "ILLUSTRATIVE SITE",
+        "selector": "p.t-tag",
+        "dataAttributes": {},
+        "sourceFile": "compositions/tension.html",
+        "bbox": {
+          "x": 192,
+          "y": 402.51,
+          "width": 316.2,
+          "height": 34
+        },
+        "time": 13.372,
+        "times": [
+          13.372
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 8.715,
+        "elements": [
+          {
+            "selector": "p.t-tag",
+            "text": "ILLUSTRATIVE SITE",
+            "fontPx": 26,
+            "time": 13.372,
+            "seconds": 8.715
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.46 s (25.09–28.55 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 25.092,
+        "seconds": 3.456,
+        "floorSeconds": 3,
+        "until": 28.548
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 4 text elements stay under it for 0.5 s or more, the smallest \"AN OPEN STANDARD\" at 26 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "AN OPEN STANDARD",
+        "selector": "p.m-mono",
+        "dataAttributes": {},
+        "sourceFile": "compositions/mcp.html",
+        "bbox": {
+          "x": 192,
+          "y": 790,
+          "width": 297.61,
+          "height": 34
+        },
+        "time": 28.698,
+        "times": [
+          28.698,
+          28.998,
+          29.9,
+          30.952
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 5.409,
+        "elements": [
+          {
+            "selector": "p.m-mono",
+            "text": "AN OPEN STANDARD",
+            "fontPx": 26,
+            "time": 28.698,
+            "seconds": 5.409
+          },
+          {
+            "selector": "#m-lab-1",
+            "text": "INTRODUCEDANTHROPIC",
+            "fontPx": 26,
+            "time": 28.998,
+            "seconds": 5.109
+          },
+          {
+            "selector": "#m-lab-2",
+            "text": "ADOPTEDACROSS THE AI INDUSTRY",
+            "fontPx": 26,
+            "time": 29.9,
+            "seconds": 4.207
+          },
+          {
+            "selector": "#m-lab-3",
+            "text": "GOVERNEDVENDOR-NEUTRAL · LINUX FOUNDATION",
+            "fontPx": 26,
+            "time": 30.952,
+            "seconds": 3.155
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.61 s (37.56–41.17 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 37.563,
+        "seconds": 3.606,
+        "floorSeconds": 3,
+        "until": 41.169
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 4.51 s (42.37–46.88 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 42.371,
+        "seconds": 4.507,
+        "floorSeconds": 3,
+        "until": 46.878
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 4.81 s (47.78–52.59 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 47.78,
+        "seconds": 4.808,
+        "floorSeconds": 3,
+        "until": 52.588
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 5 text elements stay under it for 0.5 s or more, the smallest \"01\" at 26 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "01",
+        "selector": "div.o-list > div:nth-of-type(1) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/offer.html",
+        "bbox": {
+          "x": 192,
+          "y": 344,
+          "width": 35.2,
+          "height": 34
+        },
+        "time": 53.189,
+        "times": [
+          53.189,
+          53.339,
+          53.489,
+          53.639,
+          53.94
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 5.859,
+        "elements": [
+          {
+            "selector": "div.o-list > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "01",
+            "fontPx": 26,
+            "time": 53.189,
+            "seconds": 5.859
+          },
+          {
+            "selector": "div.o-list > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "02",
+            "fontPx": 26,
+            "time": 53.339,
+            "seconds": 5.709
+          },
+          {
+            "selector": "div.o-list > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "03",
+            "fontPx": 26,
+            "time": 53.489,
+            "seconds": 5.559
+          },
+          {
+            "selector": "div.o-list > div:nth-of-type(4) > span:nth-of-type(1)",
+            "text": "04",
+            "fontPx": 26,
+            "time": 53.639,
+            "seconds": 5.409
+          },
+          {
+            "selector": "div.o-list > div:nth-of-type(5) > span:nth-of-type(1)",
+            "text": "05",
+            "fontPx": 26,
+            "time": 53.94,
+            "seconds": 5.108
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.91 s (54.99–58.90 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 54.992,
+        "seconds": 3.906,
+        "floorSeconds": 3,
+        "until": 58.898
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.61 s (62.95–66.56 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 62.955,
+        "seconds": 3.606,
+        "floorSeconds": 3,
+        "until": 66.561
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"MANAGED OPERATIONS\" renders at 26 px for 5.86 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "MANAGED OPERATIONS",
+        "selector": "#h-managed",
+        "dataAttributes": {},
+        "sourceFile": "compositions/how.html",
+        "bbox": {
+          "x": 1024.22,
+          "y": 388.59,
+          "width": 316.81,
+          "height": 34
+        },
+        "time": 67.162,
+        "times": [
+          67.162
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 5.859,
+        "elements": [
+          {
+            "selector": "#h-managed",
+            "text": "MANAGED OPERATIONS",
+            "fontPx": 26,
+            "time": 67.162,
+            "seconds": 5.859
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 5.11 s (67.76–72.87 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 67.763,
+        "seconds": 5.108,
+        "floorSeconds": 3,
+        "until": 72.871
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"rfive.ai\" (2 words) is on screen 1.57 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "rfive.ai",
+        "selector": "#f-wordmark",
+        "dataAttributes": {},
+        "sourceFile": "compositions/closer.html",
+        "bbox": {
+          "x": 969.39,
+          "y": 498,
+          "width": 323.19999999999993,
+          "height": 84
+        },
+        "time": 87.437,
+        "words": 2,
+        "seconds": 1.568,
+        "floorSeconds": 2
+      }
+    ],
+    "enabled": true,
+    "step": 0.15000000000000036,
+    "samples": 599
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

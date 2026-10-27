@@ -1,0 +1,87 @@
+<template>
+  <style>
+    @font-face { font-family: 'IBM Plex Serif'; src: url('assets/fonts/IBMPlexSerif-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    #root { position: absolute; inset: 0; color: #101820; font-family: 'IBM Plex Serif', serif; }
+    .op-ground { position: absolute; inset: 0; background: #fff; }
+    .op-blueprint { position: absolute; top: 0; right: 0; width: 900px; height: 1080px; background-color: var(--blue, #003153); background-image: linear-gradient(#ffffff08 1px, transparent 1px), linear-gradient(90deg, #ffffff08 1px, transparent 1px), linear-gradient(#ffffff0c 1px, transparent 1px), linear-gradient(90deg, #ffffff0c 1px, transparent 1px); background-size: 24px 24px, 24px 24px, 96px 96px, 96px 96px; }
+    .op-kicker { position: absolute; left: 192px; top: 155px; font: 28px 'IBM Plex Mono', monospace; letter-spacing: 3px; color: var(--blue, #003153); }
+    .op-rule { position: absolute; left: 192px; top: 212px; width: 72px; height: 3px; background: var(--blue, #003153); transform-origin: left; }
+    .op-copy { position: absolute; left: 192px; width: 805px; font-weight: 400; letter-spacing: -3px; line-height: 1.15; }
+    #op-lead { top: 280px; font-size: 85px; }
+    #op-setup { top: 398px; font-size: 67px; letter-spacing: -2.5px; }
+    #op-subject { top: 501px; font-size: 112px; color: var(--blue, #003153); }
+    #op-payoff { top: 664px; font-size: 69px; letter-spacing: -2.8px; }
+    .op-mono { font-family: 'IBM Plex Mono', monospace; font-weight: 400; }
+    .op-workflow-label { position: absolute; left: 1104px; top: 156px; color: #fff; font-size: 28px; letter-spacing: 2px; }
+    .op-request-slot { position: absolute; left: 1104px; top: 270px; width: 624px; }
+    .cm-pop { transform-origin: right bottom; }
+    .op-request { border: 1px solid #ffffff80; padding: 32px 35px 35px; background: var(--blue, #003153); color: white; }
+    .op-request-label { font-size: 28px; letter-spacing: 1px; margin-bottom: 20px; }
+    .op-request-body { font-size: 45px; line-height: 1.25; letter-spacing: -1px; }
+    .op-flow { position: absolute; left: 1137px; top: 509px; width: 2px; height: 30px; background: #ffffff80; transform-origin: top; }
+    .op-agent { position: absolute; left: 1104px; top: 549px; width: 624px; height: 78px; display: flex; align-items: center; gap: 22px; color: #fff; }
+    .op-agent-icon { width: 66px; height: 66px; display: grid; place-items: center; border: 1px solid #ffffff80; }
+    .op-agent-name { font-size: 34px; }
+    .op-progress { position: absolute; left: 1192px; top: 612px; width: 415px; height: 2px; background: #ffffff80; transform-origin: left; }
+    .op-flow-bottom { position: absolute; left: 1137px; top: 637px; width: 2px; height: 57px; background: #ffffff80; transform-origin: top; }
+    .op-result-slot { position: absolute; left: 1104px; top: 704px; width: 624px; }
+    .op-result { padding: 29px 32px 32px; background: white; color: var(--blue, #003153); }
+    .op-result-top { display: flex; align-items: center; gap: 18px; margin-bottom: 20px; }
+    .op-result-title { font-size: 42px; line-height: 1.2; letter-spacing: -1px; }
+    .op-result-detail { font-size: 29px; line-height: 1.3; }
+    .op-check-path { stroke-dasharray: 48; stroke-dashoffset: 48; }
+  </style>
+  <div data-hf-id="hf-culs" id="root" data-composition-id="opening" data-width="1920" data-height="1080" data-duration="5">
+    <div data-hf-id="hf-vy04" class="op-ground" aria-hidden="true"></div>
+    <div data-hf-id="hf-p2tr" class="op-blueprint" aria-hidden="true" data-layout-ignore=""></div>
+    <div data-hf-id="hf-95ss" id="op-kicker" class="op-kicker op-mono">THE CUSTOMER SHIFT</div>
+    <div data-hf-id="hf-2is7" id="op-rule" class="op-rule" aria-hidden="true"></div>
+    <div data-hf-id="hf-g0cf" id="op-lead-clip" class="clip" data-start="0" data-duration="5" data-track-index="1"><h1 data-hf-id="hf-3b8e" id="op-lead" class="op-copy" data-var-text="lead">Your customers</h1></div>
+    <div data-hf-id="hf-467x" id="op-setup-clip" class="clip" data-start="0.55" data-duration="4.45" data-track-index="2"><p data-hf-id="hf-g28x" id="op-setup" class="op-copy" data-var-text="setup">are starting to use</p></div>
+    <div data-hf-id="hf-kja1" id="op-subject-clip" class="clip" data-start="1.35" data-duration="3.65" data-track-index="3"><p data-hf-id="hf-s06x" id="op-subject" class="op-copy" data-var-text="subject">AI agents</p></div>
+    <div data-hf-id="hf-ykv0" id="op-payoff-clip" class="clip" data-start="2.5" data-duration="2.5" data-track-index="4"><p data-hf-id="hf-3mxf" id="op-payoff" class="op-copy" data-var-text="payoff">to get things done.</p></div>
+    <div data-hf-id="hf-pdh4" class="op-workflow-label op-mono">REQUEST → ACTION</div>
+    <!-- The registry chat-message's sender-corner arrival, adapted to R5's square blueprint style. This is an illustrative workflow, not a product screen. -->
+    <div data-hf-id="hf-yvdb" id="op-request-clip" class="clip" data-start="0.35" data-duration="4.65" data-track-index="5" data-beat="Customer request">
+      <div data-hf-id="hf-ihai" class="op-request-slot"><div data-hf-id="hf-qy2b" id="cm-pop" class="cm-pop op-request">
+        <p data-hf-id="hf-c4w8" class="op-request-label op-mono">CUSTOMER</p>
+        <p data-hf-studio-original-inline-translate="" style="translate: -1.381px -1.381px" data-hf-id="hf-45hz" class="op-request-body" data-var-text="request">Book my usual appointment.</p>
+      </div></div>
+    </div>
+    <div data-hf-id="hf-rqk7" id="op-flow" class="op-flow" aria-hidden="true"></div>
+    <div data-hf-id="hf-qeff" id="op-agent-clip" class="clip" data-start="1.55" data-duration="3.45" data-track-index="6" data-beat="Agent acts">
+      <div data-hf-id="hf-oeg6" id="op-agent" class="op-agent">
+        <div data-hf-id="hf-cbki" class="op-agent-icon" aria-hidden="true"><svg data-hf-id="hf-vqq2" width="40" height="40" viewBox="0 0 40 40" fill="none"><path data-hf-id="hf-vqzq" d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8" stroke="white" stroke-width="2" /></svg></div>
+        <p data-hf-id="hf-941e" class="op-agent-name op-mono">AI AGENT</p>
+      </div>
+    </div>
+    <div data-hf-id="hf-fudp" id="op-progress" class="op-progress" aria-hidden="true"></div>
+    <div data-hf-id="hf-dbav" id="op-flow-bottom" class="op-flow-bottom" aria-hidden="true"></div>
+    <div data-hf-id="hf-zp1j" id="op-result-clip" class="clip" data-start="2.85" data-duration="2.15" data-track-index="7" data-beat="Completed action">
+      <div data-hf-id="hf-fif2" class="op-result-slot"><div data-hf-id="hf-67k4" id="op-result" class="op-result">
+        <div data-hf-id="hf-ao5n" class="op-result-top">
+          <svg data-hf-id="hf-hrjx" width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><rect data-hf-id="hf-913l" x="1" y="1" width="40" height="40" stroke="currentColor" stroke-width="2" /><path data-hf-id="hf-alv9" id="op-check" class="op-check-path" d="m10 21 8 8 15-17" stroke="currentColor" stroke-width="3" /></svg>
+          <p data-hf-id="hf-q42o" class="op-result-title">Appointment booked.</p>
+        </div>
+        <p data-hf-id="hf-kqo4" class="op-result-detail op-mono">Tomorrow · 10:00 AM</p>
+      </div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#op-rule', { scaleX: 0 }, { scaleX: 1, duration: 0.65, ease: 'power3.out' }, 0);
+    tl.fromTo('#op-lead', { opacity: 0.25 }, { opacity: 1, duration: 0.42, ease: 'power2.out' }, 0);
+    tl.fromTo('#op-setup', { opacity: 0, filter: 'blur(6px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.32, ease: 'power2.out' }, 0.55);
+    tl.fromTo('#op-subject', { opacity: 0, clipPath: 'inset(0 100% 0 0)' }, { opacity: 1, clipPath: 'inset(0 0% 0 0)', duration: 0.58, ease: 'power4.out' }, 1.35);
+    tl.fromTo('#op-payoff', { opacity: 0, filter: 'blur(6px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.3, ease: 'power2.out' }, 2.5);
+    tl.fromTo('#cm-pop', { scale: 0.94, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: 'power3.out' }, 0.35);
+    tl.fromTo('#op-flow', { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: 'power2.inOut' }, 1.05);
+    tl.fromTo('#op-agent', { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'power2.out' }, 1.55);
+    tl.fromTo('#op-progress', { scaleX: 0 }, { scaleX: 1, duration: 0.75, ease: 'none' }, 1.95);
+    tl.fromTo('#op-flow-bottom', { scaleY: 0 }, { scaleY: 1, duration: 0.3, ease: 'power2.inOut' }, 2.55);
+    tl.fromTo('#op-result', { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.42, ease: 'power4.out' }, 2.85);
+    tl.fromTo('#op-check', { strokeDashoffset: 48 }, { strokeDashoffset: 0, duration: 0.35, ease: 'power2.out' }, 3.12);
+    window.__timelines = window.__timelines || {};
+    window.__timelines.opening = tl;
+  </script>
+</template>

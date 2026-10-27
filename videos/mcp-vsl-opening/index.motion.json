@@ -1,0 +1,10 @@
+{
+  "duration": 5,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#op-lead", "bySec": 0.4 },
+    { "kind": "before", "a": "#cm-pop", "b": "#op-agent" },
+    { "kind": "before", "a": "#op-agent", "b": "#op-result" },
+    { "kind": "appearsBy", "selector": "#op-payoff", "bySec": 2.85 },
+    { "kind": "staysInFrame", "selector": "#op-result" }
+  ]
+}
