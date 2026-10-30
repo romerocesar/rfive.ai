@@ -7,33 +7,31 @@ Status: proposed direction. Implementation has not started.
 - Remove Hugo, the LoveIt theme, and their build dependencies.
 - Use a simple plain-HTML site with CSS and no required JavaScript.
 - Replace Prussian blue with a black background, white foreground, and gray accents.
-- Make selling MCP servers the core offering rather than broad AI consulting.
+- Make custom MCP server development and management the core offering rather than broad AI consulting.
 
 ## Positioning
 
 Treat this as a repositioning of R5, not just a theme change:
 
-**R5 builds MCP servers that let AI work with your business systems.**
+**R5 builds and manages custom MCP servers so your users can connect their AI agents to your product.**
 
-Suggested hero:
+Hero:
 
-> Custom MCP server development
+> **Can AI agents use your app yet?**
 >
-> **Your systems. Connected to AI.**
+> Allow your users to get more done with their AI agents connected to the product they already use.
 >
-> R5 builds custom MCP servers that let AI assistants and agents work with your APIs, internal tools, and business data—with explicit permissions and controls.
->
-> **Discuss your MCP project** · See how it works
+> **Learn more** · **Schedule a free consultation**
 
 Briefly explain the protocol:
 
 > Model Context Protocol (MCP) gives AI applications a standard way to access tools and data. We build the server that connects those applications to your business.
 
-### Main decision to settle
+### Confirmed commercial focus
 
-Are we selling **custom MCP server development**, **ready-made servers**, or both?
+The primary offering is **custom MCP server development and management**. Ongoing management is part of the core offering, not merely an optional follow-on to a development project.
 
-Recommendation: lead with custom development based on the existing consultancy business. Introduce packaged servers when there are concrete products to demonstrate, license, document, and support. Do not imply that a product catalog already exists.
+Workshops, ready-made servers, and other products can be added later. They are outside the initial launch scope and should not compete with the core offer in the homepage or navigation.
 
 ## Homepage structure
 
@@ -42,26 +40,61 @@ Build one focused sales page:
 | Section | Purpose |
 | --- | --- |
 | Hero | Say what we build, who it helps, and how to start. |
-| What could AI do with your systems? | Show concrete workflows instead of generic AI benefits. |
-| What we build | Describe internal MCP servers and customer-facing MCP integrations. |
-| What you get | Clarify deliverables and ownership. |
-| How an engagement works | Scope → build → validate → deploy and hand off. |
-| Why R5 | Relevant engineering experience and genuine evidence. |
+| Social proof / experience | Establish credibility immediately with former employer and client logos from the nontech deck. |
+| What could your users do through their agents? | Show concrete product interactions adapted from the VSL: ordering, buying tickets, booking appointments, and analyzing data. |
+| What we build and manage | Lead with customer-facing MCP integrations that connect users' AI agents to the product; include internal servers as a secondary use case. |
+| What you get | Clarify development deliverables, ongoing management, and ownership. |
+| How an engagement works | Scope → build → validate → deploy → manage and evolve. |
 | FAQ and contact | Address deployment, access, compatibility, and next steps. |
 
-### Illustrative use cases
+### Social proof immediately after the hero
 
-- **Internal operations:** retrieve account history, check order status, or prepare updates through permissioned tools.
-- **SaaS products:** give customers an MCP interface to the product.
-- **Private systems:** expose selected capabilities from internal APIs and databases without giving an agent unrestricted access.
+Place the experience/logo section directly after the hero, before the details of what we offer and how we work. Reuse the logos already included in `docs/decks/nontech.html`, sourced from `docs/decks/assets/company-logos/`:
+
+- Google
+- Amazon
+- Unity
+- Walmart
+- Ouva
+- Ramen VR
+- Medal.tv
+- Demand-IQ
+- Andesite
+- Groundlight
+- Valve
+
+Suggested heading: **Experience includes**.
+
+Add context such as **Former employers and clients** so the section does not imply that all of these companies are R5 clients, MCP customers, or endorsers. The deck currently describes these as companies where Cesar has worked; preserve that distinction when writing the final copy.
+
+Use a compact, responsive logo grid with balanced visual sizing and accessible company names. Use suitable white or gray logo variants on black, respecting brand usage requirements and verifying contrast. Keep the section static rather than using an animated carousel. Copy the selected assets into the site's published assets directory during implementation.
+
+### Concrete product interactions from the VSL
+
+Replace the generic internal-operations / SaaS / private-systems use cases with examples of what users could do in a product through their AI agents.
+
+The VSL examples transcript (`videos/mcp-vsl-clean/analysis/examples.transcript.json`) mentions ordering their usual pizza, buying tickets, booking an appointment, and analyzing data.
+
+Suggested heading: **Your product. One request away.**
+
+Possible user requests adapted from those examples (proposed website copy, not verbatim script):
+
+- **Ordering:** “Order my usual pizza.”
+- **Tickets:** “Find two tickets for Friday’s show.”
+- **Appointments:** “Book my next appointment for Tuesday afternoon.”
+- **Data:** “How did sales this month compare with last month?”
+
+Supporting copy: **Your users already know what they want to do. We build and manage the MCP server that lets their AI agents do it through your product.**
+
+Keep this compact and directly connected to the offer, not a broad industry/use-case catalog. Select the strongest two or three examples for the final layout. For purchases and bookings, demonstrate review or confirmation before committing; do not imply unrestricted agent actions. Actual capabilities depend on the product API, permissions, and implementation.
 
 Label these as illustrative unless they are actual delivered projects. Do not invent customer evidence or results.
 
 ## Core offer
 
-### Custom MCP server development
+### Custom MCP server development and management
 
-Proposed deliverables:
+Proposed development deliverables:
 
 - Workflow and API discovery
 - Tool and resource design
@@ -70,9 +103,17 @@ Proposed deliverables:
 - Deployment instructions and client configuration
 - Documentation and handoff
 
-Offer **ongoing maintenance and expansion** as an optional follow-on.
+Ongoing management is a core part of the offer. Define the exact scope and service commitments before publishing; proposed responsibilities include:
 
-Workshops and audits can support discovery rather than appearing as equal-weight homepage offerings. Remove fractional CTO and recruiting calls from the primary sales path.
+- Deployment and operational monitoring
+- Maintenance, dependency updates, and security updates
+- Compatibility updates as the product API and MCP clients evolve
+- Troubleshooting and reliability improvements
+- Expansion of tools and capabilities as users' needs change
+
+Do not imply specific uptime guarantees, support hours, or hosting arrangements until those terms are defined.
+
+Defer workshops, ready-made servers, and other standalone products to a later release. Remove fractional CTO and recruiting calls from the primary sales path.
 
 ## Visual direction
 
@@ -118,11 +159,6 @@ site/
   robots.txt
   sitemap.xml
   assets/
-  blog/
-    index.html
-    index.xml
-    incremental/
-      index.html
   contact/
     index.html
   decks/
@@ -164,10 +200,10 @@ Once the replacement is verified:
 
 ## URL and content migration
 
-- Preserve existing blog URLs and the RSS feed if they have readers or inbound links.
+- Existing blog URLs and the RSS feed do not need to be preserved. Blog migration is outside the initial launch scope.
 - Preserve `/decks/nontech/`, currently published through Hugo file mounts from `docs/decks/nontech.html` and `docs/decks/assets/`.
 - Keep the older deck accessible without promoting it in the main navigation.
-- Give old `/services/.../` URLs a relevant replacement or clear migration page rather than breaking them. Choose a redirect approach compatible with GitHub Pages if needed.
+- Old `/services/.../` URLs do not need to be preserved. No redirects or migration pages are required for retired blog or services routes; they can return the site's standard 404 page.
 - Keep `/contact/` working, focused on one MCP conversation and email.
 - Initially use the existing free-consultation link: `https://cal.com/rfive.ai/free-consultation`.
 - Update the booking-page wording to match the MCP offer.
@@ -182,20 +218,20 @@ Once the replacement is verified:
 - `layouts/index.html` and `content/_index.md`: current homepage.
 - `content/contact/_index.md` and `data/booking_options.yaml`: current contact and booking options.
 - `.github/workflows/gh-pages.yml`: current Hugo build and Pages deployment.
-- `docs/products.md`: existing workshops, audits, and custom-solutions positioning; revisit for consistency once the MCP offering is settled.
+- `docs/products.md`: existing workshops, audits, and custom-solutions positioning; update for consistency with the confirmed custom MCP development and management focus before launch.
 
 ## Recommended first release
 
-One polished landing page, one primary CTA, and one clear offer: **custom MCP servers**.
+One polished landing page and one clear offer: **custom MCP server development and management**. Use the hero buttons **Learn more** and **Schedule a free consultation**, with consultation as the primary conversion goal.
 
-Keep the blog and legacy links in the background. Do not build a marketplace, pricing configurator, or complex content system yet.
+Do not carry over the old blog or services navigation. Do not build a marketplace, pricing configurator, or complex content system yet.
 
-Before launch, verify responsive layouts, accessibility, internal links, preserved routes, metadata, and the published artifact contents.
+Before launch, verify responsive layouts, accessibility, internal links, retained contact and deck routes, standard 404 behavior for retired routes, metadata, and the published artifact contents.
 
 ## Resume here
 
-1. Confirm custom development versus ready-made servers as the initial commercial model.
-2. Finalize the offer, deliverables, evidence, and homepage copy.
+1. Define the development and ongoing management scope, commercial terms, and service commitments.
+2. Finalize deliverables, evidence, and homepage copy around the confirmed core offer; defer additional products.
 3. Implement the monochrome static site.
-4. Migrate retained content and URLs.
+4. Migrate only retained content and routes (contact and the nontech deck); skip old blog and services URLs.
 5. Verify the replacement, switch deployment, and remove Hugo.
