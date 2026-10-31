@@ -16,7 +16,7 @@ Release completed work from the current feature branch as one mainline commit. I
 2. Run `git diff --check` and the production validation:
 
    ```bash
-   hugo --gc --minify --destination /tmp/rfive-release-build
+   python3 scripts/check-site.py
    ```
 
 3. Commit feature-branch changes when present.
@@ -36,7 +36,7 @@ Release completed work from the current feature branch as one mainline commit. I
 
    ```bash
    git diff --cached --check
-   hugo --gc --minify --destination /tmp/rfive-main-release-build
+   python3 scripts/check-site.py
    ```
 
 6. Create one detailed release commit on `main`.
@@ -52,7 +52,7 @@ Release completed work from the current feature branch as one mainline commit. I
 8. Verify `git status -sb` and the latest commit. Report:
    - feature commit, when one was created;
    - squash release commit;
-   - production build result;
+   - static-site validation result;
    - push target and deployment trigger;
    - final worktree state.
 

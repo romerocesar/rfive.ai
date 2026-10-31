@@ -1,63 +1,101 @@
 # rfive.ai
 
-R5’s static marketing site powered by [Hugo](https://gohugo.io/) and the [LoveIt theme](https://github.com/dillonzq/LoveIt).
+R5’s marketing site for **custom MCP server development and management**.
 
-## Prerequisites
+The publishable site lives entirely in `site/`: plain HTML, a shared stylesheet,
+and local assets. No framework, package installation, compilation, or JavaScript
+is needed for the marketing pages. The retained nontech presentation keeps its
+existing JavaScript and visual design.
 
-- Hugo Extended `v0.125+`
-- Go (for Hugo modules) `1.21+`
+## Local preview
 
-## Local Development
-
-```bash
-hugo server -D
-```
-
-Then open `http://localhost:1313`.
-
-## Building
+From the repository root:
 
 ```bash
-hugo --gc --minify
+python3 -m http.server 8000 --directory site
 ```
 
-Generated assets land in `public/`.
+Open:
 
-## Presentation Deck
+- Homepage: http://localhost:8000/
+- Contact: http://localhost:8000/contact/
+- Retained deck: http://localhost:8000/decks/nontech/
+- Custom 404 design: http://localhost:8000/404.html
 
-Edit `docs/decks/nontech.html` for the interactive deck and
-`docs/decks/nontech.md` for its companion content and presenter notes.
-The deck covers Workshops, Audits, and Solutions for non-tech businesses.
-The existing `docs/decks/custom-ai-solution.pdf` is a previous export.
-Regenerate the PDF once deck edits are final; Hugo builds do not regenerate it.
+Python’s basic server returns its own 404 response for missing URLs. GitHub Pages
+uses `site/404.html` for those requests in production.
 
-Hugo's file mounts publish the HTML as `/decks/nontech/index.html`
-and copy `docs/decks/assets/` alongside it. The normal build and local server
-both use these mounts, so no separate copy or build step is needed. The Markdown,
-PDF, and other documentation are not included in this route.
+## Editing
 
-- Local preview: `http://localhost:1313/decks/nontech/`
-- Published URL: `https://rfive.ai/decks/nontech/`
+- `site/index.html`: homepage copy, social proof, examples, offering, and FAQ.
+- `site/styles.css`: shared monochrome theme and responsive layouts.
+- `site/contact/index.html`: consultation and email contact.
+- `site/404.html`: retired/missing pages.
+- `site/assets/`: logos, favicon, and social preview artwork.
+- `site/sitemap.xml` and `site/robots.txt`: search-engine discovery.
+- `docs/site.md`: direction, implementation notes, and review checklist.
+- `docs/products.md`: current commercial focus.
 
-## Publishing a Blog Article
+There is no template layer: shared header/footer markup is intentionally repeated
+in three small HTML files. Keep it consistent when editing. Use root-relative
+links; preview over HTTP rather than opening HTML files directly.
 
-Create a page bundle for the article:
+The social preview is committed as PNG for link-preview compatibility. Its
+editable source is `site/assets/social-preview.svg`. To regenerate it with
+ImageMagick installed:
 
 ```bash
-hugo new content posts/my-article/index.md
+magick -background black site/assets/social-preview.svg site/assets/social-preview.png
 ```
 
-Then:
+This is an optional asset-editing tool, not a deployment dependency.
 
-1. Paste and adapt the LinkedIn post in the generated `index.md`.
-2. Add a short `description` for the blog index and search previews.
-3. If the LinkedIn version is public, set `linkedinURL` to its URL.
-4. Optionally place a cover image named `cover.webp` in the same folder. PNG and JPEG also work.
-5. Preview unpublished articles with `hugo server -D`.
-6. Set `draft = false`, then commit and push the article to publish it.
+## Presentation deck and experience logos
 
-Article URLs use `/blog/<slug>/`, and the blog RSS feed is available at `/blog/index.xml`.
+The retained deck source remains `docs/decks/nontech.html`; speaker notes remain
+in `docs/decks/nontech.md`. Its older workshops/audits/solutions content is
+intentionally preserved and is not promoted in the new site navigation.
+The PDF in `docs/decks/` is a previous export, not automatically regenerated.
+
+After editing the deck or its logos, refresh the published copies:
+
+```bash
+python3 scripts/sync-assets.py
+```
+
+This copies only the deck HTML and its assets into `site/decks/nontech/`, and the
+company logos into `site/assets/company-logos/`. Commit the source and updated
+copies together. Validation catches out-of-sync copies. Do not add private
+documents or unrelated files to the deck’s assets directory.
+
+## Validation
+
+Requires Python 3.9 or newer, with no third-party packages:
+
+```bash
+python3 scripts/check-site.py
+git diff --check
+```
+
+The checker verifies local links and anchors, image alt attributes, metadata,
+structured data, sitemap routes, XML assets, the publish-file allowlist, and
+deck/logo synchronization. It also checks that the marketing pages do not
+introduce executable JavaScript. Use a browser to review visual changes,
+keyboard navigation, responsive layouts, and native FAQ disclosures.
 
 ## Deployment
 
-GitHub Actions (`.github/workflows/gh-pages.yml`) builds on pushes to `main` and publishes the `public/` folder to the `gh-pages` branch for GitHub Pages. A `static/CNAME` file keeps the custom domain `rfive.ai` configured.
+`.github/workflows/gh-pages.yml` validates the site on pushes to `main` and
+publishes `site/` directly using GitHub Pages artifacts. The workflow can also
+be triggered manually. There is no site build step.
+
+`site/CNAME` retains the custom domain **rfive.ai**. Deploy **only `site/`**,
+never the repository root: other directories contain internal documents and
+unrelated work.
+
+Old blog and services routes are intentionally retired, without redirects or RSS.
+The contact and nontech deck routes remain available.
+
+The consultation buttons use
+https://cal.com/rfive.ai/free-consultation. Booking-page copy is managed in Cal.com
+and must be updated there separately.

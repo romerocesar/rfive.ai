@@ -1,33 +1,53 @@
 # Products
 
-R5 offers three products: **Private AI Workshops**, **AI Audits**, and **Custom AI Solutions**.
+## Current core offering
 
-All three are available to non-tech teams, development teams, and research teams. The product names stay the same; the scope and content are tailored to the audience's goals, workflows, tools, and level of technical experience.
+**Custom MCP server development and management.**
 
-## Private AI Workshops
+R5 builds and manages custom Model Context Protocol (MCP) servers so a product’s
+users can connect their AI agents to the product they already use.
 
-Hands-on sessions that help teams understand AI capabilities and apply them to their work. Content and exercises use tasks relevant to the team.
+Lead with customer-facing product integrations. Internal MCP integrations can
+also be scoped, but should not dilute the main positioning.
 
-For non-tech teams, the workshop consists of one or two 90-minute sessions covering the topics most important to the team, based on their current understanding of AI.
+### Development
 
-Topics may include prompts, structured output, harnesses, skills, agents, projects, context, models, MCP servers, file formats, and existing services. The topic selection and depth are tailored to the team.
+- Workflow discovery and API assessment
+- Tool and resource design around user tasks
+- Authentication and authorization tied to the product’s access model
+- Input validation, error handling, and integration tests
+- Deployment, client configuration, and documentation
 
-## AI Audits
+### Management
 
-A review of the team's workflows, tools, and current use of AI to identify opportunities and prioritize next steps. The scope reflects the team's goals and the systems or practices being assessed.
+Ongoing management is a core part of the offering, not merely an optional
+follow-on to development.
 
-For non-tech teams, the audit reviews both the tools they currently use and relevant tools they are not using. Recommendations identify which tools to add and pay for, keep, replace, or stop paying for, based on the team's workflows and needs.
+- Deployment management and operational monitoring
+- Maintenance, dependency updates, and security updates
+- Compatibility updates for the product API and agreed MCP clients
+- Troubleshooting and reliability improvements
+- New tools and capabilities as users’ needs change
 
-## Custom AI Solutions
+Define deliverables, source-code ownership, hosting, management scope, pricing,
+and support commitments in each engagement. Do not advertise fixed timelines,
+uptime guarantees, support hours, or universal client compatibility without
+agreed terms.
 
-Solutions built and tested for a specific team need. The scope, implementation, and handoff are tailored to the team's workflows, technical environment, and ability to maintain and use the solution.
+## Sales path
 
-## Audiences
+The primary conversion is a **free consultation** about a product and the
+workflows its users should be able to complete through agents.
 
-| Audience | Private AI Workshops | AI Audits | Custom AI Solutions |
-| --- | --- | --- | --- |
-| Non-tech teams | One or two 90-minute sessions on the topics most important to the team, based on their current understanding of AI. | Review workflows and tools in use or missing; recommend which tools to add and pay for, keep, replace, or stop paying for. | Build tools and automations for recurring business tasks. |
-| Development teams | Apply AI to software development and learn to build AI capabilities into applications. | Review development workflows, AI integrations, architecture, and evaluation practices. | Build AI features, integrations, and tools within the team's software environment. |
-| Research teams | Apply AI to research workflows, methods, and experimentation. | Review research workflows, AI methods, experimental setups, and evaluation practices. | Build research tools, experimental systems, and reproducible workflows. |
+- Booking: https://cal.com/rfive.ai/free-consultation
+- Email: cesar@rfive.ai
 
-These examples guide the scope of each engagement. The specific content and deliverables are defined around the target team's needs.
+## Later products
+
+Workshops, ready-made MCP servers, audits, and other products can be added later.
+They are outside the initial site launch scope and should not compete with the
+development-and-management offering in the homepage or navigation.
+
+The retained nontech deck describes the previous workshops/audits/solutions
+offering. Keep it accessible as existing material, not as the new site’s primary
+product positioning.

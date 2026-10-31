@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#000"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="80" y="102" fill="#fff" font-size="44" font-weight="700">R5.</text>
+    <path d="M80 145H1120" stroke="#333"/>
+    <text x="80" y="210" fill="#b3b3b3" font-size="18" letter-spacing="3">CUSTOM MCP DEVELOPMENT &amp; MANAGEMENT</text>
+    <g fill="#fff" font-size="78" font-weight="600" letter-spacing="-3">
+      <text x="76" y="325">Can AI agents</text>
+      <text x="76" y="420">use your app yet?</text>
+    </g>
+    <path d="M80 495H1120" stroke="#333"/>
+    <text x="80" y="555" fill="#b3b3b3" font-size="23">Your product. Connected to your users’ AI agents.</text>
+    <text x="1120" y="555" text-anchor="end" fill="#fff" font-size="23">rfive.ai</text>
+  </g>
+</svg>
